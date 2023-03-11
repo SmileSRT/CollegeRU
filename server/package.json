@@ -1,0 +1,32 @@
+{
+  "name": "collegeru",
+  "version": "1.0.0",
+  "description": "The website for college-rf",
+  "main": "App.js",
+  "scripts": {
+    "dev": "nodemon App",
+    "start": "node App"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OakDust/College_rf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OakDust/College_rf/issues"
+  },
+  "homepage": "https://github.com/OakDust/College_rf#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "npm": "^9.6.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "dependencies": {
+    "pg": "^8.9.0",
+    "sequelize": "^6.29.0"
+  }
+}
