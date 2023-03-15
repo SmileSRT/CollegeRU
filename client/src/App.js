@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./components/AppRouter";
+import Carousel from "./components/carousel/Carousel.jsx";
+import Navbar from "./components/nav/Navbar.jsx";
 
 
 const App = () => {
   return(
     <BrowserRouter>
-      <AppRouter />
+      <Navbar/>
+        <Carousel/>
 
       <div>client version hi</div>
     </BrowserRouter>
