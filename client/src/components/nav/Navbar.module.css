@@ -2,3 +2,8 @@
     vertical-align: top;
     display: inline-block;
 }
+
+.search {
+    cursor: pointer;
+}
+

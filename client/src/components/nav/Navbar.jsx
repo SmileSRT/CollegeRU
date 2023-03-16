@@ -1,64 +1,104 @@
 import React from 'react';
 import { Switch, Redirect, Route } from 'react-router-dom'
-import orgLogo from '../../../public/logo192.png'
-import searchIcon from '../../../public/searchIcon.png'
+import orgLogo from '../../../public/images/logoWithCapture.png'
+import searchIcon from '../../../public/images/searchIcon.png'
+import webCabinetIcon from '../../../public/images/webCabinetIcon.png'
+import handicapVersionIcon from '../../../public/images/handicapVersion.png'
 import classes from './Navbar.module.css'
+
+const searchForm = (props) => {
+    return(
+        <div style={{width: "1500px", height: "500px"}}>
+            hello world
+        </div>
+    )
+}
 
 const Navbar = () => {
     return( 
 
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mx-2">
                 <div class="container">
                     <nav class="navbar navbar-light bg-light">
                         <div class="container">
                             <a class="navbar-brand" href="#">
-                            <img src={orgLogo} alt="" width="90" height="auto" />
+                                <img src={orgLogo} alt="" width="128" height="auto" />
                             </a>
                         </div>
                     </nav>
 
 
     {/* DROPDOWN */}
-                    <div class="collapse navbar-collapse">
-                        <div class="collapse navbar-collapse container row">
-                            <ul class="navbar-nav ">
-                                <li class="nav-item dropdown col">
+
+                        <div class="collapse navbar-collapse row">
+                            <ul class="navbar-nav col mx-5">
+                                <li class="nav-item dropdown col d-inline-flex mx-5 my-1">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Поступающим
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Прием 2023</a></li>
+                                    <li><a class="dropdown-item" href="#">Приемная комиссия 2023</a></li>
                                     <li><a class="dropdown-item" href="#">Специальности</a></li>
                                     <li><a class="dropdown-item" href="#">Подготовительные курсы</a></li>
-                                    <li><a class="dropdown-item" href="#">Задать вопрос</a></li>
+                                    <li><a class="dropdown-item" href="#">Дни открытых дверей</a></li>
                                 </ul>
                                 </li>
-                                <li class="nav-item col">
-                                    <a class="nav-link" href="#">Студентам</a>
+                                <li class="nav-item dropdown col d-inline-flex mx-5 my-1">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Студентам
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Оплата обучения/квитанции</a></li>
+                                    <li><a class="dropdown-item" href="#">Расписание занятий</a></li>
+                                    <li><a class="dropdown-item" href="#">Кураторы групп</a></li>
+                                    <li><a class="dropdown-item" href="#">Дополнительные материалы</a></li>
+                                </ul>
                                 </li>
-                                <li class="nav-item col">
-                                    <a class="nav-link" href="#">Преподавателям</a>
+                                <li class="nav-item dropdown col d-inline-flex mx-5 my-1">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Сотрудникам
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Трудоустройство</a></li>
+                                    <li><a class="dropdown-item" href="#">Отдел кадров</a></li>
+                                </ul>
                                 </li>
-                                <li class="nav-item col">
+                                <li class="nav-item col d-inline-flex mx-5 my-1">
                                     <a class="nav-link" href="#">Партнерам</a>
                                 </li>
                             </ul>
 
-                            
                             <div class="w-100"></div>
 
-                            <ul class="navbar-nav col">
-                                <li class="nav-item col">
-                                    <a class="nav-link" href="#">Сведения об организации</a>
+                            <ul class="navbar-nav col mx-5">
+                            <li class="nav-item dropdown col d-inline-flex mx-5 my-1">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Сведения об организации
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">О колледже</a></li>
+                                    <li><a class="dropdown-item" href="#">Официальные документы</a></li>
+                                    <li><a class="dropdown-item" href="#">Структура и органы управления</a></li>
+                                    <li><a class="dropdown-item" href="#">Награды</a></li>
+                                    <li><a class="dropdown-item" href="#">Партнеры</a></li>
+                                </ul>
                                 </li>
-                                <li class="nav-item col">
-                                    <a class="nav-link" href="#">Образование</a>
+                                <li class="nav-item dropdown col d-inline-flex mx-5 my-1">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Образование
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Учебная деятельность</a></li>
+                                    <li><a class="dropdown-item" href="#">Образовательные программы</a></li>
+                                    <li><a class="dropdown-item" href="#">Преподаватели</a></li>
+                                    <li><a class="dropdown-item" href="#">Учебные планы</a></li>
+                                </ul>
                                 </li>
-                                <li class="nav-item col">
+                                <li class="nav-item col d-inline-flex mx-5 my-1">
                                     <a class="nav-link" href="#">Новости</a>
                                 </li>
-                                <li class="nav-item col">
+                                <li class="nav-item col d-inline-flex mx-5 my-1">
                                     <a class="nav-link" href="#">Контакты</a>
                                 </li>
                             </ul>
@@ -72,24 +112,23 @@ const Navbar = () => {
                                 </li> */}
 
 
-                    </div>
                                 
-                    <nav class="navbar navbar-light bg-light item align-top">
-                            <div class="container align-top" className={classes}>
+                    <nav class="navbar navbar-light bg-light item">
+                            <div class="container col" className={classes}>
                                 <ul class="navbar-nav">
-                                    <li class="nav-item top">
+                                    <li class="nav-item item col">
                                         <a class="navbar nav-link" href="#">
-                                            <img src={searchIcon} alt="" width="20" height="20" />
+                                            <img src={handicapVersionIcon} alt="" width="20" height="20" />
                                         </a>
                                     </li>
-                                    <li class="nav-item top">
+                                    <li class="nav-item col">
                                         <a class="navbar nav-link" href="#">
-                                            <img src={searchIcon} alt="" width="20" height="20" />
+                                            <img src={webCabinetIcon} alt="" width="20" height="20" />
                                         </a>
                                     </li>
-                                    <li class="nav-item top">
-                                        <a class="navbar nav-link" href="#">
-                                            <img src={searchIcon} alt="" width="20" height="20" />
+                                    <li class="nav-item col">
+                                        <a class="navbar nav-link">
+                                            <img src={searchIcon} alt="" width="20" height="20" className={classes.search} onClick={searchForm}/>
                                         </a>
                                     </li>
                                 </ul>
