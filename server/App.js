@@ -3,6 +3,7 @@ const express = require('express')
 const router = new express.Router()
 const sequelize = require('./db')
 const path = require('path')
+const { url } = require('inspector')
 const PORT = process.env.PORT || 5000
 
 
@@ -23,8 +24,9 @@ const start = async () => {
     }
 }
 
-app.get('/', (req, res) => {
-    res.status(200).send('server page')
+app.post('/post', (req, res) => {
+  console.log('connected to react')
+  res.redirect('/')
 })
 
 start()

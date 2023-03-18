@@ -27,6 +27,17 @@ const NavBar = () => {
     let [contactItems, revealContact] = useState(true);
     const [elementVisible, setElementVisible] = useState(true);
 
+    function closeItems() {
+        revealAbiturient(abiturientItems=true)
+        revealContact(contactItems=true)
+        revealOrg(orgItems=true)
+        revealEducation(educationItems=true)
+        revealEmployee(employeeItems=true)
+        revealStudent(studentItems=true)
+        
+        return null
+    }
+
     return( 
         <div className='container'>
             <Navbar className='navbar-light my-2' expand="lg">
@@ -36,118 +47,154 @@ const NavBar = () => {
                     </Navbar.Brand>
                 <div className='row mx-5'>
                     <Nav className='col mx-5'>
-                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {revealAbiturient(abiturientItems=false)}}>
+
+                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealAbiturient(abiturientItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
                         Поступающим
                     </Card.Header>
 
-
                     {!abiturientItems ? (
-                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {revealAbiturient(abiturientItems=true)}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
+                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {closeItems(); revealAbiturient(abiturientItems=true)}}>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href="#">jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='#'>Dapibus ac facilisis in</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='#'>Vestibulum at eros</a>
+                            </ListGroup.Item>
                         </ListGroup>) : null
                     }
                     </Card>
-                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {revealStudent(studentItems=false)}}>
+
+                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealStudent(studentItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
                         Студентам
                     </Card.Header>
 
-
                     {!studentItems ? (
-                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {revealStudent(studentItems=true)}}>
-                            <ListGroup.Item className='py-3'><a href='/about'>jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item className='py-3'>Dapibus ac facilisis in</ListGroup.Item>
-                            <ListGroup.Item className='py-3'>Vestibulum at eros</ListGroup.Item>
+                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {closeItems(); revealStudent(studentItems=true)}}>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/about'>jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/about'>jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/about'>jfosiejf</a>
+                            </ListGroup.Item>
                         </ListGroup>) : null
                     }
                         
                     </Card>
-                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {revealEmployee(employeeItems=false)}}>
+
+                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEmployee(employeeItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
                         Сотрудникам
                     </Card.Header>
 
-
                     {!employeeItems ? (
-                        <ListGroup style={listGroupStyles} onMouseLeave={() => {revealEmployee(employeeItems=true)}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
+                        <ListGroup style={listGroupStyles} onMouseLeave={() => {closeItems(); revealEmployee(employeeItems=true)}}>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href="#">jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='#'>Dapibus ac facilisis in</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='#'>Vestibulum at eros</a>
+                            </ListGroup.Item>
                         </ListGroup>) : null
                     }
                     </Card>
+
                     <Card class='mx-3 my-2' className={classes.navDropdown} >
                     <Card.Header className={classes.navDropdown}>
                         Партнерам
                     </Card.Header>
 
-
-                    
-                        <ListGroup variant="flush" style={{position: "absolute", zIndex: 50, display: "none"}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
-                        </ListGroup>
                     </Card>
-                   
                     </Nav>
+
                     <div className='w-100'></div>
+
                     <Nav className='col mx-5'>
-                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {revealOrg(orgItems=false)}}>
+
+                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealOrg(orgItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
                         Сведения об организации
                     </Card.Header>
 
-
                     {!orgItems ? (
-                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {revealOrg(orgItems=true)}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
+                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {closeItems(); revealOrg(orgItems=true)}}>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href="#">jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Dapibus ac facilisis in</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Vestibulum at eros</a>
+                            </ListGroup.Item>
                         </ListGroup>) : null
                     }
                     </Card>
-                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {revealEducation(educationItems=false)}}>
+
+                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEducation(educationItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
                         Образование
                     </Card.Header>
 
-
                     {!educationItems ? (
-                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {revealEducation(educationItems=true)}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
+                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {closeItems(); revealEducation(educationItems=true)}}>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href="#">jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Dapibus ac facilisis in</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Vestibulum at eros</a>
+                            </ListGroup.Item>
                         </ListGroup>) : null
                     }
                     </Card>
+
                     <Card class='mx-3 my-2' className={classes.navDropdown} >
                     <Card.Header className={classes.navDropdown}>
                         Новости
                     </Card.Header>
-
-
                     
                         <ListGroup variant="flush" style={{position: "absolute", zIndex: 50, display: "none"}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href="#">jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Dapibus ac facilisis in</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Vestibulum at eros</a>
+                            </ListGroup.Item>
                         </ListGroup>
                     </Card>
-                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {revealContact(contactItems=false)}}>
+
+                    <Card class='mx-3 my-2' className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealContact(contactItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
                         Контакты
                     </Card.Header>
 
-
                     {!contactItems ? (
-                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {revealContact(contactItems=true)}}>
-                            <ListGroup.Item><a href="#">jfosiejf</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Dapibus ac facilisis in</a></ListGroup.Item>
-                            <ListGroup.Item><a href='#'>Vestibulum at eros</a></ListGroup.Item>
+                        <ListGroup variant="flush" style={listGroupStyles} onMouseLeave={() => {closeItems(); revealContact(contactItems=true)}}>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href="#">jfosiejf</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Dapibus ac facilisis in</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}}>
+                                <a className='nav-link' href='#'>Vestibulum at eros</a>
+                            </ListGroup.Item>
                         </ListGroup>) : null
                     }
                     </Card>

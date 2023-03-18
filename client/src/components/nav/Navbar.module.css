@@ -16,16 +16,21 @@
     border: none;
     border-bottom: none;
     background: none;
+    color: gray;
     text-decoration-color: none;
+    cursor: pointer;
 }
 
 .navDropdown::after {
     position: absolute;
     content: '';
-
+    border: none;
+    border-bottom: none;
 }
 
 .navDropdown::before {
     position: absolute;
     content: '';
+    border: none;
+    border-bottom: none;
 }
