@@ -7,3 +7,25 @@
     cursor: pointer;
 }
 
+.navDropdown {
+    position: relative;
+    background-color: none;
+    background-image: none;
+    text-decoration: none;
+    margin: 1px 15px 1px 15px;
+    border: none;
+    border-bottom: none;
+    background: none;
+    text-decoration-color: none;
+}
+
+.navDropdown::after {
+    position: absolute;
+    content: '';
+
+}
+
+.navDropdown::before {
+    position: absolute;
+    content: '';
+}
