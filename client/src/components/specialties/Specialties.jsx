@@ -17,32 +17,32 @@ const Specialties = () => {
 
             <div class="container">
                 <div class="d-flex flex-row w-100">
-                    <div class="col md-auto" className={classes.sidebars}>
+                    <div class="col md-auto" className={classes.zoom} style={{backgroundImage: specialty1}}>
                         <a href="#">
                             <img src={specialty1} alt="" />
                         </a>
                     </div>
-                    <div class="col md-auto" className={classes.sidebars}>
+                    <div class="col md-auto" className={classes.zoom} style={{backgroundImage: specialty2}}>
                         <a href="#">
                             <img src={specialty2} alt="" />
                         </a>
                     </div>
-                    <div class="col md-auto" className={classes.sidebars}>
+                    <div class="col md-auto" className={classes.zoom} style={{backgroundImage: specialty3}}>
                         <a href="#">
                             <img src={specialty3} alt="" />
                         </a>
                     </div>
-                    <div class="col md-auto" className={classes.sidebars}>
+                    <div class="col md-auto" className={classes.zoom} style={{backgroundImage: specialty4}}>
                         <a href="#">
                             <img src={specialty4} alt="" />
                         </a>
                     </div>
-                    <div class="col md-auto" className={classes.sidebars}>
+                    <div class="col md-auto" className={classes.zoom} style={{backgroundImage: specialty5}}>
                         <a href="#">
                             <img src={specialty5} alt="" />
                         </a>
                     </div>
-                    <div class="col md-auto" className={classes.sidebars}>
+                    <div class="col md-auto" className={classes.zoom} style={{backgroundImage: specialty6}}>
                         <a href="#">
                             <img src={specialty6} alt="" />
                         </a>

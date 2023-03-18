@@ -12,7 +12,10 @@
     background-color: none;
     background-image: none;
     text-decoration: none;
-    margin: 1px 15px 1px 15px;
+    display: inline-flex;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: auto;
     border: none;
     border-bottom: none;
     background: none;
