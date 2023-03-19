@@ -7,7 +7,11 @@ import Navbar from "../components/nav/Navbar.jsx";
 import Specialties from "../components/specialties/Specialties.jsx";
 
 
-const Index = () => {
+const Index = (props) => {
+    const title = props.title
+    document.title = title;
+ 
+
     return( 
         <div>
             <Navbar/>

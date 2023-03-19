@@ -15,7 +15,7 @@ const App = () => {
                 <AboutOrg/>
                 <Specialties/> */}
                 {/* <Auth/> */}
-            {/* Распечатать фото с голубями камила */}
+
 
                 {/* <Accreditation/>
                 <Footer/> */}

@@ -3,7 +3,9 @@ import Navbar from "../components/nav/Navbar.jsx";
 import Footer from "../components/footer/Footer.jsx";
 
 
-const Contact = () => {
+const Contact = (props) => {
+    const title = props.title
+    document.title = title;
     return( 
 
         <div>

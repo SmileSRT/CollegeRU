@@ -15,18 +15,19 @@ const listGroupStyles = {
     zIndex: 50, 
     marginTop: "40px", 
     width: "250px", 
-    height: "200px"
+    height: "200px",
 }
 
 const itemLined = {
     position: "absolute", 
     zIndex: 50, 
-    borderRadius: 0,
     borderTop: "3px solid #ff4d11",
-    marginTop: "40px", 
-    width: "auto", 
-    height: "200px"
+    marginTop: "48px", 
+    width: 250 
+
 }
+
+// width: window.innerWidth > 0 ? 300 : "auto", 
 
 const NavBar = () => {
     let [studentItems, revealStudent] = useState(true);
@@ -51,20 +52,20 @@ const NavBar = () => {
     return( 
         <div className='container'>
             <Navbar className='navbar-light my-2' expand="lg">
-                <Container fluid>
+                <Container fluid style={{width: "1500px"}}>
                     <Navbar.Brand href="/">
                         <img src={orgLogo} alt="" width="128" height="auto" />
                     </Navbar.Brand>
-                <div className='row mx-5'>
-                    <Nav className='col mx-5'>
+                <div className='row'>
+                    <Nav className='col'>
 
                     <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealAbiturient(abiturientItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
-                        Поступающим
+                        <a className='nav-link'>Поступающим</a>
                     </Card.Header>
 
                     {!abiturientItems ? (
-                        <ListGroup variant="secondary" style={itemLined} onMouseLeave={() => {closeItems(); revealAbiturient(abiturientItems=true)}}>
+                        <ListGroup variant="flush" style={itemLined} onMouseLeave={() => {closeItems(); revealAbiturient(abiturientItems=true)}}>
                             <ListGroup.Item style={{border: "none"}} className='py-1'>
                                 <a className='nav-link' href="/abit2023">Приемная комиссия 2023</a>
                             </ListGroup.Item>
@@ -83,7 +84,7 @@ const NavBar = () => {
 
                     <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealStudent(studentItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
-                        Студентам
+                        <a className='nav-link'>Студентам</a>
                     </Card.Header>
 
                     {!studentItems ? (
@@ -107,7 +108,7 @@ const NavBar = () => {
 
                     <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEmployee(employeeItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
-                        Сотрудникам
+                        <a className='nav-link'>Сотрудникам</a>
                     </Card.Header>
 
                     {!employeeItems ? (
@@ -132,29 +133,41 @@ const NavBar = () => {
 
                     <div className='w-100'></div>
 
-                    <Nav className='col mx-5'>
+                    <Nav className='col'>
 
                     <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealOrg(orgItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
-                        Сведения об организации
+                        <a className='nav-link'>Сведения об организации</a>
                     </Card.Header>
 
                     {!orgItems ? (
                         <ListGroup variant="flush" style={itemLined} onMouseLeave={() => {closeItems(); revealOrg(orgItems=true)}}>
                             <ListGroup.Item style={{border: "none"}}>
-                                <a className='nav-link' href="/about">О колледже</a>
+                                <a className='nav-link' href="/about">Основные сведения</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/structure'>Структура и органы управления</a>
                             </ListGroup.Item>
                             <ListGroup.Item style={{border: "none"}}>
                                 <a className='nav-link' href='/documents'>Официальные документы</a>
                             </ListGroup.Item>
                             <ListGroup.Item style={{border: "none"}}>
-                                <a className='nav-link' href='/structure'>Структура и органы управления</a>
+                                <a className='nav-link' href='/structure'>Образование</a>
                             </ListGroup.Item>
                             <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/partners'>Педагогический состав</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/partners'>Обеспечение образовательного процесса</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/partners'>Платные образовательные услуги</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{border: "none"}} className='py-1'>
+                                <a className='nav-link' href='/partners'>Финансово-хозяйственная деятельность</a>
+                            </ListGroup.Item>
+                            <ListGroup.Item style={{borderBottom: "1px solid beige", borderRadius: "5%"}} className='py-1'>
                                 <a className='nav-link' href='/rewards'>Награды</a>
-                            </ListGroup.Item>
-                            <ListGroup.Item style={{border: "none"}} className='py-1'>
-                                <a className='nav-link' href='/partners'>Партнерам</a>
                             </ListGroup.Item>
                         </ListGroup>) : null
                     }
@@ -162,7 +175,7 @@ const NavBar = () => {
 
                     <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEducation(educationItems=false)}}>
                     <Card.Header className={classes.navDropdown}>
-                        Образование
+                        <a className='nav-link'>Образование</a>
                     </Card.Header>
 
                     {!educationItems ? (
@@ -221,12 +234,7 @@ const NavBar = () => {
                 null
             }
         </Container>
-        {/* <Container>
-            {!dropdownItemsVisibility ? (
-                <Dropdown />) :
-                null
-            }
-        </Container> */}
+
         </div>
         
 

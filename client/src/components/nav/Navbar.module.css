@@ -10,12 +10,8 @@
 .navDropdown {
     position: relative;
     background-color: none;
-    background-image: none;
-    text-decoration: none;
-    display: inline-flex;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-right: auto;
+    margin: 1px auto 1px auto;
+    width: auto;
     border: none;
     border-bottom: none;
     background: none;

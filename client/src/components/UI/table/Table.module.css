@@ -1,0 +1,10 @@
+.tableStyles {
+    border: 1px solid gray;
+    border-radius: 5%;
+    padding: 40px;
+} 
+
+.tableStyles > div {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}

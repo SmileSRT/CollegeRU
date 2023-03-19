@@ -23,12 +23,12 @@ const Auth = () => {
             <Form className='d-flex flex-column'>
                 <Form.Control
                     className='mt-2'
-                    placeholder='email'
+                    placeholder='Введите ваш e-mail:'
                 />
                     
                 <Form.Control
                     className='mt-2'
-                    placeholder='password'
+                    placeholder='Введите ваш пароль:'
                 />
 
                      <div className='d-flex mt-3 '>
