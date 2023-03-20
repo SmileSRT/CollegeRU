@@ -8,8 +8,8 @@ const AboutOrg = () => {
     return( 
         <div class="d-flex justify-content-center" className={classes.split}>
             <div class="container">
-                <div class="row">
-                    <div class="col-6 col-md-6">
+                <div class="d-flex flex-row">
+                    <div class="col-6 col-md-5">
                         <h1 class="display-4">Знание - сила</h1>
                         <p class="lead">Создавая колледж, мы хотели, чтобы он стал не просто
                             еще одним учебным заведением, где ничем нне
@@ -29,9 +29,9 @@ const AboutOrg = () => {
                     </div>
                     
                     <div class="col-12 col-md-3 row">
-                        <div class="col">
+                        <div class="col" className={classes.zoom} style={{backgroundImage: anthemVideo}}>
                             <a href='#'>
-                                <img src={anthemVideo} alt="ЗНАНИЕ | Гимн колледжа" width="100%" height="auto"/>
+                                <img src={anthemVideo} alt="ЗНАНИЕ | Гимн колледжа" />
                                 {/* <p class="lead">ЗНАНИЕ | Гимн колледжа</p> */}
                             </a>
                         </div>
@@ -40,17 +40,19 @@ const AboutOrg = () => {
                         <div class="w-100"></div>
                         {/* Splitter */}
 
-                        <div class="col">
+                        <div class="col" className={classes.zoom} style={{backgroundImage: reviewVideo}}>
                             <a href='#'>
-                                <img src={reviewVideo} alt="ЗНАНИЕ | Видео-обзор" width="100%" height="auto" />
+                                <img src={reviewVideo} alt="ЗНАНИЕ | Видео-обзор" />
                             </a>
                         </div>
+                        
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-12 col-md-4" className={classes.zoom} style={{backgroundImage: photoGallery}}>
                         <a href='#'>
-                            <img src={photoGallery} alt="" width="auto" height="437px"/>
+                            <img src={photoGallery} alt="" height="536px"/>
                         </a>
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -15,9 +15,39 @@
     border: none;
     border-bottom: none;
     background: none;
-    color: gray;
     text-decoration-color: none;
     cursor: pointer;
+}
+
+.itemLined {
+    position: absolute; 
+    z-index: 1; 
+    margin-top: 50px;
+    animation: growDown 300ms forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+        border-top: 1px solid #ff4d11;
+        width: 280px
+    }
+    30% {
+        transform: scaleY(0.5);
+        border-top: 2px solid #ff4d11;
+        width: 300px;
+    }
+    80% {
+        transform: scaleY(1.1);
+        border-top: 4px solid #ff4d11;
+        width: 340px;
+    }
+    100% {
+        transform: scaleY(1);
+        border-top: 3px solid #ff4d11;
+        width: 330px
+    }
 }
 
 .navDropdown::after {
@@ -32,4 +62,35 @@
     content: '';
     border: none;
     border-bottom: none;
+}
+
+.navComponent {
+    background-color: white;
+}
+
+body {
+    background-color:  #f2f2f2;;
+}
+
+.authBlock {
+    animation: reveal 500ms ease-in-out forwards;
+    transform-origin: center;
+    z-index: 1;
+}
+
+@keyframes reveal {
+    0% {
+        transform: scale(0);
+
+    }
+    30% {
+        transform: scale(0.5);
+
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

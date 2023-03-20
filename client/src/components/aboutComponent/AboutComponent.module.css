@@ -1,0 +1,24 @@
+.head1 {
+    font-family: Arial, Bold;
+    font-size: 36pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutBlock > h2 {
+    font-family: Arial, Bold;
+    font-size: 18pt;
+    margin-bottom: 20px;
+}
+
+.aboutBlock > p {
+    font-family: Arial, Bold;
+    font-size: 13pt;
+    
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    color: #575757;
+}

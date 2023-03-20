@@ -8,9 +8,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     transition: transform .2s; /* Animation */
-    width: 100%;
-    height: auto;
-    margin: 30px 10px 30px 10px;
+    width: auto;
+    height: 100%;
+    margin: 35px 2px 35px 2px;
 }
   
 .zoom:hover {

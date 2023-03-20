@@ -8,14 +8,13 @@ const App = () => {
     return(
         <BrowserRouter>
             <AppRouter />
-            
             {/* <div class="container w-100"> */}
                 {/* <Navbar/>
                 <Carousel/>
                 <AboutOrg/>
                 <Specialties/> */}
                 {/* <Auth/> */}
-
+            {/* Распечатать фото с голубями камила */}
 
                 {/* <Accreditation/>
                 <Footer/> */}

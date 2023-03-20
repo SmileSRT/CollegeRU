@@ -1,24 +1,20 @@
 import React, { useState } from 'react';
-import { Button, Card, Container, Form } from 'react-bootstrap'
+import { Button, Card, Container, Form, Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
-import { ABOUT_ROUTE } from '../utils/consts';
+import { ABOUT_ROUTE } from '../../../utils/consts';
+import classes from './Auth.module.css'
 
-const containerStyles = {
-    height: 600, 
-    top: 0, 
-    left: 0, 
-    zIndex: 1,
-    position: "absolute"
-}
 
 
 const Auth = () => {
     return( 
+        <div className={classes.authBlock}>
+
         <Container
-            className='d-flex my-5 justify-content-center align-items-center'
-            style={containerStyles}
+            className={classes.containerStyles}
         >
         <Card style={{width: 700, height: 600, position: 'fixed'}} className="p-5">
+            
             <h1 className='display-4 m-auto'>Авторизация</h1>
             <Form className='d-flex flex-column'>
                 <Form.Control
@@ -55,6 +51,7 @@ const Auth = () => {
         </Card>
         
         </Container>
+        </div>
     );
 }
 export default Auth;
