@@ -60,6 +60,20 @@
     background-color: #181818;
     padding: 20px 0 20px 0;
 }
+
+.copyright > div {
+    display: flex;
+    margin: auto;
+    color: #e4e9f0;
+    justify-content: center;
+}
+
+.copyright > div > a {
+    margin: 10px 25px 15px 0;
+    padding-right: 25px;
+    border-right: 1px solid gray;
+}
+
 /* .captureContainer {
     border-bottom: solid 1px beige;
 } */

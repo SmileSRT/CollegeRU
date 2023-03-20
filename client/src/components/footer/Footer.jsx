@@ -1,11 +1,13 @@
 import React from 'react';
 import orgLogo from '../../../public/images/logoNoCapture.png'
 import classes from './Footer.module.css'
+import { Container, Row } from 'react-bootstrap'
+
 
 const Footer = () => {
     return( 
         <div className={classes.footerStyles}>
-        <div class="container" >
+        <Container>
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5">
             <div class="my-auto col">
                 <ul class="nav navbar-nav">
@@ -62,7 +64,24 @@ const Footer = () => {
         </footer>
 
         
-        </div><div className={classes.copyright}><p class="text-muted mx-auto d-inline-flex">© 2023 Колледж "ЗНАНИЕ"</p></div>
+        </Container>
+
+       
+
+        <div className={classes.copyright}> 
+            <Container>
+                <a className='nav-link' href="#">
+                    Памятка личной безопасности 
+                </a>
+                <a className='nav-link' href="#">
+                    Противодействие терроризму
+                </a>
+                <a className='nav-link' style={{border: "none"}} href="#">
+                    Противодействие коррупции
+                </a>
+            </Container>
+            <p class="text-muted mx-auto d-inline-flex">© 2023 Колледж "ЗНАНИЕ"</p>
+        </div>
     </div>
     );
 }
