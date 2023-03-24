@@ -1,4 +1,4 @@
-import { ABOUT_ROUTE, ABITURIENTS_ROUTE, NEWS_ROUTE, CONTACT_ROUTE, PARTNERS_ROUTE, STUDENTS_ROUTE, EDUCATION_ROUTE, EMPLOYEES_ROUTE, INDEX_ROUTE, STRUCTURE_ROUTE } from "./utils/consts.js"
+import { ABOUT_ROUTE, ABITURIENTS_ROUTE, NEWS_ROUTE, CONTACT_ROUTE, PARTNERS_ROUTE, STUDENTS_ROUTE, EDUCATION_ROUTE, EMPLOYEES_ROUTE, INDEX_ROUTE, STRUCTURE_ROUTE, CURRICULUM_ROUTE } from "./utils/consts.js"
 import About from './pages/About.jsx'
 import Abiturients from "./pages/Abiturients.jsx"
 import News from "./pages/News.jsx"
@@ -9,6 +9,7 @@ import Education from "./pages/Education.jsx"
 import Employees from "./pages/Employees.jsx"
 import Index from "./pages/Index.jsx"
 import Structure from "./pages/Structure.jsx"
+import CurriculumGraffic from "./pages/CurriculumGraffic.jsx"
 
 export const publicRoutes = [
     {
@@ -60,6 +61,11 @@ export const publicRoutes = [
         path: STRUCTURE_ROUTE,
         Component: Structure,
         title: 'ЗНАНИЕ | Структура и органы управления'
+    },
+    {
+        path: CURRICULUM_ROUTE,
+        Component: CurriculumGraffic,
+        title: 'ЗНАНИЕ | График учебного процесса'
     }
 ]
 

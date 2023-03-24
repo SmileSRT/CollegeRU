@@ -2,7 +2,8 @@
   "name": "collegeru",
   "version": "1.0.0",
   "description": "The website for college-rf",
-  "main": "App.js",
+  "main": "app.js",
+  "type": "module",
   "proxy": "http://localhost:8080",
   "scripts": {
     "dev": "nodemon App",

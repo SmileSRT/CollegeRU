@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-
+const Dotenv = require('dotenv-webpack')
 // Импортируем плагин
 
 
@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 const plugins = [
+  new Dotenv(),
   new HtmlWebpackPlugin({
     template: './src/index.html',
   }),

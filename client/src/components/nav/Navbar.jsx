@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useContext, useState } from 'react';
 import orgLogo from '../../../public/images/logoWithCapture.png'
 import searchIcon from '../../../public/images/searchIcon.png'
 import webCabinetIcon from '../../../public/images/webCabinetIcon.png'
@@ -9,6 +9,7 @@ import Auth from '../UI/auth/Auth.jsx';
 import { Navbar, Container, NavDropdown, Nav, NavItem, Dropdown, Card } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import ListGroup from 'react-bootstrap/ListGroup';
+import NavbarPhones from '../UI/navbarPhones/NavbarPhones.jsx';
 
 
 // width: window.innerWidth > 0 ? 300 : "auto", 
@@ -32,10 +33,14 @@ const NavBar = () => {
         
         return null
     }
+    
+    const width = window.innerWidth > 400
 
     return( 
+        <div>
+        {window.innerWidth > 400 ? (
         <div className={classes.navComponent}>
-            <Navbar className='navbar-light' expand="lg">
+            <Navbar className='navbar-light'>
                 <Container flex>
                     <Navbar.Brand href="/">
                         <img src={orgLogo} alt="" width="128" height="auto" />
@@ -43,8 +48,8 @@ const NavBar = () => {
                 <div className='row mx-5'>
                     <Nav className='col mx-4'>
 
-                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealAbiturient(abiturientItems=false)}}>
-                    <Card.Header className={classes.navDropdown}>
+                    <Card  className={classes.navDropdown} >
+                    <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealAbiturient(abiturientItems=false)}}>
                         <a className='nav-link'>Поступающим</a>
                     </Card.Header>
 
@@ -66,8 +71,8 @@ const NavBar = () => {
                     }
                     </Card>
 
-                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealStudent(studentItems=false)}}>
-                    <Card.Header className={classes.navDropdown}>
+                    <Card  className={classes.navDropdown} >
+                    <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealStudent(studentItems=false)}}>
                         <a className='nav-link'>Студентам</a>
                     </Card.Header>
 
@@ -90,8 +95,8 @@ const NavBar = () => {
                         
                     </Card>
 
-                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEmployee(employeeItems=false)}}>
-                    <Card.Header className={classes.navDropdown}>
+                    <Card  className={classes.navDropdown} >
+                    <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEmployee(employeeItems=false)}}>
                         <a className='nav-link'>Сотрудникам</a>
                     </Card.Header>
 
@@ -119,8 +124,8 @@ const NavBar = () => {
 
                     <Nav className='col mx-4'>
 
-                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealOrg(orgItems=false)}}>
-                    <Card.Header className={classes.navDropdown}>
+                    <Card  className={classes.navDropdown} >
+                    <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealOrg(orgItems=false)}}>
                         <a className='nav-link'>Сведения об организации</a>
                     </Card.Header>
 
@@ -157,8 +162,8 @@ const NavBar = () => {
                     }
                     </Card>
 
-                    <Card  className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEducation(educationItems=false)}}>
-                    <Card.Header className={classes.navDropdown}>
+                    <Card  className={classes.navDropdown} >
+                    <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEducation(educationItems=false)}}>
                         <a className='nav-link'>Образование</a>
                     </Card.Header>
 
@@ -218,10 +223,11 @@ const NavBar = () => {
         </Container>
 
         </div>
-        
-
+    ) : <NavbarPhones/>}
+    </div>
     );
 }
+
 export default NavBar;
 
 

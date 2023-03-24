@@ -5,7 +5,7 @@ import Carousel from "../components/carousel/Carousel.jsx";
 import Footer from "../components/footer/Footer.jsx";
 import Navbar from "../components/nav/Navbar.jsx";
 import Specialties from "../components/specialties/Specialties.jsx";
-
+import { Container } from 'react-bootstrap';
 
 const Index = (props) => {
     const title = props.title

@@ -3,19 +3,19 @@ import anthemVideo from '../../../public/images/aboutOrgImages/anthemVideo.png'
 import reviewVideo from '../../../public/images/aboutOrgImages/reviewVideo.png'
 import photoGallery from '../../../public/images/aboutOrgImages/photoGallery.png'
 import classes from './AboutOrg.module.css'
+import { Col, Container, Row } from 'react-bootstrap';
 
 const AboutOrg = () => {
     return( 
-        <div class="d-flex justify-content-center" className={classes.split}>
-            <div class="container">
-                <div class="d-flex flex-row">
-                    <div class="col-6 col-md-5">
-                        <h1 class="display-4">Знание - сила</h1>
-                        <p class="lead">Создавая колледж, мы хотели, чтобы он стал не просто
+        <Container className='my-5'>
+            <h1 className="display-4">Знание - сила</h1>
+            <Row>
+                <Col xs lg="5">
+                        <p className={classes.paragraphStyle}>Создавая колледж, мы хотели, чтобы он стал не просто
                             еще одним учебным заведением, где ничем нне
                             связанные друг с другом люди будут обучать и учиться.
                         </p>
-                        <p class="lead">
+                        <p className={classes.paragraphStyle}>
                             Наша цель была в другом: мы убеждены -- каждый 
                             человек талантлив; мы убеждены -- сейчас время
                             неординарных людей и неординарных идей; мы
@@ -26,36 +26,27 @@ const AboutOrg = () => {
                             позитива человек может развиваться!
 
                         </p>
-                    </div>
-                    
-                    <div class="col-12 col-md-3 row">
-                        <div class="col" className={classes.zoom} style={{backgroundImage: anthemVideo}}>
-                            <a href='#'>
-                                <img src={anthemVideo} alt="ЗНАНИЕ | Гимн колледжа" />
-                                {/* <p class="lead">ЗНАНИЕ | Гимн колледжа</p> */}
-                            </a>
-                        </div>
+                </Col>
+                <Col>
+                    <Row className={classes.zoom} style={{backgroundImage: anthemVideo}}>
+                        <a href='#'>
+                            <img src={anthemVideo} alt="ЗНАНИЕ | Гимн колледжа" />
+                        </a>
+                    </Row>
 
-                        {/* Splitter */}
-                        <div class="w-100"></div>
-                        {/* Splitter */}
-
-                        <div class="col" className={classes.zoom} style={{backgroundImage: reviewVideo}}>
+                    <Row className={classes.zoom} style={{backgroundImage: reviewVideo}}>
                             <a href='#'>
                                 <img src={reviewVideo} alt="ЗНАНИЕ | Видео-обзор" />
                             </a>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-4" className={classes.zoom} style={{backgroundImage: photoGallery}}>
+                    </Row>
+                </Col>
+                <Col className={classes.zoom} style={{backgroundImage: photoGallery}}>
                         <a href='#'>
-                            <img src={photoGallery} alt="" height="536px"/>
+                            <img src={photoGallery} alt=""/>
                         </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 export default AboutOrg;
