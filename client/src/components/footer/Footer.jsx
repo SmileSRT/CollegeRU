@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={classes.footerStyles}>
         <Container>
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5">
-            <div className={classes.orgLogo}>
+            <div className={classes.footerLogo}>
                 <ul class="nav navbar-nav">
                     <li class="nav-item mx-auto my-1">
                         <a href="/">

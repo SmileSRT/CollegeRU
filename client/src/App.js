@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./components/AppRouter/AppRouter.jsx";
+import Loading from "./components/Loading/Loading.jsx";
 
 
 
@@ -35,7 +36,7 @@ const App = () => {
     if (error) {
         return <div>Ошибка: {error.message}</div>;
     } else if (!isLoaded) {
-        return <div>Загрузка...</div>;
+        return <Loading />;
     } else {
     // let [, sumbitPost] = useState('')
     // useEffect(() => {
@@ -70,6 +71,7 @@ const App = () => {
                     </form>
                 </div> */}
                 <AppRouter />
+
             </BrowserRouter>
         )
     }
