@@ -12,7 +12,8 @@ import {
     DOCUMENTS_ROUTE, 
     PAIDSERVICE_ROUTE, 
     PROFESSORS_ROUTE, 
-    TECHSUPPORT_ROUTE 
+    TECHSUPPORT_ROUTE, 
+    CURRICULUM_ROUTE
 } from "./utils/consts.js"
 import About from './pages/About.jsx'
 import Abiturients from "./pages/Abiturients.jsx"
@@ -28,6 +29,7 @@ import Documents from "./pages/Documents.jsx"
 import PaidService from "./pages/PaidService.jsx"
 import Professors from "./pages/Professors.jsx"
 import TechSupport from "./pages/TechSupport.jsx"
+import CurriculumGraffic from "./pages/CurriculumGraffic.jsx"
 
 export const publicRoutes = [
     {
@@ -99,6 +101,11 @@ export const publicRoutes = [
         path: TECHSUPPORT_ROUTE,
         Component: TechSupport,
         title: 'Материальное техническое обеспечение и оснащенность образовательного процесса'
+    }, 
+    {
+        path: CURRICULUM_ROUTE,
+        Component: CurriculumGraffic,
+        title: 'Учебные планы'
     }
 
 ]
