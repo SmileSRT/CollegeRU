@@ -1,5 +1,5 @@
 import React from 'react';
-import orgLogo from '../../../public/images/logoNoCapture.png'
+import logoFooter from '../../../public/images/LogoFooter.png'
 import classes from './Footer.module.css'
 import { Container, Row } from 'react-bootstrap'
 
@@ -9,20 +9,11 @@ const Footer = () => {
         <div className={classes.footerStyles}>
         <Container>
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5">
-            <div class="my-auto col">
+            <div className={classes.orgLogo}>
                 <ul class="nav navbar-nav">
                     <li class="nav-item mx-auto my-1">
-                        <a href="/" class="align-items-center link-light text-decoration-none">
-                            <img src={orgLogo} alt="" width="100px" height="auto" />      
-                        </a>
-                    </li>
-                    <li class="nav-item  my-1">
-                        <a href="/" class="align-items-center link-light text-decoration-none">
-                            <p class="text-center" style={{lineHeight: "0.7"}}>
-                                <span className={classes.headCapture}><b>ЗНАНИЕ</b></span><br/>
-                                <span className={classes.footCapture}><b>Гуманитарно-технический</b></span><br/>
-                                <span className={classes.footCapture}><b>колледж</b></span>   
-                            </p>
+                        <a href="/">
+                            <img src={logoFooter} alt="" width="150px" height="auto" />      
                         </a>
                     </li>
                 </ul>

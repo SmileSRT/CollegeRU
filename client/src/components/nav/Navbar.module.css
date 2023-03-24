@@ -10,7 +10,7 @@
 .navDropdown {
     position: relative;
     background-color: none;
-    padding-right: 28px;
+    padding-right: 25px;
     width: auto;
     border: none;
     border-bottom: none;
@@ -95,14 +95,5 @@ body {
     }
 }
 
-.alternativeNav > ul > li {
-    margin: 10px 0 10px 0;
-    list-style-type: none;
-    font-size: 16pt;
-}
-.alternativeNav {
-    margin: 10px 0 10px 0;
-    list-style-type: none;
-    font-size: 16pt;
-    background-color: white;
-}
+
+
