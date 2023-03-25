@@ -1,0 +1,30 @@
+.header > h1 {
+    font-family: Arial, Bold;
+    font-size: 36pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textStyle > p {
+    font-family: Arial, Bold;
+    font-size: 13pt;
+    color: #575757;
+}
+
+.textStyle > h2 {
+    font-family: Arial, Bold;
+    font-size: 18pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.listStyle {
+    font-family: Arial, Bold;
+    list-style: none;
+    padding-left: 0px;
+    color:#575757;
+}
+.urlStyle > a {
+    font-family: Arial, bold;
+    color: #ff4d11;
+    text-decoration: none;
+}

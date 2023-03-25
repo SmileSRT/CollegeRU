@@ -1,0 +1,31 @@
+.split {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.zoom {
+    background-size: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    transition: transform .2s; /* Animation */
+    margin: 45px 10px 45px 10px;
+}
+  
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.paragraphStyle {
+    font-size: 14pt;
+    margin: 20px 0 20px 0;
+    font-family: Arial, Bold;
+}
+
+.images{
+    width: 290px;
+}
+.head{
+    font-size: 36pt;
+    font-family: Arial, Bold;
+    padding-top: 50px;
+}
