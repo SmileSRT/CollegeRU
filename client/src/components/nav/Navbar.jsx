@@ -40,7 +40,7 @@ const NavBar = () => {
 
     return( 
         <div>
-        {window.innerWidth > 400 ? (
+        {window.innerWidth > 420 ? (
 
                 <div className={classes.navComponent}>
                     <Navbar className='navbar-light' >

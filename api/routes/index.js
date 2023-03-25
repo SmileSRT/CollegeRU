@@ -15,6 +15,13 @@ router.get('/curriculum/:caption', (req, res) => {
     res.redirect('/pdf/curriculum_graffic/' + req.params.caption)
 })
 
+router.get('/education/:folder/:year/:caption', (req, res) => {
+    console.log(req.url)
+    console.log('year is here', req.params.year)
+    console.log('caption Is here ',req.params.caption)
+    res.redirect('/pdf' + '/' + req.params.folder + '/' + req.params.year + '/' + req.params.caption)
+})
+
 router.post('/', (req, res) => {
 //     const pool = new db.Pool({
 
