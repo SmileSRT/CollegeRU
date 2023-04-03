@@ -10,6 +10,7 @@ import { Navbar, Container, NavDropdown, Nav, NavItem, Dropdown, Card } from 're
 import { NavLink } from 'react-router-dom';
 import ListGroup from 'react-bootstrap/ListGroup';
 import NavbarPhones from '../UI/navbarPhones/NavbarPhones.jsx';
+import Search from '../UI/search/Search.jsx';
 
 
 // width: window.innerWidth > 0 ? 300 : "auto", 
@@ -40,7 +41,7 @@ const NavBar = () => {
 
     return( 
         <div>
-        {window.innerWidth > 420 ? (
+        {window.innerWidth > 600 ? (
 
                 <div className={classes.navComponent}>
                     <Navbar className='navbar-light' >
@@ -237,16 +238,16 @@ const NavBar = () => {
                         </div>
                         <div className='d-inline-flex mx-3 pb-5'>
                             <NavLink className='px-2' href='#'>
-                            <img   src={handicapVersionIcon} alt="" width="25" height="25" />
-                        </NavLink>
-        
-                        <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
-                            <img  src={webCabinetIcon} alt="" width="25" height="25" />
-                        </NavLink>
-        
-                        <NavLink className='px-2' href='#'>
-                            <img  src={searchIcon} alt="" width="25" height="25" />  
-                        </NavLink>
+                                <img   src={handicapVersionIcon} alt="" width="25" height="25" />
+                            </NavLink>
+            
+                            <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
+                                <img  src={webCabinetIcon} alt="" width="25" height="25" />
+                            </NavLink>
+                            
+                            {/* SearchIcon  */}
+                            <Search/>
+
                         </div>
                         
         

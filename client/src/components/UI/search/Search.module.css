@@ -1,0 +1,15 @@
+.searchInput {
+    margin: 20px 0 20px 0;
+}
+
+.searchResults {
+    margin: 20px 0 20px 0;
+}
+
+
+
+.modalStyles > div {
+    margin: 30px auto;
+    max-width: 800px;
+    width: 96vw;
+}

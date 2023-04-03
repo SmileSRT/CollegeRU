@@ -8,36 +8,36 @@ import Loading from "./components/Loading/Loading.jsx";
 
 const App = () => {
 
-    // const [error, setError] = useState(null);
-    // const [isLoaded, setIsLoaded] = useState(false);
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
     // let [userdata, setUserData] = useState(null)
     // const [items, setItems] = useState([]);
     // const [[id, body, title], setRequest] = useState('')
 // Примечание: пустой массив зависимостей [] означает, что
   // этот useEffect будет запущен один раз
   // аналогично componentDidMount()
-    // useEffect(() => {
-    //     fetch("http://localhost:9000/")
-    //     .then(res => res.json())
-    //     .then(
-    //         (result) => {
-    //             setIsLoaded(true);
-    //             // setUserData(result);
-    //         },
-    //         // Примечание: важно обрабатывать ошибки именно здесь, а не в блоке catch(),
-    //         // чтобы не перехватывать исключения из ошибок в самих компонентах.
-    //         (error) => {
-    //             setIsLoaded(true);
-    //             setError(error);
-    //         }
-    //     )
-    // }, [])
+    useEffect(() => {
+        fetch("http://localhost:9000/")
+        .then(res => res.json())
+        .then(
+            (result) => {
+                setIsLoaded(true);
+                // setUserData(result);
+            },
+            // Примечание: важно обрабатывать ошибки именно здесь, а не в блоке catch(),
+            // чтобы не перехватывать исключения из ошибок в самих компонентах.
+            (error) => {
+                setIsLoaded(true);
+                setError(error);
+            }
+        )
+    }, [])
 
-    // if (error) {
-    //     return <div>Ошибка: {error.message}</div>;
-    // } else if (!isLoaded) {
-    //     return <Loading />;
-    // } else {
+    if (error) {
+        return <div>Ошибка: {error.message}</div>;
+    } else if (!isLoaded) {
+        return <Loading />;
+    } else {
     // let [, sumbitPost] = useState('')
     // useEffect(() => {
     //     fetch("http://localhost:9000/", {method: 'POST', body: JSON.stringify()})
@@ -75,6 +75,6 @@ const App = () => {
             </BrowserRouter>
         )
     }
-// }
+}
 
 export default App;

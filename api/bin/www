@@ -7,12 +7,12 @@
 var app = require('../app');
 var debug = require('debug')('api:server');
 var http = require('http');
-// const sequelize = require('../db')
+const sequelize = require('../db')
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '5000');
+var port = normalizePort(process.env.DEV_PORT || process.env.PROD_PORT);
 app.set('port', port);
 
 /**
@@ -26,8 +26,8 @@ var server = http.createServer(app);
  */
 const start = async () => {
   try {
-      // await sequelize.authenticate() // waits for the users connection to db
-      // await sequelize.sync() // checks whether initialization done or not. Does nothing if the initialization is done
+      await sequelize.authenticate() // waits for the users connection to db
+      await sequelize.sync() // checks whether initialization done or not. Does nothing if the initialization is done
       server.listen(port, () => console.log(`[server]: Server started on http://localhost:${port}`)) // listening
   } catch (err) {
       console.log(err.stack)

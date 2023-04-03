@@ -1,0 +1,9 @@
+.textStyle > p{
+    font-family: arial, bold;
+    font-size: 14pt;
+}
+.textStyle > h1{
+    font-family: arial, bold;
+    font-size: 36pt;
+    padding-bottom: 14pt;
+}

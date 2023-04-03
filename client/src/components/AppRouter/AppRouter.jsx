@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Navigate, Route } from 'react-router-dom'
+import ErrorHttp404 from '../../pages/httpPages/404/ErrorHttp404.jsx';
 import { authRoutes, publicRoutes } from '../../routes.js';
 
 
@@ -21,6 +22,8 @@ const AppRouter = () => {
             {/* <Route exact path='/about' element={<About/>}/> */}
 
             <Route element={<Navigate to='/about' />} />
+
+            <Route path='*' element={<ErrorHttp404 />}/>
         </Routes>
         
     );

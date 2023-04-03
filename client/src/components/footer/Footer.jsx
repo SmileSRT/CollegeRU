@@ -60,7 +60,7 @@ const Footer = () => {
        
 
         <div className={classes.copyright}> 
-            <Container>
+            {/* <Container>
                 <a className='nav-link' href="#">
                     Памятка личной безопасности 
                 </a>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <a className='nav-link' style={{border: "none"}} href="#">
                     Противодействие коррупции
                 </a>
-            </Container>
+            </Container> */}
             <p class="text-muted mx-auto d-inline-flex">© 2023 Колледж "ЗНАНИЕ"</p>
         </div>
     </div>

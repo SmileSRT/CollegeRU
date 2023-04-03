@@ -64,12 +64,18 @@
     border-bottom: none;
 }
 
+
 .navComponent {
     background-color: white;
 }
 
 body {
-    background-color:  #f2f2f2;;
+    background-color:  #f2f2f2;
+}
+
+body:not(.modal-open) {
+    padding-right: 0!important;
+    overflow: auto!important;
 }
 
 .authBlock {
@@ -94,6 +100,3 @@ body {
         transform: scale(1);
     }
 }
-
-
-

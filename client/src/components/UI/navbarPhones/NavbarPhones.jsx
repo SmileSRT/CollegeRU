@@ -1,27 +1,114 @@
 import { React, useState } from 'react';
 import classes from './NavbarPhones.module.css'
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, Navbar, Row, Col, ListGroup, Modal, Button, Card, NavbarBrand } from 'react-bootstrap';
 import orgLogo from '../../../../public/images/logoWithCapture.png'
 import searchIcon from '../../../../public/images/searchIcon.png'
 import webCabinetIcon from '../../../../public/images/webCabinetIcon.png'
 import handicapVersionIcon from '../../../../public/images/handicapVersion.png'
 import { NavLink } from 'react-router-dom';
+import navbarMenuIcon from '../../../../public/icons/navbarMenuIcon.png'
+import NavbarPhonesCard from './NavbarPhonesCard.jsx';
+import { ABITURIENTS_ROUTE, ABOUT_ROUTE, CONTACT_ROUTE, EDUCATION_ROUTE, NEWS_ROUTE, PARTNERS_ROUTE, PROFESSORS_ROUTE, STUDENTS_ROUTE } from '../../../utils/consts';
+import Search from '../search/Search.jsx';
+
 
 const NavbarPhones = () => {
-    let [n1, reveal] = useState(true)
+    const [show, setShow] = useState(false);
+    const [fullscreen, setFullscreen] = useState(true);
+    const handleClose = () => {
+        setShow(false);
+        setFullscreen(false) 
+    }
+    const handleShow = () => { 
+        setShow(true);
+        setFullscreen(true); 
+    }
     return( 
 
         <div className={classes.alternativeNav}>
                 
-            <Container style={{justifyContent: 'center', textAlign: 'center', margin: 'auto'}}>
-                <Navbar.Brand href="/" >
-                    <img src={orgLogo} alt="" width="128" height="auto" />
-                </Navbar.Brand>
-            </Container>
-            
-            <div id='alternativeNavReveal'>
-            <button onClick={() => { reveal(!n1) }}>show</button>
-            {!n1 ? (
+
+
+            <Row style={{justifyContent: 'space-between'}}>
+                <Col >
+                    <NavbarBrand href="/" >
+                        <img src={orgLogo} alt="" width="128" height="auto" />
+                    </NavbarBrand>
+                </Col>
+                <Col className={classes.navIcons}>
+                    <div>
+                        <img src={handicapVersionIcon} alt="" width="25" height="25" />
+                    </div>
+                    <div>
+                        <NavLink href='#' onClick={() => setElementVisible(!elementVisible)}>
+                        <img  src={webCabinetIcon} alt="" width="25" height="25" />
+                        </NavLink>
+                    </div>
+                    <div>
+                        <Search/> 
+                    </div>
+                    
+                    <div>
+                        <img src={navbarMenuIcon}
+                            alt="Меню"
+                            width="25px"
+                            height="25px"
+                            onClick={handleShow} />
+                    </div>
+                </Col>
+                
+            </Row>
+            {/* {menu ? ( */}
+            {/* <Button variant="primary" onClick={handleShow}>
+            Launch demo modal
+          </Button> */}
+    
+          <Modal show={show} onHide={handleClose} fullscreen={fullscreen} contentClassName={classes.navbarPhonesAlert} >
+            <Modal.Header closeButton style={{color: "#ff4d11", fontSize: "14pt"}}>
+                {document.title}
+            </Modal.Header>
+            <Modal.Body className={classes.modalBody}>
+                {/* <div className={classes.navbarSlider}> */}
+                    <Row className={classes.rowStyles}>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Поступающим" cardText="text1" link={ABITURIENTS_ROUTE} />
+                        </Col>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Студентам" cardText="text1" link={STUDENTS_ROUTE} />
+                        </Col>
+                    </Row>
+                    <Row className={classes.rowStyles}>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Сотрудникам" cardText="text1" link={PROFESSORS_ROUTE} />
+                        </Col>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Партнерам" cardText="text1" link={PARTNERS_ROUTE} />
+                        </Col>
+                    </Row>
+                    <Row className={classes.rowStyles}>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Об организации" cardText="text1" link={ABOUT_ROUTE} />
+                        </Col>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Образование" cardText="text1" link={EDUCATION_ROUTE} />
+                        </Col>
+                    </Row>
+                    <Row className={classes.rowStyles}>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Новости" cardText="text1" link={NEWS_ROUTE} />
+                        </Col>
+                        <Col className={classes.colStyles}>
+                            <NavbarPhonesCard cardTitle="Контакты" cardText="text1" link={CONTACT_ROUTE} />
+                        </Col>
+                    </Row>
+
+            </Modal.Body>
+            <Modal.Footer style={{borderTop: "5px solid #ff4d11", paddingTop: "2vh"}}>
+
+            </Modal.Footer>
+          </Modal>
+            {/* ) : null } */}
+            {/* {menu ? (
             <ul> 
                 <li className={classes.alternativeNav}>Поступающим
                     <ul>
@@ -82,8 +169,7 @@ const NavbarPhones = () => {
                 <NavLink className='px-2' href='#'>
                     <img  src={searchIcon} alt="" width="25" height="25" />  
                 </NavLink>
-                </div>
-            </div>
+            </div> */}
         </div>
     );
 }

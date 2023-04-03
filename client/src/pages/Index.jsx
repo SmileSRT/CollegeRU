@@ -17,7 +17,7 @@ const Index = (props) => {
             <Navbar/>
             <Carousel/>
             <AboutOrg/>
-            <Specialties/>
+            {/* <Specialties/> */}
             <Accreditation/>
             <Footer/>
         </div>

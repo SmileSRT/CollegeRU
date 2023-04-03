@@ -6,6 +6,7 @@ const { getUsers, addUser } = require('../queries')
 
 router.get('/', (req, res) => {
     // getUsers(req, res)
+    console.log(req.socket.remoteAddress)
     res.status(200).json('ok').end()
 })
 
@@ -16,9 +17,6 @@ router.get('/curriculum/:caption', (req, res) => {
 })
 
 router.get('/education/:folder/:year/:caption', (req, res) => {
-    console.log(req.url)
-    console.log('year is here', req.params.year)
-    console.log('caption Is here ',req.params.caption)
     res.redirect('/pdf' + '/' + req.params.folder + '/' + req.params.year + '/' + req.params.caption)
 })
 
@@ -49,7 +47,7 @@ router.post('/', (req, res) => {
 //             }
 //           }))
 //         .catch((e) => console.error(e.stack))
-        addUser(req, res)
+        // addUser(req, res)
     
 })
 
