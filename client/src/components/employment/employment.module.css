@@ -1,0 +1,23 @@
+.header > h1{
+    font-size: 36pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.header > h2{
+    font-size: 18pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.urlStyle > a{
+    color: #ff4d11;
+    text-decoration: none;
+}
+
+
+.urlStyle:hover{
+    color:#fa7447
+}

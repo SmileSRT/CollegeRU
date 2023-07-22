@@ -1,0 +1,89 @@
+.intro{
+    width: 100%;
+    height: auto;
+}
+
+
+.parametersBlock {
+    border: 3px solid rgb(207, 207, 207);
+    border-radius: 25px;
+    text-align: center;
+    margin: 50px 10px;
+    transition: transform .2s;
+    background-color: white;
+}
+
+
+.parametersBlock:hover{
+    border-color: #ff4d11;
+    transform: scale(1.1)
+}
+
+
+.parametersBlock > h5 {
+    font-size: 20px;
+    color: gray;
+}
+
+
+.parametersBlock > p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.learnBlock{
+    border: 3px solid rgb(207, 207, 207);
+    border-radius: 25px;
+    text-align: left;
+    background-color: white;
+    margin: 10px;
+}
+
+
+.learnBlock > p {
+    width: 70%;
+    padding-left: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+.connectionBlock {
+    width: 60%;
+    border: 3px solid rgb(207, 207, 207);
+    border-radius: 25px;
+    text-align: center;
+    margin: 25px auto;
+    background-color: white;
+}
+
+
+.iconStyle{
+    width: 128px;
+    height: auto;
+    float: right;
+    margin: 20px;
+}
+
+
+.header > h1 {
+    text-align: center;
+    margin: 25px;
+}
+
+
+.textStyle > p{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+
+
+.textStyle > a{
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#ff4d11
+}

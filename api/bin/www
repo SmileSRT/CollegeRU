@@ -26,8 +26,8 @@ var server = http.createServer(app);
  */
 const start = async () => {
   try {
-      await sequelize.authenticate() // waits for the users connection to db
-      await sequelize.sync() // checks whether initialization done or not. Does nothing if the initialization is done
+      // await sequelize.authenticate() // waits for the users connection to db
+      // await sequelize.sync() // checks whether initialization done or not. Does nothing if the initialization is done
       server.listen(port, () => console.log(`[server]: Server started on http://localhost:${port}`)) // listening
   } catch (err) {
       console.log(err.stack)

@@ -1,0 +1,25 @@
+.header {
+    font-size: 36pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.textStyle{
+    margin: 50px;
+}
+
+
+.textStyle > p {
+    font-size: 13pt;
+    color: #575757;
+    text-align: center;
+}
+
+
+.video {
+    display: flex;
+    justify-content: center;
+}

@@ -12,25 +12,37 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Specialties = () => {
     return( 
             <div style={{width: "1500px", margin: "auto"}}>
-                <Container><h1 className='display-4'>Учебные направления</h1></Container>
+                <Container><h1>Учебные направления</h1></Container>
                 <Row className='mx-auto'>
                     <Col className={classes.zoom} style={{backgroundImage: specialty1}}>
-                        <img src={specialty1} alt="Право и организация социального обеспечения" />
+                        <a href="advocateEdu">
+                            <img src={specialty1} alt="Право и организация социального обеспечения"/>
+                        </a>
                     </Col>
                     <Col className={classes.zoom} style={{backgroundImage: specialty2}}>
-                        <img src={specialty2} alt="Бухгалтер, специалист банковского дела" />
+                        <a href="creditEdu">
+                            <img src={specialty2} alt="Бухгалтер, специалист банковского дела" />
+                        </a>
                     </Col>
                     <Col className={classes.zoom} style={{backgroundImage: specialty3}}>
-                        <img src={specialty3} alt="Учитель начальных классов" />
+                        <a href="teacherEdu">
+                            <img src={specialty3} alt="Учитель начальных классов" />
+                        </a>
                     </Col>
                     <Col className={classes.zoom} style={{backgroundImage: specialty4}}>
-                        <img src={specialty4} alt="Дошкольное образование" />
+                        <a href="preschoolEdu">
+                            <img src={specialty4} alt="Дошкольное образование" />
+                        </a>
                     </Col>
                     <Col className={classes.zoom} style={{backgroundImage: specialty5}}>
-                        <img src={specialty5} alt="Сестринское дело" />
+                        <a href="doctorEdu">
+                            <img src={specialty5} alt="Сестринское дело" />
+                        </a>
                     </Col>
                     <Col className={classes.zoom} style={{backgroundImage: specialty6}}>
-                        <img src={specialty6} alt="Дизайн" />
+                        <a href="designEdu">
+                            <img src={specialty6} alt="Дизайн" />
+                        </a>
                     </Col>
                 </Row>
             </div>

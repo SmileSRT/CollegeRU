@@ -37,7 +37,7 @@ const App = () => {
         return <div>Ошибка: {error.message}</div>;
     } else if (!isLoaded) {
         return <Loading />;
-    } else {
+    }
     // let [, sumbitPost] = useState('')
     // useEffect(() => {
     //     fetch("http://localhost:9000/", {method: 'POST', body: JSON.stringify()})
@@ -56,7 +56,6 @@ const App = () => {
             </div> */}
                 {/* <div>
                     {items.body} {items.id} {items.title}<br/>
-
                     <form method="POST">
                         <label>
                         Name:
@@ -66,15 +65,13 @@ const App = () => {
                             Email
                         </label>
                         <input type="text" name="email" />
-
                         <input type="submit" value="Submit" />
                     </form>
                 </div> */}
                 <AppRouter />
-
             </BrowserRouter>
         )
-    }
+
 }
 
 export default App;

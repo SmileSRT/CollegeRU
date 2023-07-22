@@ -44,7 +44,7 @@ const aboutProfessors = () => {
         'Преподаватель ораторского искусства',
         'Преподаватель физической культуры',
         'Преподаватель отделения «Сестринское дело». Награждена Медалью «За заслуги» 2 степени, учрежденную постановлением Президиума МОК профсоюза работников здравоохранения, Медалью «За борьбу с COVID-19»от 09 июля 2020 года',
-        'Преподаватель компьюiтерной графики',
+        'Преподаватель компьютерной графики',
         'Преподаватель ДОУ. Почетная Грамота Министерства образования Московской области за многолетний и плодотворный труд. 2005 г. Благодарность Главы города Подольска Пестова Николая Игоревича за многолетний и плодотворный труд в системе образования г. Подольска. 2015 г.',
         'Преподаватель естественнонаучных дисциплин.',
         'Преподаватель русского языка и литературы. Финалист «Педагог года Подмосковья-2019» в номинации «Учитель года», победитель муниципального этапа Московского областного конкурса «Любимый учитель»',
@@ -56,13 +56,13 @@ const aboutProfessors = () => {
         Row.setAttribute('class', classes.header);
         for (let i = 0; i < professorName_array.length; i++){
             Row.innerHTML += `
-            <Row>
-                <Col xxl=${3} xl=${4} lg=${5}> <img src=${images('./professor' + (i + 1).toString() + '.png')} className=${classes.images} alt="" width="320" height="auto"/></Col>
-                <Col xxl=${6} xl=${5} lg=${7} className=${classes.textStyle}>
+            <div class="row">
+                <div class="col-xxl-3"> <img src=${images('./professor' + (i + 1).toString() + '.png')} style="margin-bottom: 20px" alt="" width="320" height="auto"/></div>
+                <div class="col-xxl-6">
                     <h3>${professorName_array[i]}</h3>
                     <p>${aboutProfessor_array[i]}</p>
-                </Col>
-            </Row>
+                </div>
+            </div>
         `
         }
         document.getElementById('professorsArray').appendChild(Row)

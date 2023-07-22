@@ -15,7 +15,7 @@ const Accreditation = () => {
             {/* <div className={classes.accreditationBlock}> */}
                 
             <Container>
-                <h1 className='display-4 mb-5'>Лицензия и государственная аккредитация</h1>
+                <h1>Лицензия и государственная аккредитация</h1>
                 
                 <Row>
                     <Col>

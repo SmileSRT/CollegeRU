@@ -22,7 +22,17 @@ import {
     TIMETABLE_ROUTE,
     CURATORS_ROUTE,
     STUMATERIALS_ROUTE,
-    EMPLOYMENT_ROUTE
+    EMPLOYMENT_ROUTE,
+    ADVOCATE_ROUTE,
+    CREDIT_ROUTE,
+    DESIGN_ROUTE,
+    DOCTOR_ROUTE,
+    PRESCHOOL_ROUTE,
+    TEACHER_ROUTE,
+    PHARMACIST_ROUTE,
+    SPECIALTIES_ROUTE,
+    HYMN_ROUTE,
+    PRINCIPLES_ROUTE
 } from "./utils/consts.js"
 import About from './pages/About.jsx'
 import Abiturients from "./pages/Abiturients.jsx"
@@ -48,7 +58,16 @@ import TimeTable from "./pages/TimeTable.jsx"
 import Curators from "./pages/Curators.jsx"
 import StuMaterials from "./pages/StuMaterials.jsx"
 import Employment from "./pages/Employment.jsx"
-
+import Advocate from "./pages/Advocate.jsx"
+import Credit from "./pages/Credit.jsx"
+import Teacher from "./pages/Teacher.jsx"
+import Preschool from "./pages/Preschool.jsx"
+import Doctor from "./pages/Doctor.jsx"
+import Design from "./pages/Design.jsx"
+import Pharmacist from "./pages/Pharmacist.jsx"
+import Specialties from "./pages/Specialites.jsx"
+import Hymn from "./pages/Hymn.jsx"
+import Principles from "./pages/Principles.jsx"
 export const publicRoutes = [
     {
         path: ABOUT_ROUTE,
@@ -170,6 +189,56 @@ export const publicRoutes = [
         path: EMPLOYMENT_ROUTE,
         Component: Employment,
         title: 'ЗНАНИЕ | Трудоустройство'
+    },
+    {
+        path: ADVOCATE_ROUTE,
+        Component: Advocate,
+        title: 'ЗНАНИЕ | Право'
+    },
+    {
+        path: CREDIT_ROUTE,
+        Component: Credit,
+        title: 'ЗНАНИЕ | Бухгалтер'
+    },
+    {
+        path: TEACHER_ROUTE,
+        Component: Teacher,
+        title: 'ЗНАНИЕ | Учитель начальных классов'
+    },
+    {
+        path: PRESCHOOL_ROUTE,
+        Component: Preschool,
+        title: 'ЗНАНИЕ | Дошкольное образование'
+    },
+    {
+        path: DOCTOR_ROUTE,
+        Component: Doctor,
+        title: 'ЗНАНИЕ | Сестринское дело'
+    },
+    {
+        path: DESIGN_ROUTE,
+        Component: Design,
+        title: 'ЗНАНИЕ | Дизайн'
+    },
+    {
+        path: PHARMACIST_ROUTE,
+        Component: Pharmacist,
+        title: 'ЗНАНИЕ | Фармация'
+    },
+    {
+        path: SPECIALTIES_ROUTE,
+        Component: Specialties,
+        title: 'ЗНАНИЕ | Направления'
+    },
+    {
+        path: HYMN_ROUTE,
+        Component: Hymn,
+        title: 'ЗНАНИЕ | Гимн колледжа'
+    },
+    {
+        path: PRINCIPLES_ROUTE,
+        Component: Principles,
+        title: 'ЗНАНИЕ | Наши принципы'
     }
 
 ]

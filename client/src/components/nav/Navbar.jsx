@@ -118,7 +118,7 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealSpecialites(specItems=false)}}>
-                                <a className='nav-link' href='/specialites'>Направления</a>
+                                <a className='nav-link' href='/specialties'>Направления</a>
                             </Card.Header>
                             {!specItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealSpecialites(specItems=true)}}>
@@ -139,6 +139,9 @@ const NavBar = () => {
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
                                         <a className='nav-link' href='/designEdu'>Дизайн</a>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item style={{border: "none"}} className='py-0'>
+                                        <a className='nav-link' href='/pharmacistEdu'>Фармация</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -211,13 +214,13 @@ const NavBar = () => {
                                         <a className='nav-link' href="/achivements">Наши достижения</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/specialties'>Наши принципы</a>
+                                        <a className='nav-link' href='/principles'>Наши принципы</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/professors'>Гимн колледжа</a>
+                                        <a className='nav-link' href='/hymn'>Гимн колледжа</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/curriculum'>Фотогалерея</a>
+                                        <a className='nav-link' href='/photogallery'>Фотогалерея</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
