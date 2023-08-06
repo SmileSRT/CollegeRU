@@ -1,0 +1,46 @@
+.blind {
+    background-color: white;
+}
+
+.link-box > div > div > a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 6px;
+    border-bottom: solid 3px;
+}
+
+.link-box {
+    padding: 50px 0 20px 0;
+    font-style: bold;
+}
+
+.blind-bar {
+    display: grid;
+    height: 125px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bar-items > div {
+    padding-right: 15vw;
+}
+
+.font-transformer > span {
+    margin: 0 0 0 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.font-transformer :first-child {
+    font-size: 20px;
+}
+
+.font-transformer :last-child{
+    font-size: 40px;
+}
+
+.bar-items > div :first-child {
+    padding: 0;
+}

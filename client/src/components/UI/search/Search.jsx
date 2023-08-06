@@ -8,7 +8,7 @@ import classes from './Search.module.css'
 import searchIcon from '../../../../public/images/searchIcon.png'
 
 
-const Search = () => {
+const Search = (props) => {
     const [query, setQuery] = useState("")
     const [show, setShow] = useState(false);
 
@@ -19,7 +19,7 @@ const Search = () => {
 
         <div style={{position: "relative"}}>
             <NavLink className='px-2' href='#'>
-                <img  src={searchIcon} alt="" width="25" height="25" onClick={handleShow}/>  
+                <img  src={searchIcon} alt="" width={props.icon_width} height={props.icon_height} onClick={handleShow}/>  
             </NavLink>
             <Modal show={show} onHide={handleClose}  className={classes.modalStyles}>
                 <Modal.Header closeButton>
@@ -50,7 +50,7 @@ const Search = () => {
                             }
                         }).map((link) => (
                             <div key={link.title} className={classes.searchResults}>
-                                <p>{link.title}</p>
+                                <p><a href={link.link}>{link.title}</a></p>
                                 {/* <p>{link.id}</p> */}
                             </div>
                         ))

@@ -43,7 +43,8 @@ import {
     PRACTICE_DOCTOR_ROUTE,
     PRACTICE_PHARMACIST_ROUTE,
     PRACTICE_TEACHER_ROUTE,
-    PRACTICE_PRESCHOOL_ROUTE
+    PRACTICE_PRESCHOOL_ROUTE,
+    BLIND_ROUTE,
 } from "./utils/consts.js"
 import About from './pages/About.jsx'
 import Abiturients from "./pages/Abiturients.jsx"
@@ -90,6 +91,7 @@ import PracticePharmacist from './pages/pracDocsPages/PracticePharmacist.jsx'
 import PracticePreschool from './pages/pracDocsPages/PracticePreschool.jsx'
 import PracticeTeacher from './pages/pracDocsPages/PracticeTeacher.jsx'
 import PracticeDoctor from './pages/pracDocsPages/PracticeDoctor.jsx'
+import Blind from "./pages/Blind/Blind.jsx"
 
 export const publicRoutes = [
     {
@@ -317,6 +319,11 @@ export const publicRoutes = [
         path: PRACTICE_TEACHER_ROUTE,
         Component: PracticeTeacher,
         title: 'ЗНАНИЕ | Практика преподаватель начальных классов'
+    },
+    {
+        path: BLIND_ROUTE,
+        Component: Blind,
+        title: 'ЗНАНИЕ | Версия для слабовидящих'
     }
 
 ]

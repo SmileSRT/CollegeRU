@@ -244,8 +244,8 @@ const NavBar = () => {
                             </Nav>
                         </div>
                         <div className='d-inline-flex mx-3 pb-5'>
-                            <NavLink className='px-2' href='#'>
-                                <img   src={handicapVersionIcon} alt="" width="25" height="25" />
+                            <NavLink className='px-2' to="/blind">
+                                <img src={handicapVersionIcon} alt="" width="25" height="25" />
                             </NavLink>
             
                             {/* <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
@@ -253,7 +253,7 @@ const NavBar = () => {
                             </NavLink> */}
                             
                             {/* SearchIcon  */}
-                            <Search/>
+                            <Search icon_width={25} icon_height={25}/>
 
                         </div>
                         
