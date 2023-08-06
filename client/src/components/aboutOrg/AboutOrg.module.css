@@ -38,3 +38,9 @@
     height: 60px;
     margin: 20px;
 }
+
+
+.header{
+    margin: 0;
+    vertical-align: bottom;
+}

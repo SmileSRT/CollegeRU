@@ -1,9 +1,10 @@
 import React from 'react';
 import Navbar from "../components/nav/Navbar.jsx";
 import Footer from "../components/footer/Footer.jsx";
+import News from '../components/news/News.jsx';
 
 
-const News = (props) => {
+const news = (props) => {
     const title = props.title
     document.title = title;
     
@@ -11,9 +12,9 @@ const News = (props) => {
 
         <div>
             <Navbar/>
-
+            <News/>
             <Footer/>
         </div>
     );
 }
-export default News;
+export default news;

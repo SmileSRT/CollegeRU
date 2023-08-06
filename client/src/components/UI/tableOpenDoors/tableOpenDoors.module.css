@@ -1,4 +1,10 @@
 .tableStyles {
     background-color: white;
-    font-family: Arial, Bold;
+    border-radius: 25px;
+}
+
+
+.listStyle {
+    list-style-type: none;
+    padding: 0;
 }

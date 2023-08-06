@@ -14,12 +14,11 @@ import {
     PROFESSORS_ROUTE, 
     TECHSUPPORT_ROUTE, 
     CURRICULUM_ROUTE,
-    STANDARTSEDU_ROUTE,
+    STANDARTS_ROUTE,
     COURSES_ROUTE,
     OPENDOORS_ROUTE,
     ABIMATERIALS_ROUTE,
     PAY_ROUTE,
-    TIMETABLE_ROUTE,
     CURATORS_ROUTE,
     STUMATERIALS_ROUTE,
     EMPLOYMENT_ROUTE,
@@ -30,9 +29,21 @@ import {
     PRESCHOOL_ROUTE,
     TEACHER_ROUTE,
     PHARMACIST_ROUTE,
-    SPECIALTIES_ROUTE,
     HYMN_ROUTE,
-    PRINCIPLES_ROUTE
+    PRINCIPLES_ROUTE,
+    RECEPTION_ROUTE,
+    ADDITIONAL_ROUTE,
+    FINANCE_ROUTE,
+    ENVIRONMENT_ROUTE,
+    LICENSE_ROUTE,
+    OPENNESS_ROUTE,
+    PRACTICE_ADVOCATE_ROUTE,
+    PRACTICE_CREDIT_ROUTE,
+    PRACTICE_DESIGN_ROUTE,
+    PRACTICE_DOCTOR_ROUTE,
+    PRACTICE_PHARMACIST_ROUTE,
+    PRACTICE_TEACHER_ROUTE,
+    PRACTICE_PRESCHOOL_ROUTE
 } from "./utils/consts.js"
 import About from './pages/About.jsx'
 import Abiturients from "./pages/Abiturients.jsx"
@@ -54,7 +65,6 @@ import Courses from "./pages/Courses.jsx"
 import OpenDoors from "./pages/OpenDoors.jsx"
 import AbiMaterials from "./pages/AbiMaterials.jsx"
 import Pay from "./pages/Pay.jsx"
-import TimeTable from "./pages/TimeTable.jsx"
 import Curators from "./pages/Curators.jsx"
 import StuMaterials from "./pages/StuMaterials.jsx"
 import Employment from "./pages/Employment.jsx"
@@ -65,9 +75,22 @@ import Preschool from "./pages/Preschool.jsx"
 import Doctor from "./pages/Doctor.jsx"
 import Design from "./pages/Design.jsx"
 import Pharmacist from "./pages/Pharmacist.jsx"
-import Specialties from "./pages/Specialites.jsx"
 import Hymn from "./pages/Hymn.jsx"
 import Principles from "./pages/Principles.jsx"
+import Reception from "./pages/Reception.jsx"
+import AdditionalEducation from "./pages/AdditionalEducation.jsx"
+import Finance from "./pages/Finance.jsx"
+import Environment from "./pages/Environment.jsx"
+import License from './pages/License.jsx'
+import Openness from './pages/Openness.jsx'
+import PracticeAdvocate from './pages/pracDocsPages/PracticeAdvocate.jsx'
+import PracticeCredit from './pages/pracDocsPages/PracticeCredit.jsx'
+import PracticeDesign from './pages/pracDocsPages/PracticeDesign.jsx'
+import PracticePharmacist from './pages/pracDocsPages/PracticePharmacist.jsx'
+import PracticePreschool from './pages/pracDocsPages/PracticePreschool.jsx'
+import PracticeTeacher from './pages/pracDocsPages/PracticeTeacher.jsx'
+import PracticeDoctor from './pages/pracDocsPages/PracticeDoctor.jsx'
+
 export const publicRoutes = [
     {
         path: ABOUT_ROUTE,
@@ -92,7 +115,7 @@ export const publicRoutes = [
     {
         path: PARTNERS_ROUTE,
         Component: Partners,
-        title: 'ЗНАНИЕ | Партнерам'
+        title: 'ЗНАНИЕ | Партнеры'
     },
     {
         path: STUDENTS_ROUTE,
@@ -145,7 +168,7 @@ export const publicRoutes = [
         title: 'ЗНАНИЕ | Учебные планы'
     },
     {
-        path: STANDARTSEDU_ROUTE,
+        path: STANDARTS_ROUTE,
         Component: StandartsEdu,
         title: 'ЗНАНИЕ | Образовательные стандарты и требования'
 
@@ -169,11 +192,6 @@ export const publicRoutes = [
         path: PAY_ROUTE,
         Component: Pay,
         title: 'ЗНАНИЕ | Оплата обучения'
-    },
-    {
-        path: TIMETABLE_ROUTE,
-        Component: TimeTable,
-        title: 'ЗНАНИЕ | Расписание'
     },
     {
         path: CURATORS_ROUTE,
@@ -226,11 +244,6 @@ export const publicRoutes = [
         title: 'ЗНАНИЕ | Фармация'
     },
     {
-        path: SPECIALTIES_ROUTE,
-        Component: Specialties,
-        title: 'ЗНАНИЕ | Направления'
-    },
-    {
         path: HYMN_ROUTE,
         Component: Hymn,
         title: 'ЗНАНИЕ | Гимн колледжа'
@@ -239,6 +252,71 @@ export const publicRoutes = [
         path: PRINCIPLES_ROUTE,
         Component: Principles,
         title: 'ЗНАНИЕ | Наши принципы'
+    },
+    {
+        path: RECEPTION_ROUTE,
+        Component: Reception,
+        title: 'ЗНАНИЕ | Приемная комиссия'
+    },
+    {
+        path: ADDITIONAL_ROUTE,
+        Component: AdditionalEducation,
+        title: 'ЗНАНИЕ | Дополнительное образование'
+    },
+    {
+        path: FINANCE_ROUTE,
+        Component: Finance,
+        title: 'ЗНАНИЕ | Финансово-хозяйственная деятельность'
+    },
+    {
+        path: ENVIRONMENT_ROUTE,
+        Component: Environment,
+        title: 'ЗНАНИЕ | Доступная среда'
+    },
+    {
+        path: OPENNESS_ROUTE,
+        Component: Openness,
+        title: 'ЗНАНИЕ | Информационная открытость'
+    },
+    {
+        path: LICENSE_ROUTE,
+        Component: License,
+        title: 'ЗНАНИЕ | Устав, лицензия, аккредитация'
+    },
+    {
+        path: PRACTICE_ADVOCATE_ROUTE,
+        Component: PracticeAdvocate,
+        title: 'ЗНАНИЕ | Практика юрист'
+    },
+    {
+        path: PRACTICE_CREDIT_ROUTE,
+        Component: PracticeCredit,
+        title: 'ЗНАНИЕ | Практика бухгалтер'
+    },
+    {
+        path: PRACTICE_DESIGN_ROUTE,
+        Component: PracticeDesign,
+        title: 'ЗНАНИЕ | Практика дизайн'
+    },
+    {
+        path: PRACTICE_PHARMACIST_ROUTE,
+        Component: PracticePharmacist,
+        title: 'ЗНАНИЕ | Практика фармация'
+    },
+    {
+        path: PRACTICE_DOCTOR_ROUTE,
+        Component: PracticeDoctor,
+        title: 'ЗНАНИЕ | Практика сестринское дело'
+    },
+    {
+        path: PRACTICE_PRESCHOOL_ROUTE,
+        Component: PracticePreschool,
+        title: 'ЗНАНИЕ | Практика дошкольное образование'
+    },
+    {
+        path: PRACTICE_TEACHER_ROUTE,
+        Component: PracticeTeacher,
+        title: 'ЗНАНИЕ | Практика преподаватель начальных классов'
     }
 
 ]

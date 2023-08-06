@@ -1,37 +1,33 @@
+.header > h2 {
+    margin-top: 30px;
+}
+
+
 .tableStyles {
-    border: 2px solid #A6A5A5;
-    border-radius: 5%;
+    border-radius: 25px;
     padding: 40px;
 } 
 
-.tableStyles > div {
-    border-top: 2px solid gray;
-    border: 2px solid gray;
-    display: inline;
-}
 
 .tableCell {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 .tableCell > td {
     font-size: 14pt;
-    font-family: Arial;  
 }
 
 .tableHeader {
     justify-content: center;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
 }
 
 .tableHeader > td {
     font-size: 14pt;
-    font-family: Arial;
 }
 
 .tableHeader > th {
     font-size: 16pt;
-    font-family: Arial;
     width: 285px;
 }

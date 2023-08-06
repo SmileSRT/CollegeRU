@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import classes from './aboutEducation.module.css';
+import Navigation from '../UI/navigation/Navigation.jsx';
 
 const aboutEducation = () => {
     let caption = useState('')
@@ -103,12 +104,23 @@ const aboutEducation = () => {
 
     return (
         <Container className='my-5'>
-            <div className={classes.header}>
-                <h1>Образование</h1>
-                <div className={classes.header} id='PDFArray'>
+            <Row>
+                <Col lg={8}>
+                    <div className={classes.header}>
+                        <h1>Образование</h1>
+                        <div className={classes.header} id='PDFArray'>
 
-                </div>
-            </div>
+                        </div>
+                    </div>
+                    <div className={classes.header}>
+                        <h2>Сведения о языке, на котором осуществляется обучение</h2>
+                        <p>Обучение осуществляется на русском языке</p>
+                    </div>
+                </Col>
+                <Col lg={4}>
+                    <Navigation/>
+                </Col>
+            </Row>
         </Container>
     );
 }

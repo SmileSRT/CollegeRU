@@ -1,22 +1,28 @@
 .urlStyle > a {
-    font-family: Arial, bold;
     font-size: 13pt;
     color: #ff4d11;
     text-decoration: none;
 }
 
+
 .header > h1 {
-    font-family: Arial, bold;
-    font-size: 36pt;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
 .header > h2 {
-    font-family: Arial, bold;
     font-size: 18pt;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+.header > p {
+    font-size: 13pt;
+    color: #575757;
+}
+
+
 .head2 {
     margin-bottom: 0px;
 }

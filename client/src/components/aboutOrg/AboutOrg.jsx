@@ -47,7 +47,7 @@ const AboutOrg = () => {
                             
                         </Col>
                         <Col className={classes.blockStyle}>
-                            <a href="photogallery">
+                            <a href="/activity/photogallery">
                                 <img src = {gallery} className={classes.iconStyle}></img>
                                 <p>Фотогалерея</p>
                             </a>
@@ -55,7 +55,9 @@ const AboutOrg = () => {
                     </Row>
                 </Col>
             </Row>
+            <h1 className={classes.header}>Учебные направления</h1>
         </Container>
+        
     );
 }
 export default AboutOrg;

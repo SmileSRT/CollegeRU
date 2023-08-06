@@ -60,16 +60,16 @@ const NavBar = () => {
                             {!abiturientItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealAbiturient(abiturientItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/abit2023">Приемная комиссия 2023</a>
+                                        <a className='nav-link' href="/abiturients/reception">Приемная комиссия 2023</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/courses'>Подготовительные курсы</a>
+                                        <a className='nav-link' href='/abiturients/courses'>Подготовительные курсы</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/opendoors'>Дни открытых дверей</a>
+                                        <a className='nav-link' href='/abiturients/opendoors'>Дни открытых дверей</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/abiMaterials'>Дополнительные материалы</a>
+                                        <a className='nav-link' href='/abiturients/materials'>Дополнительные материалы</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -83,16 +83,13 @@ const NavBar = () => {
                             {!studentItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealStudent(studentItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/pay'>Оплата обучения</a>
+                                        <a className='nav-link' href='/students/pay'>Оплата обучения</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/timetable'>Расписание групп</a>
+                                        <a className='nav-link' href='/students/curators'>Кураторы групп</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/curators'>Кураторы групп</a>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/extra'>Дополнительные материалы</a>
+                                        <a className='nav-link' href='/students/materials'>Дополнительные материалы</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -107,10 +104,7 @@ const NavBar = () => {
                             {!employeeItems ? (
                                 <ListGroup variant='flush' className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealEmployee(employeeItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="employment">Трудоустройство</a>
-                                    </ListGroup.Item>
-                                    <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/hr'>Отдел кадров</a>
+                                        <a className='nav-link' href="/employees/employment">Трудоустройство</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -118,33 +112,37 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <Card.Header className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealSpecialites(specItems=false)}}>
-                                <a className='nav-link' href='/specialties'>Направления</a>
+                                <a className='nav-link'>Направления</a>
                             </Card.Header>
                             {!specItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealSpecialites(specItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/advocateEdu">Право и организация социального обеспечения</a>
+                                        <a className='nav-link' href="/directions/advocate">Право и организация социального обеспечения</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/creditEdu'>Бухгалтер специалист банковского дела</a>
+                                        <a className='nav-link' href='/directions/credit'>Бухгалтер специалист банковского дела</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/teacherEdu'>Учитель начальных классов</a>
+                                        <a className='nav-link' href='/directions/teacher'>Учитель начальных классов</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/preschoolEdu'>Дошкольное образование</a>
+                                        <a className='nav-link' href='/directions/preschool'>Дошкольное образование</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/doctorEdu'>Сестринское дело</a>
+                                        <a className='nav-link' href='/directions/doctor'>Сестринское дело</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/designEdu'>Дизайн</a>
+                                        <a className='nav-link' href='/directions/design'>Дизайн</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/pharmacistEdu'>Фармация</a>
+                                        <a className='nav-link' href='/directions/pharmacist'>Фармация</a>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item style={{border: "none"}} className='py-0'>
+                                        <a className='nav-link' href='/directions/additional'>Дополнительное образование</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
+
         
                             </Card>
                             </Nav>
@@ -161,43 +159,49 @@ const NavBar = () => {
                             {!orgItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealOrg(orgItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}}>
-                                        <a className='nav-link' href="/about">Основные сведения</a>
+                                        <a className='nav-link' href="/about/common">Основные сведения</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/structure'>Структура и органы управления</a>
+                                        <a className='nav-link' href='/about/structure'>Структура и органы управления</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/documents'>Официальные документы</a>
+                                        <a className='nav-link' href='/about/documents'>Документы</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/education'>Образование</a>
+                                        <a className='nav-link' href='/about/education'>Образование</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/professors'>Педагогический состав</a>
+                                        <a className='nav-link' href='/about/standarts'>Образовательные стандарты и требования</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/techSupport'>Материально-техническое обеспечение и оснащенность образовательного процесса</a>
+                                        <a className='nav-link' href='/about/professors'>Руководство. Педагогический состав</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/grants'>Стипендии и меры поддержки обучающихся</a>
+                                        <a className='nav-link' href='/about/techSupport'>Материально-техническое обеспечение и оснащенность образовательного процесса</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/paidService'>Платные образовательные услуги</a>
+                                        <a className='nav-link' href='/about/paidService'>Платные образовательные услуги</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/finance'>Финансово-хозяйственная деятельность</a>
+                                        <a className='nav-link' href='/about/finance'>Финансово-хозяйственная деятельность</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/vacanciens'>Вакантные места для приема (перевода) обучающихся</a>
+                                        <a className='nav-link' href='/about/vacanciens'>Вакантные места для приема (перевода) обучающихся</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/env'>Доступная среда</a>
+                                        <a className='nav-link' href='/about/environment'>Доступная среда</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/international'>Международное сотрудничество</a>
+                                        <a className='nav-link' href='/about/international'>Международное сотрудничество</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/food'>Организация питания</a>
+                                        <a className='nav-link' href='/about/license'>Устав, лицензия, аккредитация</a>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item style={{border: "none"}} className='py-0'>
+                                        <a className='nav-link' href='/about/openness'>Информационная открытость</a>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item style={{border: "none"}} className='py-0'>
+                                        <a className='nav-link' href='/about/partners'>Партнеры</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -211,16 +215,16 @@ const NavBar = () => {
                             {!educationItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealEducation(educationItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/achivements">Наши достижения</a>
+                                        <a className='nav-link' href="/activity/achivements">Наши достижения</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/principles'>Наши принципы</a>
+                                        <a className='nav-link' href='/activity/principles'>Наши принципы</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/hymn'>Гимн колледжа</a>
+                                        <a className='nav-link' href='/activity/hymn'>Гимн колледжа</a>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/photogallery'>Фотогалерея</a>
+                                        <a className='nav-link' href='/activity/photogallery'>Фотогалерея</a>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -244,9 +248,9 @@ const NavBar = () => {
                                 <img   src={handicapVersionIcon} alt="" width="25" height="25" />
                             </NavLink>
             
-                            <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
+                            {/* <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
                                 <img  src={webCabinetIcon} alt="" width="25" height="25" />
-                            </NavLink>
+                            </NavLink> */}
                             
                             {/* SearchIcon  */}
                             <Search/>
@@ -256,12 +260,12 @@ const NavBar = () => {
         
                         </Container>
                 </Navbar>
-                <Container style={{position: "relative"}} >                 
+                {/* <Container style={{position: "relative"}} >                 
                     {!elementVisible ? (
                         <Auth className={classes.authBlock}/>) :
                         null
                     }
-                </Container>
+                </Container> */}
         
                  
             </div>

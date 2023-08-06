@@ -1,19 +1,43 @@
-.header > h1 {
-    font-family: Arial, bold;
-    font-size: 36pt;
-    margin-top: 20px;
+.headers > h1 {
     margin-bottom: 20px;
 }
 
 
-.header > h2 {
-    font-family: Arial, bold;
-    font-size: 18pt;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.headers > h2 {
+    font-size: 30px;
+    margin: 40px 0;
 }
 
 
-.images {
-    margin-bottom: 18pt;
+.imageStyle > img{
+    width: 300px;
+    height: auto;
+}
+
+
+.professorBlock{
+    padding-bottom: 40px;
+}
+
+
+.infoStyle > h3{
+    font-size: 27px;
+}
+
+
+.infoStyle > p {
+    color: #575757;
+    font-size: 18px;
+}
+
+
+.linkStyle {
+    text-decoration: none;
+    color: #ff4d11;
+}
+
+
+.linkStyle:hover {
+    text-decoration: none;
+    color: #ff6d3d;
 }

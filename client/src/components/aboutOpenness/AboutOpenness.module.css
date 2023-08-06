@@ -1,0 +1,11 @@
+.headers > h1 {
+    padding-bottom: 20px;
+}
+
+
+.imageStyle{
+    display: block;
+    width: 400px;
+    height: auto;
+    padding-bottom: 40px;
+}

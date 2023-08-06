@@ -1,7 +1,7 @@
 import React from 'react';
 import logoFooter from '../../../public/images/LogoFooter.png'
 import classes from './Footer.module.css'
-import { Container, Row } from 'react-bootstrap'
+import { Container, Row, Col} from 'react-bootstrap'
 
 
 const Footer = () => {
@@ -26,29 +26,28 @@ const Footer = () => {
             <div class="col mb-3 mx-auto">
                 <h5 className={classes.h5Capture}><a href='#' >ЗНАНИЕ</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >О колледже</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Официальные документы</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Структура и органы управления</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Награды</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Партнеры</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/about/common" class="nav-link p-0"><span >Основные сведения</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/about/documents" class="nav-link p-0"><span >Документы</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/about/structure" class="nav-link p-0"><span >Структура и органы управления</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/about/professors" class="nav-link p-0"><span >Педагогический состав</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/about/license" class="nav-link p-0"><span >Лицензия, аккредитация</span></a></li>
                 </ul>
             </div>
 
             <div class="col mb-3 mx-auto">
-                <h5 className={classes.h5Capture}><a href='#' >ОБРАЗОВАНИЕ</a></h5>
+                <h5 className={classes.h5Capture}><a href='#' >УЧЕБНАЯ ДЕЯТЕЛЬНОСТЬ</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Учебная деятельность</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Образовательные программы</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Преподаватели</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Учебные планы</span></a></li>                    
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/activity/achivements" class="nav-link p-0"><span >Наши достижения</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/activity/principles" class="nav-link p-0"><span >Наши принципы</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/activity/hymn" class="nav-link p-0"><span >Гимн колледжа</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/activity/photogalery" class="nav-link p-0"><span >Фотогалерея</span></a></li>                    
                 </ul>
             </div>
 
             <div class="col mb-3 mx-auto">
                 <h5 className={classes.h5Capture}><a href='#'>КОНТАКТЫ</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Контакты, схема проезда</span></a></li>
-                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="#" class="nav-link p-0"><span >Телефонный справочник</span></a></li>
+                    <li class="nav-item mb-2 d-inline-flex" className={classes.footerLink}><a href="/contact" class="nav-link p-0"><span >Контакты, схема проезда</span></a></li>
                 </ul>
             </div>
             
@@ -60,17 +59,17 @@ const Footer = () => {
        
 
         <div className={classes.copyright}> 
-            {/* <Container>
-                <a className='nav-link' href="#">
-                    Памятка личной безопасности 
-                </a>
-                <a className='nav-link' href="#">
+            <Row>
+                <Col className={classes.copyrightText} lg={1}>
+                    Памятка личной безопасности
+                </Col>
+                <Col className={classes.copyrightText} lg={1}>
                     Противодействие терроризму
-                </a>
-                <a className='nav-link' style={{border: "none"}} href="#">
+                </Col>
+                <Col className={classes.copyrightText} lg={1}>
                     Противодействие коррупции
-                </a>
-            </Container> */}
+                </Col>
+            </Row>
             <p class="text-muted mx-auto d-inline-flex">© 2023 Колледж "ЗНАНИЕ"</p>
         </div>
     </div>

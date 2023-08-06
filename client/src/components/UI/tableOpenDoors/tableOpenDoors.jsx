@@ -17,7 +17,7 @@ const TableOpenDoors = () => {
                     <tr>
                         <td>Январь-апрель</td>
                         <td>Дни открытых дверей
-                            <ul>
+                            <ul className={classes.listStyle}>
                                 <li>11 Марта 12:00</li>
                                 <li>25 Марта 12:00</li>
                                 <li>7 Апреля 12:00</li>

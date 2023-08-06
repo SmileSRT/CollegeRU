@@ -1,4 +1,25 @@
 .textStyle > h1{
-    font-size: 36pt;
-    font-family: Arial, Bold;
+    margin-bottom: 20px;
+}
+
+
+.listStyle {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.listStyle > li {
+    padding: 5px 0;
+}
+
+.linkStyle > a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #ff4d11;
+}
+
+
+.linkStyle > a:hover {
+    color: #fd7446;
 }
