@@ -75,3 +75,43 @@
     float: right;
     margin: 20px;
 }
+
+
+.mapSize{
+    width: 600px;
+    height: 400px;
+}
+
+
+@media ((min-width: 320px) and (max-width: 425px)){
+    .urlStyle{
+        font-size: 18px;
+    }
+
+    .tableStyle{
+        width: 100%;
+    }
+
+    .imageStyle{
+        height: 200px;
+        width: auto;
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .mapSize{
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 300px;
+    }
+
+    .infoStyle > p {
+        font-size: 18px;
+    }
+
+    .textStyle{
+        font-size: 18px;
+    }
+}

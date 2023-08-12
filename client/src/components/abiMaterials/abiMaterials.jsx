@@ -47,7 +47,7 @@ const AbiMaterials = () => {
             <div className={classes.textStyle}>
                 <h1>Дополнительные материалы</h1>
 
-                <h2>Договора</h2>
+                <h2>Договоры</h2>
                 <ul className={classes.listStyle}>
                     {agreements.map((agreement) => (
                         <li className={classes.linkStyle}>

@@ -1,23 +1,40 @@
-.sidebars {
-    height:auto;
-    width: 100%;
-    margin: 0 10px 0 10px
+.specialtiesBlock{
+    padding-bottom: 30px;
+    margin: 0 20px;
 }
 
-.zoom {
-    background-size: 100%;
-    background-repeat: no-repeat;
+
+.specialties{
     transition: transform .2s; /* Animation */
-    width: auto;
-    height: 100%;
     margin: 0 2px 35px 2px;
 }
-  
-.zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+.specialties >img{
+    display: block;
+    margin: auto;
+    transition: transform .2s;
+    width: auto;
+    height: 100%;
+}
+
+.specialties >img:hover{
+    transform: scale(1.1);
 }
 
 
 .header { 
     margin-top: 30px;
+}
+
+
+@media ((min-width: 1280px) and (max-width: 1440px)){
+    .specialtiesBlock{
+        padding-bottom: 10px;
+    }
+    
+    
+    .specialties > img{
+        height: 575px;
+        width: auto;
+    }
 }

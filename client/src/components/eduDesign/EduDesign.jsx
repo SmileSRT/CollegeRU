@@ -1,17 +1,35 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './EduDesign.module.css'
-import slide from '../../../public/images/education/designSlide.png'
 import iconDone from '../../../public/icons/done.png'
 
 const EduDesign = () => {
 
     return (
         <div>
-            <img src={slide} className={classes.intro}></img>
+            <Row className={classes.introBlock}>
+                <Col xs={12} lg={6}>
+                    <div className={classes.introText}>
+                        <h1>Дизайн</h1>
+                        <p>
+                            Мы научим вас проектировать интерьеры, ландшафты,
+                            создавать сувенирную продукцию, разрабатывать
+                            фирменный стиль и логотипы.
+                            Вы осовите искусство композиции, будете свободно
+                            владеть компьютерными программами, в том числе 
+                            3D-моделированием.
+                        </p>
+                        <p>
+                            Если вы захотитте продолжить свое образование 
+                            в ВУЗах, то диплом колледжа и знания, полученные у нас,
+                            помогут вам это сделать!
+                        </p>
+                    </div>
+                </Col>
+            </Row>
             <Container>
-                <Row>
-                    <Col className={classes.parametersBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Срок обучения</h5>
                         <p>
                             2 год 10 мес.<br/>
@@ -19,22 +37,22 @@ const EduDesign = () => {
                             3 года 10 мес.
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Стоимость</h5>
                         <p>122.000 руб.</p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Форма</h5>
                         <p>
                             Очная<br/>
                             Заочная
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Итог</h5>
                         <p>Государственный диплом</p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Перспектива</h5>
                         <p>
                             Трудоустройство<br/>
@@ -47,22 +65,22 @@ const EduDesign = () => {
                     <h1>Чему вы научитесь?</h1>
                 </div>
 
-                <Row>
-                    <Col className={classes.learnBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Рисунок с основами перспективы</p>
                     </Col>
-                    <Col className={classes.learnBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Разработка 3D моделей и выставочных стендов</p>
                     </Col>
                 </Row>
-                <Row>
-                    <Col className={classes.learnBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Живопись с основами цветоведения</p>
                     </Col>
-                    <Col className={classes.learnBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Начертательная геометрия</p>
                     </Col>

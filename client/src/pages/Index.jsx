@@ -4,7 +4,8 @@ import Accreditation from "../components/accreditation/Accreditation.jsx";
 import Carousel from "../components/carousel/Carousel.jsx";
 import Footer from "../components/footer/Footer.jsx";
 import Navbar from "../components/nav/Navbar.jsx";
-import Specialties from "../components/specialties/Specialties.jsx";
+import Specialties from '../components/specialties/Specialties.jsx';
+import SpecialtiesPhones from '../components/UI/SpecialtiesPhones/SpecialtiesPhones.jsx';
 import { Container } from 'react-bootstrap';
 
 const Index = (props) => {
@@ -17,7 +18,7 @@ const Index = (props) => {
             <Navbar/>
             <Carousel/>
             <AboutOrg/>
-            <Specialties/> 
+            <Specialties/>
             <Accreditation/>
             <Footer/>
         </div>

@@ -81,7 +81,7 @@ const StuMaterials = () => {
                 <h2>Отчетные документы по практике</h2>
                 <Row>
                     {directions_practice.map((direction) => (
-                        <Col className={classes.practiceBlock}>
+                        <Col className={classes.practiceBlock} xs={5} lg={2}>
                             <a href={direction.route}>
                                 <img src={icons('./' + direction.name + 'Icon.png')} className={classes.iconStyle} alt={direction.info}></img>
                                 <div className={classes.textPractice}>
