@@ -21,7 +21,7 @@ const AboutOpenness = () => {
                     {documents}
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
 

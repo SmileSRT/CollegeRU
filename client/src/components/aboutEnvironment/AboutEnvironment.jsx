@@ -23,7 +23,7 @@ const AboutEnvironment = () => {
                     </a>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
                 

@@ -3,8 +3,8 @@ import classes from './Navigation.module.css'
 import {Container, Row, Col} from 'react-bootstrap';
 
 
-const Navigation = () => {
-
+const Navigation = (props) => {
+    const isShowed = props.isShowed
     const navigationMenu = [
         {
             'name': 'Основные сведения',
@@ -69,14 +69,18 @@ const Navigation = () => {
     ]
 
     return( 
-        <div className={classes.menuStyle}>
-            <h1>Разделы</h1>
-            <ul className={classes.navigationStyle}>
-                {navigationMenu.map((header) => (
-                    <li className={classes.linkMenu}><a href={header.route}>{header.name}</a></li>
-                ))}
-            </ul>
+        <div>
+            {isShowed ? (
+                <div className={classes.menuStyle}>
+                    <h1>Разделы</h1>
+                    <ul className={classes.navigationStyle}>
+                        {navigationMenu.map((header) => (
+                            <li className={classes.linkMenu}><a href={header.route}>{header.name}</a></li>
+                        ))}
+                    </ul>
+                </div>) : null}
         </div>
+        
     );
 }
 export default Navigation;

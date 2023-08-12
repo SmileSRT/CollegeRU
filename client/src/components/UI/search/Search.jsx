@@ -50,7 +50,7 @@ const Search = (props) => {
                             }
                         }).map((link) => (
                             <div key={link.title} className={classes.searchResults}>
-                                <p><a href={link.link}>{link.title}</a></p>
+                                <a href={link.link} className={classes.linkStyle}>{link.title}</a>
                                 {/* <p>{link.id}</p> */}
                             </div>
                         ))

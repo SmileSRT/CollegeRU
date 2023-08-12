@@ -3,12 +3,14 @@ import {Container, Row, Col} from 'react-bootstrap';
 import classes from './AboutComponent.module.css'
 import Navigation from "../UI/navigation/Navigation.jsx";
 
-const AboutComponent = () => {
+const AboutComponent = (props) => {
+    const isShowed = props.isShowed
+
     return( 
         <Container className='my-5'>
                 <Row>
                     <Col lg={8} className={classes.aboutBlock}>
-                        <h1 className={classes.head1}>Основные сведения</h1>
+                        <h1>Основные сведения</h1>
                         <h2>Полное наименование образовательной организации</h2>
                         <p>
                             Автономная некоммерческая организация профессионального образования "Гуманитарно-технический колледж Знание"
@@ -66,7 +68,7 @@ const AboutComponent = () => {
                         </p>
                     </Col> 
                     <Col lg={4}>
-                        <Navigation/>
+                        <Navigation isShowed={isShowed} />
                     </Col>
                 </Row>
         </Container>

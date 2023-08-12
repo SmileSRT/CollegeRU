@@ -39,13 +39,13 @@ const NavbarPhones = () => {
                     <div>
                         <img src={handicapVersionIcon} alt="" width="25" height="25" />
                     </div>
-                    <div>
+                    {/* <div>
                         <NavLink href='#' onClick={() => setElementVisible(!elementVisible)}>
                         <img  src={webCabinetIcon} alt="" width="25" height="25" />
                         </NavLink>
-                    </div>
+                    </div> */}
                     <div>
-                        <Search/> 
+                        <Search icon_width={25} icon_height={25} /> 
                     </div>
                     
                     <div>
@@ -108,7 +108,7 @@ const NavbarPhones = () => {
             </Modal.Footer>
           </Modal>
             {/* ) : null } */}
-            {/* {menu ? (
+            {/* {/* {menu ? ( */}
             <ul> 
                 <li className={classes.alternativeNav}>Поступающим
                     <ul>
@@ -156,7 +156,7 @@ const NavbarPhones = () => {
                 <li className={classes.alternativeNav}>Новости</li>
                 <li className={classes.alternativeNav}>Контакты</li>
             </ul>
-            ) : null}
+       
             <div className='d-inline-flex mx-3 pb-5'>
                     <NavLink className='px-2' href='#'>
                     <img   src={handicapVersionIcon} alt="" width="25" height="25" />
@@ -169,7 +169,7 @@ const NavbarPhones = () => {
                 <NavLink className='px-2' href='#'>
                     <img  src={searchIcon} alt="" width="25" height="25" />  
                 </NavLink>
-            </div> */}
+            </div> 
         </div>
     );
 }

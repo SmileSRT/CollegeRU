@@ -13,7 +13,7 @@ const AboutFinance = () => {
                     <a href="#" className={classes.linkStyle}>План финансово-хозяйственной деятельности на 2020 год</a>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
 

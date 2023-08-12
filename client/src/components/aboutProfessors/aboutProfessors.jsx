@@ -258,7 +258,7 @@ const aboutProfessors = () => {
                     </div>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
         </Container>
