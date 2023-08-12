@@ -1,6 +1,36 @@
-.intro{
+.introBlock{
     width: 100%;
-    height: auto;
+    height: 100vh;
+    background: no-repeat url('../../../public/images//education/backgroundAdvocate.png');
+    margin: 0;
+    background-size: 100% 100vh;
+}
+
+
+.introText{
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding-top: 40px;
+}
+
+
+.introText >h1{
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff4d11;
+    padding: 6px 0;
+    margin-bottom: 20px;
+}
+
+
+.introText > p{
+    font-size: 30px;
+}
+
+
+.infoBlock{
+    justify-content: center;
 }
 
 
@@ -86,4 +116,79 @@
     font-weight: bold;
     text-decoration: none;
     color:#ff4d11
+}
+
+
+@media((min-width: 320px) and (max-width: 425px)){
+    .introBlock{
+        background:
+        linear-gradient(rgba(44, 44, 44, 0.7), rgba(0, 0, 0, 0.8)),
+        url('../../../public/images/education/backgroundPhonesAdvocate.jpg');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+
+    .introText{
+        width: 80%;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .introText > h1{
+        font-size: 35px;
+    }
+
+    .introText>p {
+        font-size: 18px;
+    }
+
+    .parametersBlock{
+        width: 46%;
+        margin: 10px 5px;
+    }
+
+    .parametersBlock > h5{
+        font-size: 18px;
+    }
+
+    .parametersBlock > p{
+        font-size: 16px;
+    }
+
+    .learnBlock{
+        width: 95%;
+    }
+
+    .learnBlock > p{
+        font-size: 20px;
+    }
+
+    .iconStyle{
+        width: 50px;
+        height: auto;
+        margin: 5px;
+    }
+
+    .connectionBlock{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .textStyle > p{
+        font-size: 20px;
+    }
+
+    .textStyle > a{
+        font-size: 25px;
+    }
+}
+
+@media((min-width: 320px) and (max-width: 425px) and (min-height: 800px)){
+    .introText > h1{
+        font-size: 40px;
+    }
+
+    .introText>p {
+        font-size: 20px;
+    }
 }

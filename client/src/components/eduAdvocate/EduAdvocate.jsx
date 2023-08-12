@@ -1,17 +1,33 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import classes from './EduAdvocate.module.css'
-import slide from '../../../public/images/education/advocateSlide.png'
 import iconDone from '../../../public/icons/done.png'
 
 const EduAdvocate = () => {
 
     return (
         <div>
-            <img src={slide} className={classes.intro}></img>
+            <Row className={classes.introBlock}>
+                <Col xs={12} lg={6}>
+                    <div className={classes.introText}>
+                        <h1>Юрист</h1>
+                        <p>Кого мы готовим? Это, прежде
+                            всего, специалисты в области права соцобеспечения.
+                            Их ждет работа в государственных и муниципальных органах власти,
+                            социальной сферы. 
+                        </p>
+                        <p>
+                            Те выпускники, которые выберут 
+                            работу в силовых структурах,
+                            могут смело претендовать на нее!
+                        </p>
+                    </div>
+                </Col>
+            </Row>
+
             <Container>
-                <Row>
-                    <Col className={classes.parametersBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Срок обучения</h5>
                         <p>
                             1 год 10 мес.<br/>
@@ -19,25 +35,25 @@ const EduAdvocate = () => {
                             2 года 10 мес.
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Стоимость</h5>
                         <p>
                             От 52.000 руб<br/>
                             До 98.000 руб
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Форма</h5>
                         <p>
                             Очная<br/>
                             Заочная
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Итог</h5>
                         <p>Государственный диплом</p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Перспектива</h5>
                         <p>
                             Трудоустройство<br/>
@@ -50,22 +66,22 @@ const EduAdvocate = () => {
                     <h1>Чему вы научитесь?</h1>
                 </div>
 
-                <Row>
-                    <Col className={classes.learnBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Правовая поддержка в социальной сфере</p>
                     </Col>
-                    <Col className={classes.learnBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Изучение гражданско правовых норм</p>
                     </Col>
                 </Row>
-                <Row>
-                    <Col className={classes.learnBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Изучение уголовного кодекса</p>
                     </Col>
-                    <Col className={classes.learnBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Риторика<br/>
                         Ораторское искусство

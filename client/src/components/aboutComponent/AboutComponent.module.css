@@ -1,3 +1,9 @@
+
+.aboutBlock > h1 {
+    margin-bottom: 20px;
+}
+
+
 .aboutBlock > h2 {
     margin-bottom: 10px;
 }

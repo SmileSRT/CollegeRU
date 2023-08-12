@@ -32,20 +32,24 @@ const NavbarPhones = () => {
             <Row style={{justifyContent: 'space-between'}}>
                 <Col >
                     <NavbarBrand href="/" >
-                        <img src={orgLogo} alt="" width="128" height="auto" />
+                        <img src={orgLogo} alt="Колледж 'ЗНАНИЕ'" className={classes.logoStyle} />
                     </NavbarBrand>
                 </Col>
                 <Col className={classes.navIcons}>
-                    <div>
+                    {/* <div>
                         <img src={handicapVersionIcon} alt="" width="25" height="25" />
-                    </div>
+
                     {/* <div>
                         <NavLink href='#' onClick={() => setElementVisible(!elementVisible)}>
                         <img  src={webCabinetIcon} alt="" width="25" height="25" />
                         </NavLink>
                     </div> */}
                     <div>
+
                         <Search icon_width={25} icon_height={25} /> 
+
+                        <Search icon_width={25} icon_height={25}/> 
+
                     </div>
                     
                     <div>

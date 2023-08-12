@@ -44,7 +44,7 @@ const NavBar = () => {
         {window.innerWidth > 600 ? (
 
                 <div className={classes.navComponent}>
-                    <Navbar className='navbar-light' >
+                    <Navbar className='navbar-light'>
                         <Container flex>
                             <Navbar.Brand href="/">
                                 <img src={orgLogo} alt="" width="128" height="auto" />

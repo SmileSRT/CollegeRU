@@ -18,6 +18,7 @@
     border: 3px rgb(192, 192, 192) solid;
     border-radius: 25px;
     transition: 0.2s;
+    width: 11%;
 }
 
 
@@ -72,4 +73,29 @@
 
 .linkStyle >a:hover{
     color:#ff8157;
+}
+
+
+@media((min-width: 320px) and (max-width: 425px)){
+    .headers > h2{
+        font-size: 24px;
+    }
+
+    .linkStyle > a{
+        font-size: 18px;
+    }
+
+    .iconStyle{
+        width: 50px;
+        height: auto;
+    }
+
+    .practiceBlock{
+        margin-bottom: 15px;
+        width: 43%;
+    }
+
+    .textPractice > p{
+        font-size: 18px;
+    }
 }

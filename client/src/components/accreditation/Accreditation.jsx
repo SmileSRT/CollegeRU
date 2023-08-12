@@ -12,76 +12,38 @@ const Accreditation = () => {
 
     return( 
         <div className={classes.accreditationBlock} style={{backgroundImage: "url('" + accreditationBackground + "'", backgroundSize: "cover"}}>
-            {/* <div className={classes.accreditationBlock}> */}
                 
-            <Container>
+            <Container className={classes.headers}>
                 <h1>Лицензия и государственная аккредитация</h1>
-                
                 <Row>
-                    <Col>
+                    <Col className={classes.licenseBlock} xs={6} lg={3}>
                         <a href="">
-                            <img className="mx-auto d-block" src={accreditationImage1} alt="" width="auto" height="400px" />
+                            <img className={classes.licenseImage} src={accreditationImage1} alt=""/>
                         </a>
-                        <p class="ledge text-center my-2">Лицензия на осуществление образовательной деятельности №77080 от 24 мая 2017 г. Серия: 50Л01 №0008960</p>
+                        <p>Лицензия на осуществление образовательной деятельности №77080 от 24 мая 2017 г. Серия: 50Л01 №0008960</p>
                     </Col>
-                    <Col>
+                    <Col className={classes.licenseBlock} xs={6} lg={3}>
                         <a href="#">
-                            <img className="mx-auto d-block" src={accreditationImage2} alt="" width="auto" height="400px"/>
+                            <img className={classes.licenseImage} src={accreditationImage2} alt=""/>
                         </a>
-                        <p class="ledge text-center my-2">Приложение №1 к лицензии на осуществление образовательной деятельности</p>
+                        <p>Приложение №1 к лицензии на осуществление образовательной деятельности</p>
                     </Col>
-                    <Col>
+                    <Col className={classes.licenseBlock} xs={6} lg={3}>
                         <a href="#">
-                            <img className="mx-auto d-block" src={accreditationImage3} alt="" width="auto" height="400px"/>
+                            <img className={classes.licenseImage} src={accreditationImage3} alt=""/>
                         </a>
-                        <p class="ledge text-center my-2">Свидетельство о государственной аккредитации от 23 июня 2017г. Серия: 50А01 №0000172</p>
+                        <p>Свидетельство о государственной аккредитации от 23 июня 2017г. Серия: 50А01 №0000172</p>
                     </Col>
-                    <Col>
+                    <Col className={classes.licenseBlock} xs={6} lg={3}>
                         <a href="#">
-                            <img className="mx-auto d-block" src={accreditationImage4} alt="" width="auto" height="400px"/>
+                            <img className={classes.licenseImage} src={accreditationImage4} alt=""/>
                         </a>
-                        <p class="ledge text-center my-2">Приложение №1 к свидетельству о государственной аккредитации от 23 июня 2017 г. №4201</p>
+                        <p>Приложение №1 к свидетельству о государственной аккредитации от 23 июня 2017 г. №4201</p>
                     </Col>
 
                 </Row>
-            </Container>
-            {/* <div class="container mx-auto">
-                <div class="container">
-                    <h1 class="display-4 mb-5">
-                        Лицензия и государственная аккредитация
-                    </h1>
-                </div>
-
-                <div class="d-flex flex-row">
-                    <div class="col md-auto" className={classes.sidebars}>
-                        <a href="">
-                            <img src={accreditationImage1} alt="" width="auto" height="400px" />
-                        </a>
-                        <p class="ledge text-center my-2">Лицензия на осуществление образовательной деятельности №77080 от 24 мая 2017 г. Серия: 50Л01 №0008960</p>
-                    </div>
-                    <div class="col md-auto" className={classes.sidebars}>
-                        <a href="#">
-                            <img src={accreditationImage2} alt="" width="auto" height="400px"/>
-                        </a>
-                        <p class="ledge text-center my-2">Приложение №1 к лицензии на осуществление образовательной деятельности</p>
-                    </div>
-                    <div class="col md-auto" className={classes.sidebars}>
-                        <a href="#">
-                            <img src={accreditationImage3} alt="" width="auto" height="400px"/>
-                        </a>
-                        <p class="ledge text-center my-2">Свидетельство о государственной аккредитации от 23 июня 2017г. Серия: 50А01 №0000172</p>
-                    </div>
-                    <div class="col md-auto" className={classes.sidebars}>
-                        <a href="#">
-                            <img src={accreditationImage4} alt="" width="auto" height="400px"/>
-                        </a>
-                        <p class="ledge text-center my-2">Приложение №1 к свидетельству о государственной аккредитации от 23 июня 2017 г. №4201</p>
-                    </div>
-                </div>
-            </div> */}
-                
+            </Container>    
         </div>
-        // </div>
     );
 }
 export default Accreditation;

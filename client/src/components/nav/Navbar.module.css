@@ -84,6 +84,7 @@ body:not(.modal-open) {
     z-index: 1;
 }
 
+
 @keyframes reveal {
     0% {
         transform: scale(0);

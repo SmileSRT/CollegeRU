@@ -1,4 +1,10 @@
-.paragraphStyle {
+.aboutBlock{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.infoBlock > p{
     font-size: 14pt;
     margin: 45px 0 45px 0;
     width: 95%;
@@ -43,4 +49,34 @@
 .header{
     margin: 0;
     vertical-align: bottom;
+}
+
+
+@media (max-width: 425px){
+    .infoBlock > h1{
+        margin: 0;
+        font-size: 20px;
+    }
+
+
+    .infoBlock > p{
+        width: 100%;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .iconStyle{
+        height: 35px;
+        width: auto;
+    }
+
+    
+    .blockStyle {
+        border: 2px solid rgb(207, 207, 207);
+    }
+    
+    .blockStyle > a{
+        font-size: 13px;
+    }
+
 }
