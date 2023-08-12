@@ -48,8 +48,6 @@ const NavbarPhones = () => {
 
                         <Search icon_width={25} icon_height={25} /> 
 
-                        <Search icon_width={25} icon_height={25}/> 
-
                     </div>
                     
                     <div>
@@ -113,7 +111,7 @@ const NavbarPhones = () => {
           </Modal>
             {/* ) : null } */}
             {/* {/* {menu ? ( */}
-            <ul> 
+            {/* <ul> 
                 <li className={classes.alternativeNav}>Поступающим
                     <ul>
                         <li><a className='nav-link' href="/abit2023">Приемная комиссия 2023</a></li>
@@ -159,9 +157,9 @@ const NavbarPhones = () => {
                 </li>
                 <li className={classes.alternativeNav}>Новости</li>
                 <li className={classes.alternativeNav}>Контакты</li>
-            </ul>
+            </ul> */}
        
-            <div className='d-inline-flex mx-3 pb-5'>
+            {/* <div className='d-inline-flex mx-3 pb-5'>
                     <NavLink className='px-2' href='#'>
                     <img   src={handicapVersionIcon} alt="" width="25" height="25" />
                 </NavLink>
@@ -173,7 +171,7 @@ const NavbarPhones = () => {
                 <NavLink className='px-2' href='#'>
                     <img  src={searchIcon} alt="" width="25" height="25" />  
                 </NavLink>
-            </div> 
+            </div>  */}
         </div>
     );
 }
