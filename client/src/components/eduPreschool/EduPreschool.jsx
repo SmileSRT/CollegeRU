@@ -1,17 +1,32 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './EduPreschool.module.css'
-import slide from '../../../public/images/education/preschoolSlide.png'
 import iconDone from '../../../public/icons/done.png'
 
 const EduPreschool = () => {
 
     return (
         <div>
-            <img src={slide} className={classes.intro}></img>
+            <Row className={classes.introBlock}>
+                <Col xs={12} lg={6}>
+                    <div className={classes.introText}>
+                        <h1>Дошкольное образование</h1>
+                        <p>
+                            Воспитатель — это не просто человек, воспитывающий детей.
+                            Если вы выбрали эту профессию, то помните — ваша задача из
+                            непутевого неумехи малыша вырастить будушего первоклассника! 
+                        </p>
+                        <p>
+                            Сложно? Еще как! Наши преподаватели дадут вам знания, необходимые
+                            воспитателю. Если вы любите детей, хотите подарим им свое тепло
+                            и показать дорогу в жизнь — добро пожаловать в наш колледж!
+                        </p>
+                    </div>
+                </Col>
+            </Row>
             <Container>
-                <Row>
-                    <Col className={classes.parametersBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Срок обучения</h5>
                         <p>
                             2 года 10 мес.<br/>
@@ -19,25 +34,25 @@ const EduPreschool = () => {
                             3 года 10 мес.
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Стоимость</h5>
                         <p>
                             От 52.000 руб<br/>
                             До 92.000 руб
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Форма</h5>
                         <p>
                             Очная<br/>
                             Заочная
                         </p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Итог</h5>
                         <p>Государственный диплом</p>
                     </Col>
-                    <Col className={classes.parametersBlock}>
+                    <Col className={classes.parametersBlock} lg={2}>
                         <h5>Перспектива</h5>
                         <p>
                             Трудоустройство<br/>
@@ -50,22 +65,22 @@ const EduPreschool = () => {
                     <h1>Чему вы научитесь?</h1>
                 </div>
 
-                <Row>
-                    <Col className={classes.learnBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Воспитание и обучение детей дошкольного возраста</p>
                     </Col>
-                    <Col className={classes.learnBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Оценивать процесс и результаты обучения детей</p>
                     </Col>
                 </Row>
-                <Row>
-                    <Col className={classes.learnBlock}>
+                <Row className={classes.infoBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Организация различных видов деятельности</p>
                     </Col>
-                    <Col className={classes.learnBlock}>
+                    <Col className={classes.learnBlock} lg={5}>
                         <img src={iconDone} className={classes.iconStyle}></img>
                         <p>Организовывать и проводить праздники для детей</p>
                     </Col>

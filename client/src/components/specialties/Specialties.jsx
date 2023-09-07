@@ -1,56 +1,66 @@
 import React from 'react';
 import classes from './Specialties.module.css'
-import specialty1 from '../../../public/images/specialities/speciality1.png'
-import specialty2 from '../../../public/images/specialities/speciality2.png'
-import specialty3 from '../../../public/images/specialities/speciality3.png'
-import specialty4 from '../../../public/images/specialities/speciality4.png'
-import specialty5 from '../../../public/images/specialities/speciality5.png'
-import specialty6 from '../../../public/images/specialities/speciality6.png'
-import specialty7 from '../../../public/images/specialities/speciality7.png'
-import { Col, Container, Row } from 'react-bootstrap';
+const images = require.context('../../../public/images/specialities', false, /\.(png)$/);
+import { Col, Container, Row, Card } from 'react-bootstrap';
+import SpecialtiesPhones from '../UI/SpecialtiesPhones/SpecialtiesPhones.jsx';
 
+const specialties=[
+    {
+        'id': '1',
+        'name': 'Юрист',
+        'route': '/directions/advocate',
+    },
+    {
+        'id': '2',
+        'name': 'Бухгалтер',
+        'route': '/directions/credit',
+    },
+    {
+        'id': '3',
+        'name': 'Учитель начальных классов',
+        'route': '/directions/teacher',
+    },
+    {
+        'id': '4',
+        'name': 'Дошкольное образование',
+        'route': '/directions/preschool',
+    },
+    {
+        'id': '5',
+        'name': 'Сестринское дело',
+        'route': '/directions/doctor',
+    },
+    {
+        'id': '6',
+        'name': 'Дизайн',
+        'route': '/directions/design',
+    },
+    {
+        'id': '7',
+        'name': 'Фармация',
+        'route': '/directions/pharmacist',
+    },
+]
 
 const Specialties = () => {
     return( 
-            <div style={{width: "1500px", margin: "auto"}}>
-                <Row>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty1}}>
-                        <a href="/directions/advocate">
-                            <img src={specialty1} alt="Право и организация социального обеспечения"/>
-                        </a>
-                    </Col>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty2}}>
-                        <a href="/directions/credit">
-                            <img src={specialty2} alt="Бухгалтер, специалист банковского дела" />
-                        </a>
-                    </Col>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty3}}>
-                        <a href="/directions/teacher">
-                            <img src={specialty3} alt="Учитель начальных классов" />
-                        </a>
-                    </Col>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty4}}>
-                        <a href="/directions/preschool">
-                            <img src={specialty4} alt="Дошкольное образование" />
-                        </a>
-                    </Col>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty5}}>
-                        <a href="/directions/doctor">
-                            <img src={specialty5} alt="Сестринское дело" />
-                        </a>
-                    </Col>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty6}}>
-                        <a href="/directions/design">
-                            <img src={specialty6} alt="Дизайн" />
-                        </a>
-                    </Col>
-                    <Col className={classes.zoom} style={{backgroundImage: specialty7}}>
-                        <a href="/directions/pharmacist">
-                            <img src={specialty7} alt="Фармация" />
-                        </a>
-                    </Col>
+        <div>
+        {window.innerWidth >= 1280 ? (
+            <div>
+                <Row className={classes.specialtiesBlock}>
+                    {specialties.map((speciality) => (
+                        <Col>
+                            <a className ={classes.specialties} href={speciality.route}>
+                                <img src={images(`./speciality${speciality.id}.png`)} alt={speciality.name}/>
+                            </a>
+                        </Col>
+                    ))}
                 </Row>
             </div>
+
+        ): <SpecialtiesPhones/>}
+        </div>
+            
     );
 }
 export default Specialties;

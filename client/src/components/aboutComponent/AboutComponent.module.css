@@ -1,4 +1,4 @@
-.head1 {
+.aboutBlock > h1 {
     margin-bottom: 20px;
 }
 
@@ -8,7 +8,6 @@
 }
 
 .aboutBlock > p {
-    font-size: 13pt;
     color: #575757;
     
 }

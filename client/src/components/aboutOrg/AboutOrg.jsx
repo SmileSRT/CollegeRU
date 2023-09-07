@@ -4,19 +4,20 @@ import distance from '../../../public/icons/learnIcon.png'
 import gallery from '../../../public/icons/galleryIcon.png'
 import classes from './AboutOrg.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
+import Specialties from '../specialties/Specialties.jsx';
 
 const AboutOrg = () => {
     return( 
-        <Container className='my-5'>
+        <Container className={classes.aboutBlock}>
             <Row>
-                <Col>
+                <Col className={classes.infoBlock} lg = {6}>
                     <h1>Знание — сила!</h1>
-                    <p className={classes.paragraphStyle}>
+                    <p>
                         Создавая колледж, мы хотели, чтобы он стал не просто
                         еще одним учебным заведением, где ничем не
                         связанные друг с другом люди будут обучать и учиться.
                     </p>
-                    <p className={classes.paragraphStyle}>
+                    <p>
                         Наша цель была в другом: мы убеждены — каждый 
                         человек талантлив; мы убеждены — сейчас время
                         неординарных людей и неординарных идей; мы
@@ -27,7 +28,7 @@ const AboutOrg = () => {
                         позитива человек может развиваться!
                     </p>
                 </Col>
-                <Col>
+                <Col className = {classes.infoBlock} lg = {6}>
                     <h1>Онлайн-ресурсы</h1>
                     <Row>
                         <Col className={classes.blockStyle}>
@@ -55,7 +56,9 @@ const AboutOrg = () => {
                     </Row>
                 </Col>
             </Row>
-            <h1 className={classes.header}>Учебные направления</h1>
+            <div className={classes.infoBlock}>
+                <h1>Учебные направления</h1>
+            </div>
         </Container>
         
     );

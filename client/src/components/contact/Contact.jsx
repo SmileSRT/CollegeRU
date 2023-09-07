@@ -12,7 +12,7 @@ const Contact = () => {
         <Container className='my-5'>
             <h1 className={classes.header}>Контакты, схема проезда</h1>
             <Row >
-                <Col xs={3} className={classes.infoStyle}>
+                <Col lg={3} className={classes.infoStyle}>
                     <h3>Почтовый адрес</h3>
                 </Col>
                 <Col className={classes.infoStyle}>
@@ -20,7 +20,7 @@ const Contact = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={3} className={classes.infoStyle}>
+                <Col lg={3} className={classes.infoStyle}>
                     <h3>Электронная почта</h3>
                 </Col>
                 <Col>
@@ -28,7 +28,7 @@ const Contact = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={3} className={classes.infoStyle}>
+                <Col lg={3} className={classes.infoStyle}>
                     <h3>Адрес в сети интернет</h3>
                 </Col>
                 <Col>
@@ -78,10 +78,9 @@ const Contact = () => {
                 <img src={routeToCollege2} className={classes.imageStyle}></img>
                 <img src={routeToCollege1} className={classes.imageStyle}></img>
                 <iframe 
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac13395645263bb2a2d0f87a4fac94cbc2e98fde2aa605fa00a04ba5c47aee961&amp;source=constructor" 
-                width="600" 
-                height="400" 
-                frameborder="0">
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac13395645263bb2a2d0f87a4fac94cbc2e98fde2aa605fa00a04ba5c47aee961&amp;source=constructor" className={classes.mapSize}
+                frameborder="0"
+                >
                 </iframe>
             </div>
             <h4 className={classes.important}>ПРИМЕЧАНИЕ!</h4>
