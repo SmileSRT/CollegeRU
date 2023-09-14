@@ -1,77 +1,162 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Container} from 'react-bootstrap';
 import classes from './abiMaterials.module.css'
 
 const agreements = [
-    'Бухгалтер 9 классов очная форма обучения',
-    'Бухгалтер 11 классов очная форма обучения',
-    'Бухгалтер 11 классов заочная форма обучения',
-    'Воспитатель 9 классов очная форма обучения',
-    'Воспитатель 11 классов очная форма обучения',
-    'Воспитатель 11 классов заочная форма обучения',
-    'Дизайнер 9 классов очная форма обучения',
-    'Дизайнер 11 классов очная форма обучения',
-    'Педагог 9 классов очная форма обучения',
-    'Педагог 11 классов очная форма обучения',
-    'Педагог 11 классов заочная форма обучения',
-    'Юрист 9 классов очная форма обучения',
-    'Юрист 11 классов очная форма обучения',
-    'Юрист 11 классов заочная форма обучения',
-    'Медсестра 9 классов очная форма обучения',
-    'Медсестра 11 классов очная формао обучения',
-    'Медсестра 11 классов очно-заочная форма обучения',
-    'Фармацевт 9 классов очная форма обучения',
-    'Фармацевт 11 классов очная форма обучения',
-    'Фармацевт 11 классов очно-заочная форма обучения',
+    {
+        name: 'Бухгалтер 9 классов очная форма обучения',
+        link: 'Договор-23-САЙТ-БУХГАЛТЕР.pdf'
+    },
+    {
+        name:'Воспитатель 9 классов очная форма обучения',
+        link: 'Договор-23-САЙТ-ВОСПИТАТЕЛЬ.pdf'
+    },
+    {
+        name:'Дизайнер 9 классов очная форма обучения',
+        link:'Договор-23-САЙТ-ДИЗАЙНЕР.pdf'
+    },
+    {
+        name:'Медсестра 9 классов очная форма обучения',
+        link:'Договор-23-САЙТ-МЕДСЕСТРА.pdf'
+    },
+    {
+        name:'Юрист 9 классов очная форма обучения',
+        link:  'Договор-23-САЙТ-ЮРИСТ.pdf'
+    },
+    {
+        name:'Фармацевт 9 классов очная форма обучения',
+        link:'Договор-23-ФАРМАЦЕВТ-9.docx'
+    },
+    {
+        name:'Педагог 9 классов очная форма обучения',
+        link:'Договор-Преподавание-в-начальных-классах.pdf'
+    },
+    {
+        name:'Фармацевт 11 классов очная форма обучения',
+        link:'Договор-23-ФАРМАЦИЯ-11.docx'
+    },
+]
+
+const applications = [
+    {
+        name:'Заявление о приеме',
+        link:'Заявление-о-приеме.docx'
+    },
+    {
+        name:'Заявление по физкультуре для самообразования',
+        link:'Заявление-по-физкультуре-для-самообразования.pdf'
+    }
 ]
 
 
-const statements = [
-    'Заявление о приеме',
-    'Заявление по физкультуре для самообразования',
-]
-
-
-const materials = [
-    'Билеты по русскому языку',
-    'Правила приема',
-    'Квитанция для оплаты',
-    'Согласие на обработку персональных данных',
-    'Медицинская справка для поступающих на сестринское дело',
-    'Справка 030-ПО-у-17 для поступающих на сестринское дело',
+const downloads = [
+    {
+        name:'Билеты по русскому языку',
+        link:'БИЛЕТЫ-рус.яз.-для-сайта.docx'
+    },
+    {
+        name:'Правила приема',
+        link:'Правила-приёма-2023.pdf'
+    },
+    {
+        name:'Извещение',
+        link:'Извещение.docx'
+    },
+    {
+        name:'Согласие на обработку персональных данных',
+        link:'Согласие-на-обработку-персональных-данных.pdf'
+    },
+    {
+        name:'Медицинская справка для поступающих на сестринское дело',
+        link:'Мед.справка-для-поступающих-на-Сестринское-дело.pdf'
+    },
+    {
+        name:'Справка 030-ПО-у-17 для поступающих на сестринское дело',
+        link:'Справка-030-ПО-у-17-для-Сестринского-дела.pdf'
+    }
 ]
 
 const AbiMaterials = () => {
+    let caption = useState('')
+    const returnPath = (caption) => {
+        return 'http://localhost:9000/pdf/abiMaterials/' + caption
+    }
+
+const agreementFiller = () => {
+    let div = document.createElement('div')
+    div.setAttribute('class', classes.listStyle)
+    for (let i = 0; i < agreements.length; i++) {
+        div.innerHTML += `
+        <li class=${classes.linkStyle}>
+            <a href=${ returnPath(caption = 'agreement/' + agreements[i].link) }>${agreements[i].name}</a>
+        </li>
+    `
+    }
+    document.getElementById('agreementList').appendChild(div)
+}
+
+const applicationsFiller = () => {
+    let div = document.createElement('div')
+    div.setAttribute('class', classes.listStyle)
+    for (let i = 0; i < applications.length; i++) {
+        div.innerHTML += `
+        <li class=${classes.linkStyle}>
+            <a href=${ returnPath(caption = 'applications/' + applications[i].link) }>${applications[i].name}</a>
+        </li>
+    `
+    }
+    document.getElementById('applicationsList').appendChild(div)
+}
+const downloadFiller = () => {
+    let div = document.createElement('div')
+    div.setAttribute('class', classes.listStyle)
+    for (let i = 0; i < downloads.length; i++) {
+        div.innerHTML += `
+        <li class=${classes.linkStyle}>
+            <a href=${ returnPath(caption = 'download/' + downloads[i].link) }>${downloads[i].name}</a>
+        </li>
+    `
+    }
+    document.getElementById('downloadList').appendChild(div)
+}
+useEffect(() => {
+    agreementFiller()
+    applicationsFiller()
+    downloadFiller()
+})
+
+
     return(
         <Container className='my-5'>
             <div className={classes.textStyle}>
                 <h1>Дополнительные материалы</h1>
 
                 <h2>Договоры</h2>
-                <ul className={classes.listStyle}>
-                    {agreements.map((agreement) => (
+                <ul className={classes.listStyle} id='agreementList'>
+                    {/* {
+                        agreements.map((agreement) => (
                         <li className={classes.linkStyle}>
-                            <a href="">{agreement}</a>
+                            <a href={ returnPath(caption = 'agreement/' + abiList[i]) }>{agreement}</a>
                         </li>
-                    ))}
+                    ))} */}
                 </ul>
                 
                 <h2>Заявления</h2>
-                <ul className={classes.listStyle}>
-                    {statements.map((statement) => (
+                <ul className={classes.listStyle} id='applicationsList'>
+                    {/* {statements.map((statement) => (
                         <li className={classes.linkStyle}>
                             <a href="">{statement}</a>
                         </li>
-                    ))}
+                    ))} */}
                 </ul>
 
                 <h2>Материалы для скачивания</h2>
-                <ul className={classes.listStyle}>
-                    {materials.map((material) => (
+                <ul className={classes.listStyle} id='downloadList'>
+                    {/* {materials.map((material) => (
                         <li className={classes.linkStyle}>
                             <a href="">{material}</a>
                         </li>
-                    ))}
+                    ))} */}
                 </ul>
             </div>
         </Container>
