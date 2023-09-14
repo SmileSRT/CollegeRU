@@ -1,10 +1,9 @@
 import React from 'react';
 import classes from './Navigation.module.css'
-import {Container, Row, Col} from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 
 const Navigation = (props) => {
-    const isShowed = props.isShowed
+    const isShowed = true;
     const navigationMenu = [
         {
             'name': 'Основные сведения',
@@ -72,10 +71,10 @@ const Navigation = (props) => {
         <div>
             {isShowed ? (
                 <div className={classes.menuStyle}>
-                    <h1>Разделы</h1>
+                    <h3>Разделы</h3>
                     <ul className={classes.navigationStyle}>
                         {navigationMenu.map((header) => (
-                            <li className={classes.linkMenu}><a href={header.route}>{header.name}</a></li>
+                            <li className={classes.linkMenu}><Link to={header.route}>{header.name}</Link></li>
                         ))}
                     </ul>
                 </div>) : null}

@@ -1,5 +1,4 @@
 .header {
-    font-size: 36pt;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -8,7 +7,7 @@
 
 
 .textStyle{
-    margin: 50px;
+    margin: 50px 0;
 }
 
 
@@ -23,3 +22,21 @@
     display: flex;
     justify-content: center;
 }
+
+.video > iframe{
+    width: 800px;
+    height: 400px;
+}
+
+
+@media((min-width: 320px) and (max-width: 425px)){
+    .video > iframe{
+        width: 300px;
+        height: 200px;
+    }
+
+    .textStyle > p{
+        font-size: 16px;
+    }
+}
+

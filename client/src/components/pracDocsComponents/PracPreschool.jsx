@@ -15,7 +15,7 @@ const PracPreschool = () => {
         <Container className='my-5'>
             <div className={classes.headers}>
                 <h1>Отчетные документы по практике</h1>
-                <h2>Направление Дошкольное образование (44.02.01)</h2>
+                <h4>Направление Дошкольное образование (44.02.01)</h4>
                 <ul className={classes.listStyle}>
                     {documents.map((document) => (
                     <li className={classes.linkStyle}>

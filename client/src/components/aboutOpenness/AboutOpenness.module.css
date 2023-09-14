@@ -9,3 +9,11 @@
     height: auto;
     padding-bottom: 40px;
 }
+
+
+@media((min-width: 320px) and (max-width: 768px)){
+    .imageStyle{
+        width: 300px;
+        height: auto;
+    }
+}

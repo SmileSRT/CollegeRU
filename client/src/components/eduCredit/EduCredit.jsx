@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './EduCredit.module.css'
 import iconDone from '../../../public/icons/done.png'
+import SpecialtiesNav from '../UI/specialtiesNav/specialtiesNav.jsx';
 
 const EduCredit = () => {
 
@@ -10,7 +11,7 @@ const EduCredit = () => {
             <Row className={classes.introBlock}>
                 <Col xs={12} lg={6}>
                     <div className={classes.introText}>
-                        <h1>Бухгалтер специалист банковского дела</h1>
+                        <h1>Бухгалтер</h1>
                         <p>
                             Мы готовим профессиональных
                             бухгалтеров с дополнительной
@@ -87,6 +88,11 @@ const EduCredit = () => {
                         <p>Финансы государства и организаций</p>
                     </Col>
                 </Row>
+
+                <div className={classes.header}>
+                    <h1>Хотите изучить больше?</h1>
+                    <SpecialtiesNav/>
+                </div>
 
                 <div className={classes.header}>
                     <h1>Как к нам поступить?</h1>

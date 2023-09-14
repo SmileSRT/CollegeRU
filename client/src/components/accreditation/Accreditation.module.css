@@ -6,6 +6,7 @@
 }
 
 .headers > h1{
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -27,7 +28,7 @@
 
 .licenseImage{
     width: auto;
-    height: 400px;
+    height: 350px;
 }
 
 
@@ -38,13 +39,13 @@
 
 .licenseBlock > p{
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-@media(max-width: 425px){
+@media(max-width: 560px){
     .headers > h1{
         text-align: center;
-        font-size: 20px;
+        font-size: 22px;
     }
 
 
@@ -52,9 +53,15 @@
         width: auto;
         height: 150px;
     }
+}
 
+@media((min-width: 560px) and (max-width: 1200px)){
+    .headers > h1{
+        text-align: center;
+    }
     
-    .licenseBlock > p{
-        font-size: 14px;
+    .licenseImage{
+        width: auto;
+        height: 250px;
     }
 }

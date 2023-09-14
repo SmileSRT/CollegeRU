@@ -69,11 +69,11 @@
 
 
 .imageStyle{
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
-    float: right;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 
@@ -83,7 +83,41 @@
 }
 
 
-@media ((min-width: 320px) and (max-width: 425px)){
+@media ((min-width: 320px) and (max-width: 768px)){
+    .urlStyle{
+        font-size: 16px;
+    }
+
+    .tableStyle{
+        width: 100%;
+    }
+
+    .imageStyle{
+        height: 150px;
+        width: auto;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .mapSize{
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .infoStyle > p {
+        font-size: 16px;
+    }
+
+    .textStyle{
+        font-size: 16px;
+    }
+}
+
+
+@media ((min-width: 768px) and (max-width: 1000px)){
     .urlStyle{
         font-size: 18px;
     }
@@ -93,10 +127,9 @@
     }
 
     .imageStyle{
-        height: 200px;
+        height: 150px;
         width: auto;
-        float: none;
-        margin: 20px auto;
+        margin: 0 auto 20px auto;
         display: block;
     }
 
@@ -105,6 +138,7 @@
         margin: auto;
         width: 95%;
         height: 300px;
+        margin-bottom: 20px;
     }
 
     .infoStyle > p {

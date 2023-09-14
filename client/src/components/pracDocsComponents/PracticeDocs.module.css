@@ -1,7 +1,6 @@
 .linkStyle > a {
     text-decoration: none;
     color: #ff4d11;
-    font-size: 20px;
 }
 
 
@@ -21,8 +20,7 @@
 }
 
 
-.headers > h2 { 
-    font-size: 25px;
+.headers > h2 {
     margin-bottom: 30px;
 }
 

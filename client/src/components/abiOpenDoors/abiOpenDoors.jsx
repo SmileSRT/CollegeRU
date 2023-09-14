@@ -8,7 +8,7 @@ const AbiOpenDoors = () => {
         <Container className='my-5'>
             <div className={classes.textStyles}>
                 <h1>Дни открытых дверей</h1>
-                <h2>Расписание дней открытых дверей</h2>
+                <h4>Расписание дней открытых дверей</h4>
             </div>
         </Container>
     )

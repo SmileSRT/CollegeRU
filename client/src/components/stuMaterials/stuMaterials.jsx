@@ -55,7 +55,7 @@ const StuMaterials = () => {
             <div className={classes.headers}>
                 <h1>Дополнительные материалы</h1>
 
-                <h2>Методические указания по выполнению курсовой работы</h2>
+                <h4>Методические указания по выполнению курсовой работы</h4>
                 <ul className={classes.listStyle}>
                     <li className={classes.linkStyle}>
                         <a href="">Методические указания по оформлению дипломной работы</a>
@@ -65,7 +65,7 @@ const StuMaterials = () => {
                     </li>
                 </ul>
                 
-                <h2>Практика</h2>
+                <h4>Практика</h4>
                 <ul className={classes.listStyle}>
                     <li className={classes.linkStyle}>
                         <a href="">
@@ -78,10 +78,10 @@ const StuMaterials = () => {
                     </li>
                 </ul>
 
-                <h2>Отчетные документы по практике</h2>
+                <h4>Отчетные документы по практике</h4>
                 <Row>
                     {directions_practice.map((direction) => (
-                        <Col className={classes.practiceBlock} xs={5} lg={2}>
+                        <Col className={classes.practiceBlock} xs={5} xl={2}>
                             <a href={direction.route}>
                                 <img src={icons('./' + direction.name + 'Icon.png')} className={classes.iconStyle} alt={direction.info}></img>
                                 <div className={classes.textPractice}>

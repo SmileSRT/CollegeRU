@@ -11,7 +11,7 @@ const AboutPaidService = () => {
                     <div className={classes.header}>
                         <h1>Платные образовательные услуги</h1>
                         <div className={classes.header}>
-                            <h2>Стоимость обучения 2017-2024</h2>
+                            <h4>Стоимость обучения 2017-2024</h4>
                             <div className={classes.urlStyle}>
                                 <a href="#">Стоимость обучения 2023-2024</a>
                             </div>
@@ -33,7 +33,7 @@ const AboutPaidService = () => {
                             <div className={classes.urlStyle}>
                                 <a href="#">Стоимость обучения 2017-2018</a>
                             </div>
-                            <h2>Образец договора об указании платных образовательных услуг</h2>
+                            <h4>Образец договора об указании платных образовательных услуг</h4>
                             <div className={classes.urlStyle}>
                                 <a href='#'>Договор об указании платных образовательных услуг</a>
                             </div>

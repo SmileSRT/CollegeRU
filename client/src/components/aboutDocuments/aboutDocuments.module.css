@@ -1,5 +1,4 @@
 .urlStyle > a {
-    font-size: 13pt;
     color: #ff4d11;
     text-decoration: none;
 }
@@ -10,8 +9,7 @@
 }
 
 
-.header > h2 {
-    font-size: 18pt;
+.header > h4 {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }

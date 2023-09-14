@@ -2,6 +2,8 @@ import React from 'react';
 import logoFooter from '../../../public/images/LogoFooter.png'
 import classes from './Footer.module.css'
 import { Container, Row, Col} from 'react-bootstrap'
+const icons = require.context('../../../public/icons', false, /\.(png)$/);
+
 
 const about_college_list=[
     {
@@ -64,7 +66,7 @@ const Footer = () => {
                     </a>
                 </Col>
                 <Col xs={6} lg={3}>
-                    <h5 className={classes.h5Capture}><a href='#' >ЗНАНИЕ</a></h5>
+                    <h5 className={classes.h5Capture}>ЗНАНИЕ</h5>
                     <ul className={classes.listStyle}>
                         {about_college_list.map((element) => (
                             <li><a className={classes.footerLink} href={element.route}>{element.content}</a></li>
@@ -72,7 +74,7 @@ const Footer = () => {
                     </ul>
                 </Col>
                 <Col xs={6} lg={3}>
-                    <h5 className={classes.h5Capture}><a href='#' >ЖИЗНЬ КОЛЛЕДЖА</a></h5>
+                    <h5 className={classes.h5Capture}>ЖИЗНЬ КОЛЛЕДЖА</h5>
                     <ul className={classes.listStyle}>
                         {about_activity_list.map((element) => (
                             <li><a className={classes.footerLink} href={element.route}>{element.content}</a></li>
@@ -80,7 +82,7 @@ const Footer = () => {
                     </ul>
                 </Col>
                 <Col xs={6} lg={3}>
-                    <h5 className={classes.h5Capture}><a href='#' >КОНТАКТЫ</a></h5>
+                    <h5 className={classes.h5Capture}>КОНТАКТЫ</h5>
                     <ul className={classes.listStyle}>
                         {about_contact_list.map((element) => (
                             <li><a className={classes.footerLink} href={element.route}>{element.content}</a></li>
@@ -91,14 +93,13 @@ const Footer = () => {
         </Container>
         <div className={classes.copyright}> 
             <Row>
-                <Col className={classes.safetyText} lg={1}>
-                    Памятка личной безопасности /
+                <Col className={classes.safetyText} md={6} lg={8}>
+                    Памятка личной безопасности / Противодействие терроризму / Противодействие коррупции
                 </Col>
-                <Col className={classes.safetyText} lg={1}>
-                    Противодействие терроризму /
-                </Col>
-                <Col className={classes.safetyText} lg={1}>
-                    Противодействие коррупции
+                <Col className={classes.socials} md={6} lg={4}>
+                    <a href="#" target='_blank'><img src={icons('./telegram.png')}/></a>
+                    <a href="https://vk.com/gtk.znanie" target='_blank'><img src={icons('./vk.png')}/></a>
+                    <a href="#" target='_blank'><img src={icons('./whatsapp.png')}/></a>
                 </Col>
             </Row>
             <p>© 2023 Колледж "ЗНАНИЕ"</p>

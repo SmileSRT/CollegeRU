@@ -15,7 +15,7 @@ const PracDoctor = () => {
         <Container className='my-5'>
             <div className={classes.headers}>
                 <h1>Отчетные документы по практике</h1>
-                <h2>Направление Преподавание в начальных классах (44.02.02)</h2>
+                <h4>Направление Преподавание в начальных классах (44.02.02)</h4>
                 <ul className={classes.listStyle}>
                     {documents.map((document) => (
                     <li className={classes.linkStyle}>

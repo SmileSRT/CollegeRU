@@ -7,7 +7,7 @@ const StuCurators = () => {
         <Container className='my-5'>
             <div className={classes.header}>
                 <h1>Кураторы групп</h1>
-                <h2>Загрузить приказ о назначении кураторов</h2>
+                <h4>Загрузить приказ о назначении кураторов</h4>
                 <div className={classes.urlStyle}>
                     <a href='#'>Приказ о назначении кураторов групп.pdf</a>
                 </div>
