@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import classes from './aboutDocuments.module.css';
 import Navigation from '../UI/navigation/Navigation.jsx'
@@ -8,85 +8,107 @@ const AboutDocuments = () => {
     const states = [
         {
             name: 'Положение о внутреннем контроле качества подготовки специалиста в АНО ПО ГТК Знание',
-            link:
+            link:'states/001-5.pdf'
         },
         {
             name: 'Положение о ГИА',
-            link:
+            link:'states/001-6.pdf'
         },
         {
             name: 'Положение о зачислении в качестве экстернов',
-            link:
+            link:'states/001-7.pdf'
         },
         {
             name: 'Положение о педагогическом совете',
-            link:
+            link:'states/001-8.pdf'
         },
         {
             name: 'Положение о подготовительных курсах для поступающих',
-            link:
+            link:'states/001-9.pdf'
         },
         {
             name: 'Положение о порядке обучения по индивидуальному плану',
-            link:
+            link:'states/001-10.pdf'
         },
         {
             name: 'Положение о порядке осуществления индивидуального учета результатов освоения обущающимся образовательных программ',
-            link:
+            link:'states/001-11.pdf'
         },
         {
             name: 'Положение о порядке перевода, отчисления и восстановления обучающихся',
-            link:
+            link:'states/001-12.pdf'
         },
         {
             name: 'Положение о предметно-цикловой комиссии',
-            link:
+            link:'states/001-13.pdf'
         },
         {
             name: 'Положение о приемной комиссии',
-            link:
+            link:'states/001-14.pdf'
         },
         {
             name: 'Положение о проведении экзаменов, зачетов, пересдач, перевода обучающихся на следующий курс',
-            link:
+            link:'states/001-15.pdf'
         },
         {
             name: 'Положение о текущем контроле знаний и промежуточной аттестации',
-            link:
+            link:'states/001-16.pdf'
         },
         {
             name: 'Положение о формах обучения',
-            link:
+            link:'states/001-17.pdf'
         },
         {
             name: 'Положение об интернет-сайте',
-            link:
+            link:'states/001-18.pdf'
         },
         {
             name: 'Положение об обучении студентов-инвалидов',
-            link:
+            link:'states/001-19.pdf'
         },
         {
             name: 'Положение об организации выполнения и защиты курсовой работы',
-            link:
+            link:'states/001-20.pdf'
         },
         {
             name: 'Положение об электронной билиотеке',
-            link:
+            link:'states/001-21.pdf'
         },
         {
             name: 'Положение об электронном журнале',
-            link:
+            link:'states/001-22.pdf'
         },
         {
             name: 'Положение об учебной и производственной практике студентов',
-            link:
+            link:'states/001-23.pdf'
         },
         {
             name: 'Положение об общем собрании работников и студентов (совет колледжа)',
-            link:
+            link:'states/Положение-об-общем-собрании-работников-и-студентов-совет-колледжа.pdf'
         }
     ]
+
+    let caption = useState('')
+    const returnPath = (caption) => {
+        return 'http://localhost:9000/pdf/' + caption
+    }
+
+    const statesFiller = () => {
+      let div = document.createElement('div')
+      for (let i = 0; i < states.length; i++) {
+        div.innerHTML += `
+            <div class=${classes.urlStyle}>
+                <a href=${ returnPath(caption = 'documents/' + states[i].link) }>${states[i].name}</a>
+            </div>
+        `
+      }
+
+      document.getElementById('states').appendChild(div)
+    }
+
+    useEffect(() => {
+      statesFiller()
+    })
 
     return (
         <Container className='my-5'>
@@ -97,7 +119,7 @@ const AboutDocuments = () => {
                     <div className={classes.header}>
                         <h2>Устав образовательной организации</h2>
                             <div className={classes.urlStyle}>
-                                <a href="#">Устав образовательной организации</a>
+                                <a href="http://localhost:9000/pdf/founding_documents/Устав.pdf">Устав образовательной организации</a>
                             </div>
                             <h2>Лицензия на осуществление образовательной деятельности (с приложениями)</h2>
                             <div className={classes.urlStyle}>
@@ -112,74 +134,16 @@ const AboutDocuments = () => {
                             </div>
                             <h2>Учредительные документы</h2>
                             <div className={classes.urlStyle}>
-                                <a href="#">Лист записи единого государственного реестра юридических лиц</a>
+                                <a href="http://localhost:9000/pdf/founding_documents/Лист_Записи_Единого_Государственного_Реестра_Юридических_Лиц.pdf">Лист записи единого государственного реестра юридических лиц</a>
                             </div>
                             <div className={classes.urlStyle}>
-                                <a href="#">Свидетельство о постановке на учет в налоговом органе</a>
+                                <a href="http://localhost:9000/pdf/founding_documents/Свидетельство_О_Постановке_На_Учет_ФНО.pdf">Свидетельство о постановке на учет в налоговом органе</a>
                             </div>
                             <div className={classes.urlStyle}>
-                                <a href="#">Свидетельство о государственной регистрации</a>
+                                <a href="http://localhost:9000/pdf/founding_documents/Свидетельство_О_Регистрации.pdf">Свидетельство о государственной регистрации</a>
                             </div>
                             <h2>Локальные нормативные акты</h2>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
-                            </div>
-                            <div className={classes.urlStyle}>
-                                <a href="#"></a>
+                            <div id="states">
                             </div>
                         </div>
                     </div>
@@ -188,7 +152,7 @@ const AboutDocuments = () => {
                     <Navigation isShowed={true} />
                 </Col>
             </Row>
-            
+
         </Container>
     );
 }
