@@ -61,7 +61,7 @@ module.exports = {
         ],
       }, // Добавляем загрузчики стилей
       {
-        test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
+        test: /\.(png|jpe?g|gif|svg|webp|ico|pdf)$/i,
         type: mode === 'production' ? 'asset' : 'asset/resource', // В продакшен режиме
         // изображения размером до 8кб будут инлайнится в код
         // В режиме разработки все изображения будут помещаться в dist/assets
