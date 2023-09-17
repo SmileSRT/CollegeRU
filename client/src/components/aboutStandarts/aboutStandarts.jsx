@@ -80,7 +80,7 @@ const AboutStandarts = () => {
                     <div className={classes.header}>
                         <h1>Образовательные стандарты и требования</h1>
 
-                        <h2>Федеральные государственные образовательные стандарты</h2>
+                        <h4>Федеральные государственные образовательные стандарты</h4>
                         <ul className={classes.listStyle} id='documentList'> 
                         </ul>
 

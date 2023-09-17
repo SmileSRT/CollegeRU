@@ -2,6 +2,7 @@ import React from 'react';
 import logoFooter from '../../../public/images/LogoFooter.png'
 import classes from './Footer.module.css'
 import { Container, Row, Col} from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 const icons = require.context('../../../public/icons', false, /\.(png)$/);
 
 
@@ -69,7 +70,7 @@ const Footer = () => {
                     <h5 className={classes.h5Capture}>ЗНАНИЕ</h5>
                     <ul className={classes.listStyle}>
                         {about_college_list.map((element) => (
-                            <li><a className={classes.footerLink} href={element.route}>{element.content}</a></li>
+                            <li><Link className={classes.footerLink} to={element.route} onClick={window.scroll(0, 0)}>{element.content}</Link></li>
                         ))}
                     </ul>
                 </Col>
@@ -77,7 +78,7 @@ const Footer = () => {
                     <h5 className={classes.h5Capture}>ЖИЗНЬ КОЛЛЕДЖА</h5>
                     <ul className={classes.listStyle}>
                         {about_activity_list.map((element) => (
-                            <li><a className={classes.footerLink} href={element.route}>{element.content}</a></li>
+                            <li><Link className={classes.footerLink} to={element.route}>{element.content}</Link></li>
                         ))}
                     </ul>
                 </Col>
@@ -85,7 +86,7 @@ const Footer = () => {
                     <h5 className={classes.h5Capture}>КОНТАКТЫ</h5>
                     <ul className={classes.listStyle}>
                         {about_contact_list.map((element) => (
-                            <li><a className={classes.footerLink} href={element.route}>{element.content}</a></li>
+                            <li><Link className={classes.footerLink} to={element.route}>{element.content}</Link></li>
                         ))}
                     </ul>
                 </Col>

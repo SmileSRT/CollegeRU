@@ -3,6 +3,7 @@ import classes from './Specialties.module.css'
 const images = require.context('../../../public/images/specialities', false, /\.(png)$/);
 import { Col, Container, Row, Card } from 'react-bootstrap';
 import SpecialtiesPhones from '../UI/SpecialtiesPhones/SpecialtiesPhones.jsx';
+import { NavLink, Link} from 'react-router-dom';
 
 const specialties=[
     {
@@ -67,9 +68,9 @@ const Specialties = () => {
                 <Row className={classes.specialtiesBlock}>
                     {specialties.map((speciality) => (
                         <Col>
-                            <a className ={classes.specialties} href={speciality.route}>
+                            <Link className ={classes.specialties} to={speciality.route}>
                                 <img src={images(`./speciality${speciality.id}.png`)} alt={speciality.name}/>
-                            </a>
+                            </Link>
                         </Col>
                     ))}
                 </Row>

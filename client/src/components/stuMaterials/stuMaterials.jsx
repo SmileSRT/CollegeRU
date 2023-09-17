@@ -1,6 +1,7 @@
 import {React} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import classes from './stuMaterials.module.css'
+import classes from './stuMaterials.module.css';
+import {Link} from 'react-router-dom';
 const icons = require.context('../../../public/icons/practice', false, /\.(png)$/);
 
 const directions_practice = [
@@ -8,43 +9,36 @@ const directions_practice = [
         'name': 'advocate',
         'id': '40.02.01',
         'info': 'Юрист',
-        'route': 'materials/advocate',
     },
     {
         'name': 'doctor',
         'id': '34.02.01',
         'info': 'Сестринское дело',
-        'route': 'materials/doctor',
     },
     {
         'name': 'credit',
         'id': '38.02.01',
         'info': 'Экономика и бухгалтерский учет (по отраслям)',
-        'route': 'materials/credit',
     },
     {
         'name': 'preschool',
         'id': '44.02.01',
         'info': 'Дошкольное образование',
-        'route': 'materials/preschool',
     },
     {
         'name': 'teacher',
         'id': '44.02.02',
         'info': 'Преподавание в начальных классах',
-        'route': 'materials/teacher',
     },
     {
         'name': 'design',
         'id': '52.02.01',
         'info': 'Дизайн (по отраслям)',
-        'route': 'materials/design',
     },
     {
         'name': 'pharmacist',
         'id': '34.02.01',
         'info': 'Фармация',
-        'route': 'materials/pharmacist',
     }
 ]
 
@@ -82,13 +76,13 @@ const StuMaterials = () => {
                 <Row>
                     {directions_practice.map((direction) => (
                         <Col className={classes.practiceBlock} xs={5} xl={2}>
-                            <a href={direction.route}>
+                            <Link to={direction.name}>
                                 <img src={icons('./' + direction.name + 'Icon.png')} className={classes.iconStyle} alt={direction.info}></img>
                                 <div className={classes.textPractice}>
                                     <p>{direction.id}</p>
                                     <p>{direction.info}</p>
                                 </div>
-                            </a>
+                            </Link>
                         </Col>
                     ))}
                 </Row>

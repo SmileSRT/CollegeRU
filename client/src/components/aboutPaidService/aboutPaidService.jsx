@@ -64,12 +64,12 @@ const AboutPaidService = () => {
                 <Col lg={8}>
                     <div className={classes.header}>
                         <h1>Платные образовательные услуги</h1>
-\
-                        <h2>Стоимость обучения 2017-2024</h2>
+
+                        <h4>Стоимость обучения 2017-2024</h4>
 
                         <div className={classes.header} id='pdfList'></div>   
 
-                        <h2>Образец договора об указании платных образовательных услуг</h2>
+                        <h4>Образец договора об указании платных образовательных услуг</h4>
 
                             <div className={classes.urlStyle}>
                                 <a href={process.env.REACT_APP_API_URL + '/pdf/paid_service/dogovor_dpo.docx'}>Договор об указании платных образовательных услуг</a>

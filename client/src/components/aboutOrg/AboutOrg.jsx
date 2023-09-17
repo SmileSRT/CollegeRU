@@ -4,6 +4,7 @@ import distance from '../../../public/icons/learnIcon.png'
 import gallery from '../../../public/icons/galleryIcon.png'
 import classes from './AboutOrg.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import Specialties from '../specialties/Specialties.jsx';
 
 const AboutOrg = () => {
@@ -32,13 +33,13 @@ const AboutOrg = () => {
                     <h1>Онлайн-ресурсы</h1>
                     <Row>
                         <Col className={classes.blockStyle}>
-                            <a href="/contact">
+                            <Link to="/contact">
                                 <img src = {telephone} className={classes.iconStyle}></img>
                                 <p>
                                 Контакты<br/>
                                 Схема проезда
                                 </p>  
-                            </a>
+                            </Link>
                         </Col>                
                         <Col className={classes.blockStyle}>
                             <a href="#">

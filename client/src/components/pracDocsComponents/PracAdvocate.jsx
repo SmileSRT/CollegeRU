@@ -3,11 +3,26 @@ import {Container} from 'react-bootstrap';
 import classes from './PracticeDocs.module.css'
 
 const documents = [
-    'Договор о проведении практики',
-    'Направление для прохождения практики',
-    'Индивидуальное задание на практику',
-    'Дневник прохождения практики',
-    'Отчет о прохождении практики',
+    {
+        name:'Договор о проведении практики',
+        link:'#'
+    },
+    {
+        name:'Направление для прохождения практики',
+        link:'#'
+    },
+    {
+        name:'Индивидуальное задание на практику',
+        link:'#'
+    },
+    {
+        name:'Дневник прохождения практики',
+        link:'#'
+    },
+    {
+        name:'Отчет о прохождении практики',
+        link:'#'
+    }
 ]
 
 const PracAdvocate = () => {
@@ -19,7 +34,7 @@ const PracAdvocate = () => {
                 <ul className={classes.listStyle}>
                     {documents.map((document) => (
                     <li className={classes.linkStyle}>
-                        <a href=''>{document}</a>
+                        <a href={document.link}>{document.name}</a>
                     </li>
                 ))}
                 </ul>

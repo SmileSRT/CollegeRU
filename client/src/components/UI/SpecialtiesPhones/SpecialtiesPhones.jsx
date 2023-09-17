@@ -4,6 +4,7 @@ const images = require.context('../../../../public/images/specialities', false, 
 // import Swiper core and required components
 import SwiperCore, {A11y, Navigation, Pagination, Scrollbar} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {Link} from 'react-router-dom';
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css'
@@ -50,20 +51,6 @@ const specialties=[
 ]
 
 let width = window.innerWidth
-
-// const [isMobile, setIsMobile] = useState(false);
-
-//     useEffect(() => {
-//       window.screen.width <= 1199 ? setIsMobile(true) : setIsMobile(false);
-//     }, [window.screen.width]);
-
-//     function detectWindowSize() {
-//         window.innerWidth <= 1199 ? setIsMobile(true) : setIsMobile(false);        
-//     }
-    
-//     window.onresize = detectWindowSize;
-
-
 
 const SpecialtiesPhones = () => {
     
@@ -118,9 +105,9 @@ const SpecialtiesPhones = () => {
             >
                 {specialties.map((specialty) => (
                     <SwiperSlide>
-                        <a href={specialty.route}>
+                        <Link to={specialty.route}>
                             <img className={classes.speciality} src={images(`./speciality${specialty.id}.png`)} alt={specialty.name}/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
                 ))}
                 

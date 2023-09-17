@@ -9,10 +9,6 @@
 }
 
 
-.listStyle > li {
-    padding: 5px 0;
-}
-
 .linkStyle > a{
     text-decoration: none;
     color: #ff4d11;

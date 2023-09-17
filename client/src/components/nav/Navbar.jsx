@@ -3,7 +3,7 @@ import orgLogo from '../../../public/images/logoWithCapture.png'
 import handicapVersionIcon from '../../../public/images/handicapVersion.png'
 import classes from './Navbar.module.css'
 import { Navbar, Container, NavDropdown, Nav, NavItem, Dropdown, Card } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link} from 'react-router-dom';
 import ListGroup from 'react-bootstrap/ListGroup';
 import NavbarPhones from '../UI/navbarPhones/NavbarPhones.jsx';
 import Search from '../UI/search/Search.jsx';
@@ -57,30 +57,30 @@ const NavBar = () => {
                 <div className={classes.navComponent}>
                     <Navbar className='navbar-light'>
                         <Container>
-                            <Navbar.Brand href="/">
+                            <NavLink to="/">
                                 <img src={orgLogo} alt="" width="110" height="auto" />
-                            </Navbar.Brand>
+                            </NavLink>
                         <div className='row mx-5'>
                             <Nav className='col mx-4'>
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealAbiturient(abiturientItems=false)}}>
-                                <a className='nav-link'>Абитуриентам</a>
+                                <NavLink className={classes.navLink}>Абитуриентам</NavLink>
                             </div>
         
                             {!abiturientItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealAbiturient(abiturientItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/abiturients/reception">Приемная комиссия 2023</a>
+                                        <NavLink className={classes.navLink} to="/abiturients/reception">Приемная комиссия 2023</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/abiturients/courses'>Подготовительные курсы</a>
+                                        <NavLink className={classes.navLink} to='/abiturients/courses'>Подготовительные курсы</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/abiturients/opendoors'>Дни открытых дверей</a>
+                                        <NavLink className={classes.navLink} to='/abiturients/opendoors'>Дни открытых дверей</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/abiturients/materials'>Дополнительные материалы</a>
+                                        <NavLink className={classes.navLink} to='/abiturients/materials'>Дополнительные материалы</NavLink>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -88,19 +88,19 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealStudent(studentItems=false)}}>
-                                <a className='nav-link'>Студентам</a>
+                                <NavLink className={classes.navLink}>Студентам</NavLink>
                             </div>
         
                             {!studentItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealStudent(studentItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/students/pay'>Оплата обучения</a>
+                                        <NavLink className={classes.navLink} to='/students/pay'>Оплата обучения</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/students/curators'>Кураторы групп</a>
+                                        <NavLink className={classes.navLink} to='/students/curators'>Кураторы групп</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/students/materials'>Дополнительные материалы</a>
+                                        <NavLink className={classes.navLink} to='/students/materials'>Дополнительные материалы</NavLink>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -109,13 +109,13 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEmployee(employeeItems=false)}}>
-                                <a className='nav-link'>Сотрудникам</a>
+                                <NavLink className={classes.navLink}>Сотрудникам</NavLink>
                             </div>
         
                             {!employeeItems ? (
                                 <ListGroup variant='flush' className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealEmployee(employeeItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/employees/employment">Трудоустройство</a>
+                                        <NavLink className={classes.navLink} to="/employees/employment">Трудоустройство</NavLink>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -123,33 +123,33 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealSpecialites(specItems=false)}}>
-                                <a className='nav-link'>Направления</a>
+                                <NavLink className={classes.navLink}>Направления</NavLink>
                             </div>
                             {!specItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealSpecialites(specItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/directions/advocate">Юрист</a>
+                                        <NavLink className={classes.navLink} to="/directions/advocate">Юрист</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/credit'>Бухгалтер</a>
+                                        <NavLink className={classes.navLink} to='/directions/credit'>Бухгалтер</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/teacher'>Учитель начальных классов</a>
+                                        <NavLink className={classes.navLink} to='/directions/teacher'>Учитель начальных классов</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/preschool'>Дошкольное образование</a>
+                                        <NavLink className={classes.navLink} to='/directions/preschool'>Дошкольное образование</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/doctor'>Сестринское дело</a>
+                                        <NavLink className={classes.navLink} to='/directions/doctor'>Сестринское дело</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/design'>Дизайн</a>
+                                        <NavLink className={classes.navLink} to='/directions/design'>Дизайн</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/pharmacist'>Фармация</a>
+                                        <NavLink className={classes.navLink} to='/directions/pharmacist'>Фармация</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/directions/additional'>Дополнительное образование</a>
+                                        <NavLink className={classes.navLink} to='/directions/additional'>Дополнительное образование</NavLink>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -164,55 +164,55 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealOrg(orgItems=false)}}>
-                                <a className='nav-link'>Сведения об организации</a>
+                                <NavLink className={classes.navLink}>Сведения об организации</NavLink>
                             </div>
         
                             {!orgItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealOrg(orgItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}}>
-                                        <a className='nav-link' href="/about/common">Основные сведения</a>
+                                        <NavLink className={classes.navLink} to="/about/common">Основные сведения</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/structure'>Структура и органы управления</a>
+                                        <NavLink className={classes.navLink} to='/about/structure'>Структура и органы управления</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/documents'>Документы</a>
+                                        <NavLink className={classes.navLink} to='/about/documents'>Документы</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/education'>Образование</a>
+                                        <NavLink className={classes.navLink} to='/about/education'>Образование</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/standarts'>Образовательные стандарты и требования</a>
+                                        <NavLink className={classes.navLink} to='/about/standarts'>Образовательные стандарты и требования</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/professors'>Руководство. Педагогический состав</a>
+                                        <NavLink className={classes.navLink} to='/about/professors'>Руководство. Педагогический состав</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/techSupport'>Материально-техническое обеспечение и оснащенность образовательного процесса</a>
+                                        <NavLink className={classes.navLink} to='/about/techSupport'>Материально-техническое обеспечение и оснащенность образовательного процесса</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/paidService'>Платные образовательные услуги</a>
+                                        <NavLink className={classes.navLink} to='/about/paidService'>Платные образовательные услуги</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/finance'>Финансово-хозяйственная деятельность</a>
+                                        <NavLink className={classes.navLink} to='/about/finance'>Финансово-хозяйственная деятельность</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/vacanciens'>Вакантные места для приема (перевода) обучающихся</a>
+                                        <NavLink className={classes.navLink} to='/about/vacanciens'>Вакантные места для приема (перевода) обучающихся</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/environment'>Доступная среда</a>
+                                        <NavLink className={classes.navLink} to='/about/environment'>Доступная среда</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/international'>Международное сотрудничество</a>
+                                        <NavLink className={classes.navLink} to='/about/international'>Международное сотрудничество</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/license'>Устав, лицензия, аккредитация</a>
+                                        <NavLink className={classes.navLink} to='/about/license'>Устав, лицензия, аккредитация</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/openness'>Информационная открытость</a>
+                                        <NavLink className={classes.navLink} to='/about/openness'>Информационная открытость</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/about/partners'>Партнеры</a>
+                                        <NavLink className={classes.navLink} to='/about/partners'>Партнеры</NavLink>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -220,22 +220,22 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown} onMouseEnter={() => {closeItems(); revealEducation(educationItems=false)}}>
-                                <a className='nav-link'>Учебная деятельность</a>
+                                <NavLink className={classes.navLink}>Учебная деятельность</NavLink>
                             </div>
         
                             {!educationItems ? (
                                 <ListGroup variant="flush" className={classes.itemLined} style={{width: "auto" + 50}} onMouseLeave={() => {closeItems(); revealEducation(educationItems=true)}}>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href="/activity/achivements">Наши достижения</a>
+                                        <NavLink className={classes.navLink} to="/activity/achivements">Наши достижения</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/activity/principles'>Наши принципы</a>
+                                        <NavLink className={classes.navLink} to='/activity/principles'>Наши принципы</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/activity/hymn'>Гимн колледжа</a>
+                                        <NavLink className={classes.navLink} to='/activity/hymn'>Гимн колледжа</NavLink>
                                     </ListGroup.Item>
                                     <ListGroup.Item style={{border: "none"}} className='py-0'>
-                                        <a className='nav-link' href='/activity/photogallery'>Фотогалерея</a>
+                                        <NavLink className={classes.navLink} to='/activity/photogallery'>Фотогалерея</NavLink>
                                     </ListGroup.Item>
                                 </ListGroup>) : null
                             }
@@ -243,13 +243,13 @@ const NavBar = () => {
         
                             <Card  className={classes.navDropdown} >
                             <div className={classes.navDropdown}>
-                                <a className='nav-link' href="/news">Новости</a>
+                                <NavLink className={classes.navLink} to="/news">Новости</NavLink>
                             </div>
                             </Card>
         
                             <Card  className={classes.navDropdown}>
                             <div className={classes.navDropdown}>
-                                <a className='nav-link' href="/contact">Контакты</a>
+                                <NavLink className={classes.navLink} to="/contact">Контакты</NavLink>
                             </div>
                             </Card>
                             </Nav>
@@ -262,7 +262,7 @@ const NavBar = () => {
                                 <img src={handicapVersionIcon} alt="" width="25" height="25" />
                             </NavLink>
             
-                            {/* <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
+                            {/* <NavLink className='px-2' to='#' onClick={() => setElementVisible(!elementVisible)}>
                                 <img  src={webCabinetIcon} alt="" width="25" height="25" />
                             </NavLink> */}
                             
@@ -276,7 +276,7 @@ const NavBar = () => {
                 </Navbar>
                 {/* <Container style={{position: "relative"}} >                 
                     {!elementVisible ? (
-                        <Auth className={classes.authBlock}/>) :
+                        <NavLinkuth className={classes.authBlock}/>) :
                         null
                     }
                 </Container> */}
@@ -290,14 +290,3 @@ const NavBar = () => {
             );
         }
         export default NavBar;
-
-
-
-
-
-
-
-
-
-
-
