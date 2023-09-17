@@ -8,8 +8,22 @@
     margin-bottom: 20px;
 }
 
+.listStyle {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.listStyle > li {
+    padding: 5px 0;
+}
 
 .header > h4 {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.linkStyle > a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #ff4d11;
 }

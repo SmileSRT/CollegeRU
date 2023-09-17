@@ -25,20 +25,20 @@ const aboutEducation = (props) => {
     ]
 
     let educational_programms_array2022 = [
-        'ПООП 34.02.01 Сестринское дело 2022-2025гг',
-        'ОПОП 38.02.01 Экономика и бухгалтерский учет 2022-2025гг',
-        'ОПОП 40.02.01 Право и организация социального обеспечения 2022-2025гг',
-        'ОПОП 44.02.01 Дошкольное образование 2022-2025гг',
-        'ОПОП 44.02.02 Преподавание в начальных классах 2022-2025гг',
-        'ОПОП 54.02.01 Дизайн 2022-2025гг',
+        'ПООП 34.02.01 Сестринское дело 2022-2025',
+        'ОПОП 38.02.01 Экономика и бухгалтерский учет 2022-2025',
+        'ОПОП 40.02.01 Право и организация социального обеспечения 2022-2025',
+        'ОПОП 44.02.01 Дошкольное образование 2022-2025',
+        'ОПОП 44.02.02 Преподавание в начальных классах 2022-2025',
+        'ОПОП 54.02.01 Дизайн 2022-2025',
     ]
     let educational_programms_array2021 = [
-        'ОПОП 34.02.01 Сестринское дело 2021-2025гг',
-        'ОПОП 38.02.01 Экономика и бухгалтерский учет 2021-2024гг',
-        'ОПОП 40.02.01 Право и организация социального обеспечения 2021-2024гг',
-        'ОПОП 44.02.01 Дошкольное образование 2021-2025гг',
-        'ОПОП 44.02.02 Преподавание в начальных классах 2021-2025гг',
-        'ОПОП 54.02.01 Дизайн 2021-2025гг'
+        'ОПОП 34.02.01 Сестринское дело 2021-2025',
+        'ОПОП 38.02.01 Экономика и бухгалтерский учет 2021-2024',
+        'ОПОП 40.02.01 Право и организация социального обеспечения 2021-2024',
+        'ОПОП 44.02.01 Дошкольное образование 2021-2025',
+        'ОПОП 44.02.02 Преподавание в начальных классах 2021-2025',
+        'ОПОП 54.02.01 Дизайн 2021-2025'
     ]
 
     let educational_process_graffic_array2022_2023 = [
@@ -87,7 +87,7 @@ const aboutEducation = (props) => {
             <div class=${classes.urlStyle} >
                 <a 
                     class='education-links'
-                    href=${ returnPath(caption = folder + '/' + headerNames[year].slice(-4) + '/' + arrayYEAR[i].split(' ').join('-') + '..pdf') }
+                    href=${ returnPath(caption = folder + '/' + headerNames[year].slice(-4) + '/' + arrayYEAR[i].split(' ').join('-') + '.pdf') }
                     style="font-size: ${props.Model ? props.Model.fontSize : fontSize}; color: ${props.Model ? props.Model.color: color}"
                     >${arrayYEAR[i]}</a>
             </div>
@@ -109,7 +109,22 @@ const aboutEducation = (props) => {
         // 2021
         createLink(headerNames, 4, curriculum_graffic_array2021, 'curriculum_graffic')
         // 2020
-        createLink(headerNames, 5, curriculum_graffic_array2020, 'curriculum_graffic')
+        let div = document.createElement('div')
+        div.setAttribute('class', classes.header)
+        div.innerHTML = `<h2>${headerNames[5]}<h2>`
+        for (let i = 0; i < curriculum_graffic_array2020.length; i++) {
+            div.innerHTML += `
+            <div class=${classes.urlStyle} >
+                <a 
+                    class='education-links'
+                    href=${ returnPath(caption = 'curriculum_graffic/' + headerNames[5].slice(-4) + '/' + curriculum_graffic_array2020[i].split(' ').join('-') + '.xlsx') }
+                    style="font-size: ${props.Model ? props.Model.fontSize : fontSize}; color: ${props.Model ? props.Model.color: color}"
+                    >${curriculum_graffic_array2020[i]}</a>
+            </div>
+        `
+        }
+
+        document.getElementById('PDFArray').appendChild(div)
     }, [])
 
     return (
