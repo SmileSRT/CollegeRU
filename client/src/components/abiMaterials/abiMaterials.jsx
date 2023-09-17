@@ -37,7 +37,7 @@ const agreements = [
     },
 ]
 
-<<<<<<< HEAD
+
 const applications = [
     {
         name:'Заявление о приеме',
@@ -47,14 +47,7 @@ const applications = [
         name:'Заявление по физкультуре для самообразования',
         link:'Заявление-по-физкультуре-для-самообразования.pdf'
     }
-=======
-const linkStatementPdfs = 'http://localhost:9000/pdf/abiturients_materials/statements/'
-const statements = [
-    'Заявление о приеме',
-    'Заявление по физкультуре для самообразования',
->>>>>>> main
 ]
-
 
 const downloads = [
     {
@@ -138,38 +131,19 @@ useEffect(() => {
             <div className={classes.textStyle}>
                 <h1>Дополнительные материалы</h1>
 
-<<<<<<< HEAD
+
                 <h2>Договоры</h2>
                 <ul className={classes.listStyle} id='agreementList'>
-                    {/* {
-                        agreements.map((agreement) => (
-=======
-                <h4>Договоры</h4>
-                <ul className={classes.listStyle}>
-                    {agreements.map((agreement) => (
->>>>>>> main
-                        <li className={classes.linkStyle}>
-                            <a href={ returnPath(caption = 'agreement/' + abiList[i]) }>{agreement}</a>
-                        </li>
-                    ))} */}
+             
                 </ul>
                 
-<<<<<<< HEAD
+
                 <h2>Заявления</h2>
                 <ul className={classes.listStyle} id='applicationsList'>
-                    {/* {statements.map((statement) => (
-=======
-                <h4>Заявления</h4>
-                <ul className={classes.listStyle}>
-                    {statements.map((statement) => (
->>>>>>> main
-                        <li className={classes.linkStyle}>
-                            <a href={linkStatementPdfs + statement.split(' ').join('_') + '.pdf'} target="_blank">{statement}</a>
-                        </li>
-                    ))} */}
+
+
                 </ul>
 
-<<<<<<< HEAD
                 <h2>Материалы для скачивания</h2>
                 <ul className={classes.listStyle} id='downloadList'>
                     {/* {materials.map((material) => (
