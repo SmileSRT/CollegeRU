@@ -74,15 +74,19 @@ const Contact = () => {
             <a href="https://yandex.ru/maps/org/kolledzh_znaniye/1145664545/?ll=37.550109%2C55.427883&z=16" className={classes.urlStyle}>
                 Подольск, ул. Комсомольская, 1, пом. 1
             </a>
-            <div className={classes.mapStyle}>
-                <img src={routeToCollege2} className={classes.imageStyle}></img>
-                <img src={routeToCollege1} className={classes.imageStyle}></img>
-                <iframe 
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac13395645263bb2a2d0f87a4fac94cbc2e98fde2aa605fa00a04ba5c47aee961&amp;source=constructor" className={classes.mapSize}
-                frameborder="0"
-                >
-                </iframe>
-            </div>
+            <Row className={classes.mapStyle}>
+                <Col xs={12} sm={6} lg={8} xl={7}>
+                    <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac13395645263bb2a2d0f87a4fac94cbc2e98fde2aa605fa00a04ba5c47aee961&amp;source=constructor" className={classes.mapSize}
+                    frameborder="0"
+                    >
+                    </iframe>
+                </Col>
+                <Col>
+                    <img src={routeToCollege2} className={classes.imageStyle}></img>
+                    <img src={routeToCollege1} className={classes.imageStyle}></img>
+                </Col>
+            </Row>
             <h4 className={classes.important}>ПРИМЕЧАНИЕ!</h4>
             <p className={classes.textStyle}>Колледж "ЗНАНИЕ" не имеет филиалов и представительств по другим адресам</p>
         </Container>

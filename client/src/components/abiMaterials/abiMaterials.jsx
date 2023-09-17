@@ -25,7 +25,7 @@ const agreements = [
     'Фармацевт 11 классов очно-заочная форма обучения',
 ]
 
-
+const linkStatementPdfs = 'http://localhost:9000/pdf/abiturients_materials/statements/'
 const statements = [
     'Заявление о приеме',
     'Заявление по физкультуре для самообразования',
@@ -47,7 +47,7 @@ const AbiMaterials = () => {
             <div className={classes.textStyle}>
                 <h1>Дополнительные материалы</h1>
 
-                <h2>Договоры</h2>
+                <h4>Договоры</h4>
                 <ul className={classes.listStyle}>
                     {agreements.map((agreement) => (
                         <li className={classes.linkStyle}>
@@ -56,16 +56,16 @@ const AbiMaterials = () => {
                     ))}
                 </ul>
                 
-                <h2>Заявления</h2>
+                <h4>Заявления</h4>
                 <ul className={classes.listStyle}>
                     {statements.map((statement) => (
                         <li className={classes.linkStyle}>
-                            <a href="">{statement}</a>
+                            <a href={linkStatementPdfs + statement.split(' ').join('_') + '.pdf'} target="_blank">{statement}</a>
                         </li>
                     ))}
                 </ul>
 
-                <h2>Материалы для скачивания</h2>
+                <h4>Материалы для скачивания</h4>
                 <ul className={classes.listStyle}>
                     {materials.map((material) => (
                         <li className={classes.linkStyle}>

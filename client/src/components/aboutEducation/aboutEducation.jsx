@@ -3,8 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import classes from './aboutEducation.module.css';
 import Navigation from '../UI/navigation/Navigation.jsx';
 
-const aboutEducation = () => {
+const aboutEducation = (props) => {
     let caption = useState('')
+
+
+    const fontSize= 20
+    const color= "#ff4d11"
+
+    const isShowed = props.isShowed
 
     const returnPath = (caption) => {
         return 'http://localhost:9000/education/' + caption
@@ -75,11 +81,15 @@ const aboutEducation = () => {
     const createLink = (headerNames, year, arrayYEAR, folder) => {
         let div = document.createElement('div')
         div.setAttribute('class', classes.header)
-        div.innerHTML = `<h2>${headerNames[year]}<h2>`
+        div.innerHTML = `<h4>${headerNames[year]}<h4>`
         for (let i = 0; i < arrayYEAR.length; i++) {
             div.innerHTML += `
-            <div class=${classes.urlStyle}>
-                <a href=${ returnPath(caption = folder + '/' + headerNames[year].slice(-4) + '/' + arrayYEAR[i].split(' ').join('-') + '..pdf') }>${arrayYEAR[i]}</a>
+            <div class=${classes.urlStyle} >
+                <a 
+                    class='education-links'
+                    href=${ returnPath(caption = folder + '/' + headerNames[year].slice(-4) + '/' + arrayYEAR[i].split(' ').join('-') + '..pdf') }
+                    style="font-size: ${props.Model ? props.Model.fontSize : fontSize}; color: ${props.Model ? props.Model.color: color}"
+                    >${arrayYEAR[i]}</a>
             </div>
         `
         }
@@ -108,17 +118,17 @@ const aboutEducation = () => {
                 <Col lg={8}>
                     <div className={classes.header}>
                         <h1>Образование</h1>
-                        <div className={classes.header} id='PDFArray'>
+                        <div className = {classes.header} id='PDFArray'>
 
                         </div>
                     </div>
                     <div className={classes.header}>
-                        <h2>Сведения о языке, на котором осуществляется обучение</h2>
+                        <h4>Сведения о языке, на котором осуществляется обучение</h4>
                         <p>Обучение осуществляется на русском языке</p>
                     </div>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed = {isShowed} />
                 </Col>
             </Row>
         </Container>

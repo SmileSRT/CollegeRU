@@ -6,13 +6,13 @@ import AboutEducation from '../components/aboutEducation/aboutEducation.jsx'
 
 
 const aboutEducation = (props) => {
-
+    const isShowed = props.isShowed
 
     document.title = props.title
     return( 
         <div>
             <Navbar/>
-                <AboutEducation/>
+                <AboutEducation isShowed = {true} />
             <Footer/>
         </div>
     );

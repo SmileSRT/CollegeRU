@@ -50,7 +50,7 @@ const AboutLicense = () => {
                                     </a>
                                 </td>
                                 <td className={classes.infoStyle}>
-                                    <a href={document.PDFurl} className={classes.linkStyle}><h2>{document.name}</h2></a>
+                                    <a href={document.PDFurl} className={classes.linkStyle}><h5>{document.name}</h5></a>
                                     <p>{document.info}</p>
                                     <p>{document.valid}</p>
                                 </td>
@@ -59,7 +59,7 @@ const AboutLicense = () => {
                     </Table>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
 

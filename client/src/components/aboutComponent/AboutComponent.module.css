@@ -1,15 +1,19 @@
+
 .aboutBlock > h1 {
     margin-bottom: 20px;
 }
 
+
 .aboutBlock > h2 {
-    font-size: 18pt;
     margin-bottom: 10px;
+}
+
+.aboutBlock > h1 {
+    margin-bottom: 20px;
 }
 
 .aboutBlock > p {
     color: #575757;
-    
 }
 
 .list {

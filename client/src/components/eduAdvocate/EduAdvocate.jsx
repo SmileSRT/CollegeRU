@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import classes from './EduAdvocate.module.css'
 import iconDone from '../../../public/icons/done.png'
+import SpecialtiesNav from '../UI/specialtiesNav/specialtiesNav.jsx';
 
 const EduAdvocate = () => {
 
@@ -29,25 +30,19 @@ const EduAdvocate = () => {
                 <Row className={classes.infoBlock}>
                     <Col className={classes.parametersBlock} lg={2}>
                         <h5>Срок обучения</h5>
-                        <p>
-                            1 год 10 мес.<br/>
-                            —<br/>
-                            2 года 10 мес.
-                        </p>
+                        <p>1 год 10 мес.</p>
+                        <p>—</p>
+                        <p>2 года 10 мес.</p>
                     </Col>
                     <Col className={classes.parametersBlock} lg={2}>
                         <h5>Стоимость</h5>
-                        <p>
-                            От 52.000 руб<br/>
-                            До 98.000 руб
-                        </p>
+                        <p>От 52.000 руб</p>
+                        <p>До 98.000 руб</p>
                     </Col>
                     <Col className={classes.parametersBlock} lg={2}>
                         <h5>Форма</h5>
-                        <p>
-                            Очная<br/>
-                            Заочная
-                        </p>
+                        <p>Очная</p>
+                        <p>Заочная</p>
                     </Col>
                     <Col className={classes.parametersBlock} lg={2}>
                         <h5>Итог</h5>
@@ -55,10 +50,8 @@ const EduAdvocate = () => {
                     </Col>
                     <Col className={classes.parametersBlock} lg={2}>
                         <h5>Перспектива</h5>
-                        <p>
-                            Трудоустройство<br/>
-                            Поступление в ВУЗ без экзаменов
-                        </p>
+                        <p>Трудоустройство</p>
+                        <p>Поступление в ВУЗ без экзаменов</p>
                     </Col>
                 </Row>
                 
@@ -88,6 +81,11 @@ const EduAdvocate = () => {
                         </p>
                     </Col>
                 </Row>
+
+                <div className={classes.header}>
+                    <h1>Хотите изучить больше?</h1>
+                    <SpecialtiesNav/>
+                </div>
 
                 <div className={classes.header}>
                     <h1>Как к нам поступить?</h1>

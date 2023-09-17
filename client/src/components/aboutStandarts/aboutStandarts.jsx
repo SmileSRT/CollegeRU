@@ -10,7 +10,7 @@ const AboutStandarts = () => {
                 <Col lg={8}>
                     <div className={classes.header}>
                         <h1>Образовательные стандарты и требования</h1>
-                        <h2>Федеральные государственные образовательные стандарты</h2>
+                        <h4>Федеральные государственные образовательные стандарты</h4>
                         <div className={classes.urlStyle}> 
                             <a href='#'>ФГОС 54.02.01 Дизайн от 5 мая 2022 года. Приказ №308.pdf</a>
                         </div>
@@ -47,7 +47,7 @@ const AboutStandarts = () => {
                     </div>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
     </Container>

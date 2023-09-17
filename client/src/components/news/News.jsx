@@ -31,20 +31,6 @@ const News = () => {
                     </Row>
 
                 </Col>
-                <Col lg={4} className={classes.headers}>
-                    <h2>Социальные сети</h2>
-                    <ul className={classes.listStyle}>
-                        <li className={classes.linkStyle}>
-                            <a href='https://vk.com/gtk.znanie'>ВКонтакте</a>
-                        </li>
-                        <li className={classes.linkStyle}>
-                            <a href='https://www.youtube.com/@user-zq4sw2qf2k'>YouTube</a>
-                        </li>
-                        <li className={classes.linkStyle}>
-                            <a href='/telegram'>Telegram</a>
-                        </li>
-                    </ul>
-                </Col>
             </Row>
         </Container>
     )

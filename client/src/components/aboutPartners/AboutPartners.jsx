@@ -13,12 +13,12 @@ const AboutPartners = () => {
 
                     <div className={classes.partnerBlock}>
                         <img src={partnerImage} alt="Сасовское летное училище"></img>
-                        <h2>Сасовское имени Героя Советского Союза Тарана Г.А. лётное училище гражданской авиации</h2>
+                        <h4>Сасовское имени Героя Советского Союза Тарана Г.А. лётное училище гражданской авиации</h4>
                         <p>Адрес в сети интернет: <a href='https://www.sasovoavia.ru/' className={classes.linkStyle}>https://www.sasovoavia.ru</a></p>
                     </div>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
 

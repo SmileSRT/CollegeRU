@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './EduDesign.module.css'
 import iconDone from '../../../public/icons/done.png'
+import SpecialtiesNav from '../UI/specialtiesNav/specialtiesNav.jsx';
 
 const EduDesign = () => {
 
@@ -85,6 +86,11 @@ const EduDesign = () => {
                         <p>Начертательная геометрия</p>
                     </Col>
                 </Row>
+
+                <div className={classes.header}>
+                    <h1>Хотите изучить больше?</h1>
+                    <SpecialtiesNav/>
+                </div>
 
                 <div className={classes.header}>
                     <h1>Как к нам поступить?</h1>

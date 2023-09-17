@@ -9,11 +9,11 @@ const AboutFinance = () => {
             <Row>
                 <Col lg={8} className={classes.header}>
                     <h1>Финансово-хозяйственная деятельность</h1>
-                    <h2>План финансово-хозяйственной деятельности</h2>
+                    <h4>План финансово-хозяйственной деятельности</h4>
                     <a href="#" className={classes.linkStyle}>План финансово-хозяйственной деятельности на 2020 год</a>
                 </Col>
                 <Col lg={4}>
-                    <Navigation/>
+                    <Navigation isShowed={true} />
                 </Col>
             </Row>
 

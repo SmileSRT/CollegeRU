@@ -3,14 +3,9 @@
 }
 
 
-.header > h2{
-    font-size: 18pt;
-    margin: 20px 0;
-}
-
-
-.header > h3{
-    font-size: 20px;
+.header > h4{
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -25,11 +20,20 @@
 
 .linkStyle {
     color: #ff4d11;
-    text-decoration: none; 
-    font-size: 20px; 
+    text-decoration: none;
 }
 
 
 .linkStyle:hover {
     color: #fc7b50;
+}
+
+
+@media((min-width: 320px) and (max-width: 450px)){
+    .imageStyle {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+        float: none;
+    }
 }

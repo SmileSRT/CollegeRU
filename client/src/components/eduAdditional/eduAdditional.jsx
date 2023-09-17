@@ -101,9 +101,9 @@ const EduAdditional = () => {
         return(
         <Container className='my-5'>
             <h1>Дополнительное образование</h1>
-            <h2 className={classes.header}>Утвержденные программы дополнительного образования на 2021-2022 учебный год</h2>
-            <h3>Профессиональная переподготовка</h3>
-            <Table className={classes.tableStyle}>
+            <h4 className={classes.header}>Утвержденные программы дополнительного образования на 2021-2022 учебный год</h4>
+            <h5>Профессиональная переподготовка</h5>
+            <Table responsive="lg" bordered="true" className={classes.tableStyle}>
                 <thead>
                     <tr>
                         <th>Название программы</th>
@@ -143,8 +143,8 @@ const EduAdditional = () => {
                 </tbody>
             </Table>
             
-            <h3>Курсы повышения квалификации</h3>
-            <Table className={classes.tableStyle}>
+            <h5>Курсы повышения квалификации</h5>
+            <Table responsive="lg" bordered="true" className={classes.tableStyle}>
                 <thead>
                     <tr>
                         <th>Название программы</th>
@@ -162,8 +162,8 @@ const EduAdditional = () => {
                     </tr>
                 </tbody>
             </Table>
-            <h3>Подготовительные курсы для поступающих в колледж</h3>
-            <Table className={classes.tableStyle}>
+            <h5>Подготовительные курсы для поступающих в колледж</h5>
+            <Table responsive="lg" bordered="true" className={classes.tableStyle}>
                 <thead>
                     <tr>
                         <th>Название программы</th>
@@ -176,7 +176,7 @@ const EduAdditional = () => {
                         <tr data-index={index}>
                             <td>{course.name}</td>
                             <td>4 месяца/64 часа</td>
-                            <td>3.000 руб.</td>
+                            <td>3.000 руб./месяц</td>
                         </tr>
                     ))}
                 </tbody>

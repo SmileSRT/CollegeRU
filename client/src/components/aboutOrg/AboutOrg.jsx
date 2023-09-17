@@ -28,11 +28,11 @@ const AboutOrg = () => {
                         позитива человек может развиваться!
                     </p>
                 </Col>
-                <Col className = {classes.infoBlock} lg = {6}>
+                <Col className = {classes.infoBlock} lg={6}>
                     <h1>Онлайн-ресурсы</h1>
                     <Row>
                         <Col className={classes.blockStyle}>
-                            <a href="contact">
+                            <a href="/contact">
                                 <img src = {telephone} className={classes.iconStyle}></img>
                                 <p>
                                 Контакты<br/>

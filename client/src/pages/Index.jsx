@@ -8,6 +8,11 @@ import Specialties from '../components/specialties/Specialties.jsx';
 import SpecialtiesPhones from '../components/UI/SpecialtiesPhones/SpecialtiesPhones.jsx';
 import { Container } from 'react-bootstrap';
 
+
+// All the changes connected with subpartitials are stored in about... components
+// notice that <Navigation /> component has props >>>>
+// Look at the AboutComponent props isShowed!
+
 const Index = (props) => {
     const title = props.title
     document.title = title;

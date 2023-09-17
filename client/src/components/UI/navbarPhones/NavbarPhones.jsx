@@ -1,175 +1,263 @@
 import { React, useState } from 'react';
 import classes from './NavbarPhones.module.css'
-import { Container, Navbar, Row, Col, ListGroup, Modal, Button, Card, NavbarBrand } from 'react-bootstrap';
+import {Row, Col, Modal, NavbarBrand, Container} from 'react-bootstrap';
 import orgLogo from '../../../../public/images/logoWithCapture.png'
-import searchIcon from '../../../../public/images/searchIcon.png'
-import webCabinetIcon from '../../../../public/images/webCabinetIcon.png'
-import handicapVersionIcon from '../../../../public/images/handicapVersion.png'
-import { NavLink } from 'react-router-dom';
-import navbarMenuIcon from '../../../../public/icons/navbarMenuIcon.png'
-import NavbarPhonesCard from './NavbarPhonesCard.jsx';
-import { ABITURIENTS_ROUTE, ABOUT_ROUTE, CONTACT_ROUTE, EDUCATION_ROUTE, NEWS_ROUTE, PARTNERS_ROUTE, PROFESSORS_ROUTE, STUDENTS_ROUTE } from '../../../utils/consts';
 import Search from '../search/Search.jsx';
-
+import learnIcon from '../../../../public/icons/learnIcon.png'
+import MobileMenu from './mobileMenu/MobileMenu.jsx';
+import { NavLink } from 'react-router-dom';
+import phoneIcon from '../../../../public/icons/phone.png'
 
 const NavbarPhones = () => {
-    const [show, setShow] = useState(false);
-    const [fullscreen, setFullscreen] = useState(true);
-    const handleClose = () => {
-        setShow(false);
-        setFullscreen(false) 
-    }
-    const handleShow = () => { 
-        setShow(true);
-        setFullscreen(true); 
-    }
-    return( 
-
-        <div className={classes.alternativeNav}>
-                
-
-
-            <Row style={{justifyContent: 'space-between'}}>
-                <Col >
-                    <NavbarBrand href="/" >
-                        <img src={orgLogo} alt="Колледж 'ЗНАНИЕ'" className={classes.logoStyle} />
-                    </NavbarBrand>
-                </Col>
-                <Col className={classes.navIcons}>
-                    {/* <div>
-                        <img src={handicapVersionIcon} alt="" width="25" height="25" />
-                    </div> */}
-                    {/* <div>
-                        <NavLink href='#' onClick={() => setElementVisible(!elementVisible)}>
-                        <img  src={webCabinetIcon} alt="" width="25" height="25" />
-                        </NavLink>
-                    </div> */}
-                    <div>
-                        <Search icon_width={25} icon_height={25}/> 
-                    </div>
-                    
-                    <div>
-                        <img src={navbarMenuIcon}
-                            alt="Меню"
-                            width="25px"
-                            height="25px"
-                            onClick={handleShow} />
-                    </div>
-                </Col>
-                
-            </Row>
-            {/* {menu ? ( */}
-            {/* <Button variant="primary" onClick={handleShow}>
-            Launch demo modal
-          </Button> */}
     
-          <Modal show={show} onHide={handleClose} fullscreen={fullscreen} contentClassName={classes.navbarPhonesAlert} >
-            <Modal.Header closeButton style={{color: "#ff4d11", fontSize: "14pt"}}>
-                {document.title}
-            </Modal.Header>
-            <Modal.Body className={classes.modalBody}>
-                {/* <div className={classes.navbarSlider}> */}
-                    <Row className={classes.rowStyles}>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Поступающим" cardText="text1" link={ABITURIENTS_ROUTE} />
-                        </Col>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Студентам" cardText="text1" link={STUDENTS_ROUTE} />
-                        </Col>
-                    </Row>
-                    <Row className={classes.rowStyles}>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Сотрудникам" cardText="text1" link={PROFESSORS_ROUTE} />
-                        </Col>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Партнерам" cardText="text1" link={PARTNERS_ROUTE} />
-                        </Col>
-                    </Row>
-                    <Row className={classes.rowStyles}>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Об организации" cardText="text1" link={ABOUT_ROUTE} />
-                        </Col>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Образование" cardText="text1" link={EDUCATION_ROUTE} />
-                        </Col>
-                    </Row>
-                    <Row className={classes.rowStyles}>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Новости" cardText="text1" link={NEWS_ROUTE} />
-                        </Col>
-                        <Col className={classes.colStyles}>
-                            <NavbarPhonesCard cardTitle="Контакты" cardText="text1" link={CONTACT_ROUTE} />
-                        </Col>
-                    </Row>
+    const [abiturientsListActive, setAbiturientsListActive] = useState(false);
+    const [studentsListActive, setStudentsListActive] = useState(false);
+    const [employeeListActive, setEmployeeListActive] = useState(false);
+    const [directionsListActive, setDirectionsListActive] = useState(false);
+    const [organizationListActive, setOrganizationListActive] = useState(false);
+    const [activityListActive, setActivityListActive] = useState(false);
+    const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
-            </Modal.Body>
-            <Modal.Footer style={{borderTop: "5px solid #ff4d11", paddingTop: "2vh"}}>
+    const abiturients_items = [
+        {
+            'title': 'Приемная комиссия 2023',
+            'route': '/abiturients/reception',
+        },
+        {
+            'title': 'Подготовительные курсы',
+            'route': '/abiturients/courses',
+        },
+        {
+            'title': 'Дни открытых дверей',
+            'route': '/abiturients/opendoors',
+        },
+        {
+            'title': 'Дополнительные материалы',
+            'route': '/abiturients/materials',
+        },
+    ]
 
-            </Modal.Footer>
-          </Modal>
-            {/* ) : null } */}
-            {/* {menu ? (
-            <ul> 
-                <li className={classes.alternativeNav}>Поступающим
-                    <ul>
-                        <li><a className='nav-link' href="/abit2023">Приемная комиссия 2023</a></li>
-                        <li><a className='nav-link' href='/specialties'>Специальности</a></li>
-                        <li><a className='nav-link' href='/courses'>Подготовительные курсы</a></li>
-                        <li><a className='nav-link' href='/opendoors'>Дни открытых дверей</a></li>
-                    </ul>
-                </li>
-                <li className={classes.alternativeNav}>Студентам
-                    <ul>
-                        <li><a className='nav-link' href='/pay'>Оплата обучения</a></li>
-                        <li><a className='nav-link' href='/timetable'>Расписание групп</a></li>
-                        <li><a className='nav-link' href='/curators'>Кураторы групп</a></li>
-                        <li><a className='nav-link' href='/extra'>Дополнительные материалы</a></li>
-                    </ul>
-                </li>
-                <li className={classes.alternativeNav}>Сотрудникам
-                    <ul>
-                        <li>Трудоустройство</li>
-                        <li>Отдел кадров</li>
-                    </ul>
-                </li>
-                <li className={classes.alternativeNav}>Партнерам</li>
-                <li className={classes.alternativeNav}>Сведения об организации
-                    <ul>
-                        <li><a className='nav-link' href="/about">Основные сведения</a></li>
-                        <li><a className='nav-link' href='/structure'>Структура и органы управления</a></li>
-                        <li><a className='nav-link' href='/documents'>Официальные документы</a></li>
-                        <li><a className='nav-link' href='/structure'>Образование</a></li>
-                        <li><a className='nav-link' href='/partners'>Педагогический состав</a></li>
-                        <li><a className='nav-link' href='/partners'>Обеспечение образовательного процесса</a></li>
-                        <li><a className='nav-link' href='/partners'>Платные образовательные услуги</a></li>
-                        <li><a className='nav-link' href='/partners'>Финансово-хозяйственная деятельность</a></li>
-                    </ul>
-                </li>
-                <li className={classes.alternativeNav}>Образование
-                    <ul>
-                        <li><a className='nav-link' href="/education">Учебная деятельность</a></li>
-                        <li><a className='nav-link' href='/specialties'>Образовательные программы</a></li>
-                        <li><a className='nav-link' href='/professors'>Преподаватели</a></li>
-                        <li><a className='nav-link' href='/curriculum'>Учебные планы</a></li>
-                    </ul>
-                </li>
-                <li className={classes.alternativeNav}>Новости</li>
-                <li className={classes.alternativeNav}>Контакты</li>
-            </ul>
-            ) : null}
-            <div className='d-inline-flex mx-3 pb-5'>
-                    <NavLink className='px-2' href='#'>
-                    <img   src={handicapVersionIcon} alt="" width="25" height="25" />
-                </NavLink>
+    const students_items = [
+        {
+            'title': 'Оплата обучения',
+            'route': '/students/pay',
+        },
+        {
+            'title': 'Кураторы групп',
+            'route': '/students/curators',
+        },
+        {
+            'title': 'Дополнительные материалы',
+            'route': '/students/materials',
+        },
+    ]
 
-                <NavLink className='px-2' href='#' onClick={() => setElementVisible(!elementVisible)}>
-                    <img  src={webCabinetIcon} alt="" width="25" height="25" />
-                </NavLink>
+    const employee_items = [
+        {
+            'title': 'Трудоустройство',
+            'route': '/employees/employment',
+        },
+    ]
 
-                <NavLink className='px-2' href='#'>
-                    <img  src={searchIcon} alt="" width="25" height="25" />  
-                </NavLink>
-            </div> */}
+    const directions_items = [
+        {
+            'title': 'Юрист',
+            'route': '/directions/advocate',
+        },
+        {
+            'title': 'Бухгалтер специалист банковского дела',
+            'route': '/directions/credit',
+        },
+        {
+            'title': 'Учитель начальных классов',
+            'route': '/directions/teacher',
+        },
+        {
+            'title': 'Дошкольное образование',
+            'route': '/directions/preschool',
+        },
+        {
+            'title': 'Сестринское дело',
+            'route': '/directions/doctor',
+        },
+        {
+            'title': 'Дизайн',
+            'route': '/directions/design',
+        },
+        {
+            'title': 'Фармация',
+            'route': '/directions/pharmacist',
+        },
+        {
+            'title': 'Дополнительное образование',
+            'route': '/directions/additional',
+        },
+    ]
+
+    const organization_items = [
+        {
+            'title': 'Основные сведения',
+            'route': '/about/common',
+        },
+        {
+            'title': 'Структура и органы управления',
+            'route': '/about/structure',
+        },
+        {
+            'title': 'Документы',
+            'route': '/about/documents',
+        },
+        {
+            'title': 'Образование',
+            'route': '/about/education',
+        },
+        {
+            'title': 'Образовательные стандарты и требования',
+            'route': '/about/standarts',
+        },
+        {
+            'title': 'Руководство. Педагогический состав',
+            'route': '/about/professors',
+        },
+        {
+            'title': 'Материально-техническое обеспечение и оснащенность образовательного процесса',
+            'route': '/about/techSupport',
+        },
+        {
+            'title': 'Платные образовательные услуги',
+            'route': '/about/paidService',
+        },
+        {
+            'title': 'Финансово-хозяйственная деятельность',
+            'route': '/about/finance',
+        },
+        {
+            'title': 'Вакантные места для приема (перевода)',
+            'route': '/about/vacancies',
+        },
+        {
+            'title': 'Доступная среда',
+            'route': '/about/environment',
+        },
+        {
+            'title': 'Международное Сотрудничество',
+            'route': '/about/international',
+        },
+        {
+            'title': 'Устав, лицензия, аккредитация',
+            'route': '/about/license',
+        },
+        {
+            'title': 'Информационная открытость',
+            'route': '/about/openness'
+        },
+        {
+            'title': 'Партнеры',
+            'route': '/about/partners'
+        }
+    ]
+
+    const activity_items = [
+        {
+            'title': 'Наши достижения',
+            'route': '/activity/achivements',
+        },
+        {
+            'title': 'Наши принципы',
+            'route': '/activity/principles',
+        },
+        {
+            'title': 'Гимн колледжа',
+            'route': '/activity/hymn',
+        },
+        {
+            'title': 'Фотогалерея',
+            'route': '/activity/galery',
+        },
+    ]
+
+
+    const menu_items = [
+        {
+            'title': 'Абитуриентам',
+            'icon': learnIcon,
+            'subMenuActive': abiturientsListActive,
+            'setSubMenuActive': setAbiturientsListActive,
+            'subMenu': abiturients_items,
+        },
+        {
+            'title': 'Студентам',
+            'icon': learnIcon,
+            'subMenuActive': studentsListActive,
+            'setSubMenuActive': setStudentsListActive,
+            'subMenu': students_items,
+        },
+        {
+            'title': 'Сотрудникам',
+            'icon': learnIcon,
+            'subMenuActive': employeeListActive,
+            'setSubMenuActive': setEmployeeListActive,
+            'subMenu': employee_items,
+        },
+        {
+            'title': 'Направления',
+            'icon': learnIcon,
+            'subMenuActive': directionsListActive,
+            'setSubMenuActive': setDirectionsListActive,
+            'subMenu': directions_items,
+        },
+        {
+            'title': 'Сведения об организации',
+            'icon': learnIcon,
+            'subMenuActive': organizationListActive,
+            'setSubMenuActive': setOrganizationListActive,
+            'subMenu': organization_items,
+        },
+        {
+            'title': 'Учебная деятельность',
+            'icon': learnIcon,
+            'subMenuActive': activityListActive,
+            'setSubMenuActive': setActivityListActive,
+            'subMenu': activity_items,
+        },
+    ]
+
+    const menu_links = [
+        {
+            'title': 'Контакты',
+            'icon': learnIcon,
+            'link': '/contact',
+        },
+        {
+            'title': 'Новости',
+            'icon': learnIcon,
+            'link': '/news',
+        }
+    ]
+
+    return( 
+        <div className={classes.alternativeNav}>
+            <MobileMenu active={mobileMenuActive} setActive={setMobileMenuActive} menuLinks={menu_links} menuItems={menu_items}/>
+            <Container>
+                <Row className={classes.mobileNavbar}>
+                    <Col xs={8} sm={9}  className={classes.navbarLogo}>
+                        <NavbarBrand href="/" >
+                            <img src={orgLogo} alt="Колледж 'ЗНАНИЕ'" className={classes.logoStyle} />
+                        </NavbarBrand>
+                    </Col>
+                    <Col xs={4} sm={3} className={classes.navIcons}>
+                        <NavLink to="/contact">
+                                <img src={phoneIcon} alt="" width="25" height="25" />
+                        </NavLink>
+                        <div>
+                            <Search icon_width={28} icon_height={28}/> 
+                        </div>
+                        <div className={mobileMenuActive?(classes['burgerButton'] + " " + classes.active):(classes['burgerButton'])} onClick={() => setMobileMenuActive(!mobileMenuActive)}>
+                            <span/>
+                        </div>
+                    </Col>  
+                </Row>
+            </Container>
         </div>
     );
 }

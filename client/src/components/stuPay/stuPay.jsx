@@ -10,7 +10,7 @@ const StuPay = () => {
             <div className={classes.header}>
                 <h1>Оплата обучения</h1>
                 <div className={classes.header}>
-                    <h2>Загрузить квитанцию</h2>
+                    <h4>Загрузить квитанцию</h4>
                     <div className={classes.urlStyle}>
                         <a href='#'>Квитация об оплате обучения.pdf</a>
                     </div>
@@ -22,7 +22,7 @@ const StuPay = () => {
                     </div>
                 </div>
                 <div className={classes.imageStyle}>
-                    <img src={payEducation} alt="" width='1300px' height='auto'/>
+                    <img src={payEducation} alt="Оплата обучения"/>
                 </div>
             </div>
         </Container>
