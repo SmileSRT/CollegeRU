@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import classes from './Specialties.module.css'
 const images = require.context('../../../public/images/specialities', false, /\.(png)$/);
 import { Col, Container, Row, Card } from 'react-bootstrap';
@@ -43,9 +43,26 @@ const specialties=[
 ]
 
 const Specialties = () => {
+
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200 ? true : false);
+
+    useEffect(() => {
+        function handleResize() {
+        if (window.innerWidth < 1200) {
+            setIsDesktop(false);
+        } else {
+            setIsDesktop(true);
+        }
+        }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return( 
-        <div>
-        {window.innerWidth >= 1280 ? (
+        <Container>
+        {isDesktop ? (
             <div>
                 <Row className={classes.specialtiesBlock}>
                     {specialties.map((speciality) => (
@@ -58,8 +75,8 @@ const Specialties = () => {
                 </Row>
             </div>
 
-        ): <SpecialtiesPhones/>}
-        </div>
+        ):<SpecialtiesPhones/>}
+        </Container>
             
     );
 }

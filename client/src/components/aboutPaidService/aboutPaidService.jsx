@@ -64,11 +64,38 @@ const AboutPaidService = () => {
                 <Col lg={8}>
                     <div className={classes.header}>
                         <h1>Платные образовательные услуги</h1>
+<<<<<<< HEAD
                         <h2>Стоимость обучения 2017-2024</h2>
 
                         <div className={classes.header} id='pdfList'></div>   
 
                         <h2>Образец договора об указании платных образовательных услуг</h2>
+=======
+                        <div className={classes.header}>
+                            <h4>Стоимость обучения 2017-2024</h4>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2023-2024</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2022-2023</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2021-2022</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2020-2021</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2019-2020</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2018-2019</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Стоимость обучения 2017-2018</a>
+                            </div>
+                            <h4>Образец договора об указании платных образовательных услуг</h4>
+>>>>>>> main
                             <div className={classes.urlStyle}>
                                 <a href='http://localhost:9000/pdf/paid_service/dogovor_dpo.docx'>Договор об указании платных образовательных услуг</a>
                             </div>

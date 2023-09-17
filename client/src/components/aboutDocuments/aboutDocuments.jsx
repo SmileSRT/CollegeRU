@@ -117,22 +117,26 @@ const AboutDocuments = () => {
                     <div className={classes.header}>
                     <h1>Документы</h1>
                     <div className={classes.header}>
-                        <h2>Устав образовательной организации</h2>
+                        <h4>Устав образовательной организации</h4>
                             <div className={classes.urlStyle}>
+<<<<<<< HEAD
                                 <a href="http://localhost:9000/pdf/founding_documents/Устав.pdf">Устав образовательной организации</a>
+=======
+                                <a href="http://localhost:9000/pdf/educational_programms/2022/ОПОП-38.02.01-Экономика-и-бухгалтерский-учет-2022-2025гг..pdf">Устав образовательной организации</a>
+>>>>>>> main
                             </div>
-                            <h2>Лицензия на осуществление образовательной деятельности (с приложениями)</h2>
+                            <h4>Лицензия на осуществление образовательной деятельности (с приложениями)</h4>
                             <div className={classes.urlStyle}>
                                 <a href="#">Серия 50Л01 №0008960 №77080 от 24.05.2017г. Лицензия действительна бессрочно</a>
                             </div>
                             <div className={classes.urlStyle}>
                                 <a href="#">Выписка из реестра лицензий от 04.05.2023г</a>
                             </div>
-                            <h2>Свидетельство о государственной аккредитации (с приложениями)</h2>
+                            <h4>Свидетельство о государственной аккредитации (с приложениями)</h4>
                             <div className={classes.urlStyle}>
                                 <a href="#">Серия 50А01 №0000271 №4573 от 03.11.2020г. Свидетельство действует бессрочно</a>
                             </div>
-                            <h2>Учредительные документы</h2>
+                            <h4>Учредительные документы</h4>
                             <div className={classes.urlStyle}>
                                 <a href="http://localhost:9000/pdf/founding_documents/Лист_Записи_Единого_Государственного_Реестра_Юридических_Лиц.pdf">Лист записи единого государственного реестра юридических лиц</a>
                             </div>
@@ -142,8 +146,71 @@ const AboutDocuments = () => {
                             <div className={classes.urlStyle}>
                                 <a href="http://localhost:9000/pdf/founding_documents/Свидетельство_О_Регистрации.pdf">Свидетельство о государственной регистрации</a>
                             </div>
+<<<<<<< HEAD
                             <h2>Локальные нормативные акты</h2>
                             <div id="states">
+=======
+                            <h4>Локальные нормативные акты</h4>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о внутреннем контроле качества подготовки специалиста в АНО ПО ГТК Знание</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о ГИА</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о зачислении в качестве экстернов</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о педагогическом совете</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о подготовительных курсах для поступающих</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о порядке обучения по индивидуальному плану</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о порядке осуществления индивидуального учета результатов освоения обущающимся образовательных программ</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о порядке перевода, отчисления и восстановления обучающихся</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о предметно-цикловой комиссии</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о приемной комиссии</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о проведении экзаменов, зачетов, пересдач, перевода обучающихся на следующий курс</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о текущем контроле знаний и промежуточной аттестации</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение о формах обучения</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об интернет-сайте</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об обучении студентов-инвалидов</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об организации выполнения и защиты курсовой работы</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об электронной билиотеке</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об электронном журнале</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об учебной и производственной практике студентов</a>
+                            </div>
+                            <div className={classes.urlStyle}>
+                                <a href="#">Положение об общем собрании работников и студентов (совет колледжа)</a>
+>>>>>>> main
                             </div>
                         </div>
                     </div>

@@ -16,7 +16,7 @@
 
 
 .introText >h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     border-bottom: 2px solid #ff4d11;
     padding: 6px 0;
@@ -25,7 +25,7 @@
 
 
 .introText > p{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -38,9 +38,10 @@
     border: 3px solid rgb(207, 207, 207);
     border-radius: 25px;
     text-align: center;
-    margin: 50px 10px;
+    margin: 50px 10px 0 10px;
     transition: transform .2s;
     background-color: white;
+    padding: 0;
 }
 
 
@@ -57,7 +58,7 @@
 
 
 .parametersBlock > p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -74,7 +75,7 @@
 .learnBlock > p {
     width: 70%;
     padding-left: 10px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     margin: 10px;
 }
@@ -91,7 +92,7 @@
 
 
 .iconStyle{
-    width: 128px;
+    width: 80px;
     height: auto;
     float: right;
     margin: 20px;
@@ -100,32 +101,33 @@
 
 .header > h1 {
     text-align: center;
-    margin: 25px;
+    margin: 50px 0 25px 0;
+    font-size: 42px;
 }
 
 
 .textStyle > p{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     margin: 10px 20px;
 }
 
 
 .textStyle > a{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     text-decoration: none;
     color:#ff4d11
 }
 
 
-@media((min-width: 320px) and (max-width: 425px)){
+@media((min-width: 320px) and (max-width: 768px)){
     .introBlock{
         background:
         linear-gradient(rgba(44, 44, 44, 0.7), rgba(0, 0, 0, 0.8)),
         url('../../../public/images/education/backgroundPhonesDesign.jpg');
         background-repeat: no-repeat;
-        background-size: auto 100%;
+        background-size: auto 100vh;
     }
 
     .introText{
@@ -136,18 +138,15 @@
 
     .introText > h1{
         font-size: 35px;
-        margin-bottom: 15px;
     }
 
     .introText>p {
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 15px;
     }
 
     .parametersBlock{
         width: 46%;
-        margin: 10px 5px;
-        padding: 10px 0;
+        margin: 5px;
     }
 
     .parametersBlock > h5{
@@ -169,7 +168,7 @@
     .iconStyle{
         width: 50px;
         height: auto;
-        margin: 5px;
+        margin: 5% 10px;
     }
 
     .connectionBlock{
@@ -184,7 +183,84 @@
     .textStyle > a{
         font-size: 25px;
     }
+
+    .header > h1{
+        font-size: 30px;
+    }
 }
+
+
+@media((min-width: 768px) and (max-width: 990px)){
+    .introBlock{
+        background:
+        linear-gradient(rgba(44, 44, 44, 0.7), rgba(0, 0, 0, 0.8)),
+        url('../../../public/images/education/backgroundPhonesDesign.jpg');
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+    }
+
+    .introText{
+        width: 80%;
+        text-align: left;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .introText > h1{
+        font-size: 42px;
+        width: 80%;
+    }
+
+    .introText>p {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .parametersBlock{
+        width: 46%;
+        margin: 5px;
+    }
+
+    .parametersBlock > h5{
+        font-size: 20px;
+    }
+
+    .parametersBlock > p{
+        font-size: 18px;
+    }
+
+    .learnBlock{
+        width: 70%;
+    }
+
+    .learnBlock > p{
+        font-size: 25px;
+    }
+
+    .iconStyle{
+        width: 50px;
+        height: auto;
+        margin: 5% 10px;
+    }
+
+    .connectionBlock{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .textStyle > p{
+        font-size: 20px;
+    }
+
+    .textStyle > a{
+        font-size: 25px;
+    }
+
+    .header > h1{
+        font-size: 42px;
+    }
+}
+
 
 @media((min-width: 320px) and (max-width: 425px) and (min-height: 800px)){
     .introText > h1{
@@ -192,6 +268,6 @@
     }
 
     .introText>p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }

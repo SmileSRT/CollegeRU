@@ -11,7 +11,7 @@ const MyTable = () => {
             <Row>
                 <Col lg={8} className={classes.header}>
                     <h1>Структура и органы управления образовательной организации</h1>
-                    <h2>Список сотрудников АНО ПО "ГТК "Знание"</h2>
+                    <h4>Список сотрудников АНО ПО "ГТК "Знание"</h4>
                     <Table responsive="lg" bordered="true" className={classes.tableStyles}>
                         <thead>
                         <tr className={classes.tableHeader}>
@@ -120,7 +120,7 @@ const MyTable = () => {
                             </tr>
                         </tbody>
                     </Table>
-                    <h2>Органы управления образовательной организации</h2>
+                    <h4>Органы управления образовательной организации</h4>
                     <ul>
                         <li>Общее собрание работников и студентов</li>
                         <li>Педагогический совет</li>

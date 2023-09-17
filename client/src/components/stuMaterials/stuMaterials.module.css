@@ -4,8 +4,8 @@
 
 
 .iconStyle {
-    width: auto;
-    height: 70px;
+    width: 50px;
+    height: auto;
     margin: 15px;
 }
 
@@ -37,7 +37,6 @@
 
 
 .textPractice {
-    font-size: 20px;
     color: gray;
 }
 
@@ -47,8 +46,7 @@
 }
 
 
-.headers > h2 {
-    font-size: 30px;
+.headers > h4 {
     margin-bottom: 10px;
 }
 
@@ -66,7 +64,6 @@
 
 .linkStyle > a{
     text-decoration: none;
-    font-size: 20px;
     color:#ff4d11;
 }
 
@@ -76,26 +73,17 @@
 }
 
 
-@media((min-width: 320px) and (max-width: 425px)){
-    .headers > h2{
-        font-size: 24px;
-    }
-
-    .linkStyle > a{
-        font-size: 18px;
-    }
-
-    .iconStyle{
-        width: 50px;
-        height: auto;
-    }
-
+@media((min-width: 320px) and (max-width: 993px)){
     .practiceBlock{
         margin-bottom: 15px;
         width: 43%;
     }
+}
 
-    .textPractice > p{
-        font-size: 18px;
+
+@media((min-width: 993px) and (max-width: 1200px)){
+    .practiceBlock{
+        margin-bottom: 15px;
+        width: 12%;
     }
 }

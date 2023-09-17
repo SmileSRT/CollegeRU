@@ -4,15 +4,13 @@
 
 
 .textStyle > p {
-    font-size: 13pt;
     color: #575757;
 }
 
 
-.textStyle > h2 {
-    font-size: 18pt;
+.textStyle > h4 {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 

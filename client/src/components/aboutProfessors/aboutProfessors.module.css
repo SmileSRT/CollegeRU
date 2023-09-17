@@ -41,3 +41,43 @@
     text-decoration: none;
     color: #ff6d3d;
 }
+
+
+@media((min-width: 320px) and (max-width: 768px)){
+    .headers > h1{
+        font-size: 25px;
+    }
+
+    .headers > h2{
+        font-size: 23px;
+        margin: 20px 0;
+    }
+
+    .infoStyle > h3{
+        font-size: 20px;
+    }
+
+    .infoStyle > p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .linkStyle {
+        font-size: 16px;
+    }
+
+    .imageStyle > img{
+        width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media((min-width: 768px) and (max-width: 1200px)){
+    .imageStyle > img{
+        width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}

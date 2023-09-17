@@ -22,13 +22,33 @@
 }
 
 
-.linkStyle > h2{
-    font-size: 22px;
+.infoStyle > p{
+    color: gray;
+    margin: 0;
 }
 
 
-.infoStyle > p{
-    font-size: 18px;
-    color: gray;
-    margin: 0;
+@media((min-width: 320px) and (max-width: 425px)){
+    .imageStyle {
+        width: 130px;
+        height: auto;
+    }
+
+    .infoStyle > p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media((min-width: 425px) and (max-width: 768px)){
+    .imageStyle {
+        width: 200px;
+        height: auto;
+    }
+
+    .infoStyle > p{
+        margin: 0;
+        padding: 0;
+    }
 }

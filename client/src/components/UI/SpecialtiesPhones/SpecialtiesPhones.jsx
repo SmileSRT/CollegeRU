@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 import classes from './SpecialtiesPhones.module.css'
 const images = require.context('../../../../public/images/specialities', false, /\.(png)$/);
 // import Swiper core and required components
@@ -50,28 +50,67 @@ const specialties=[
 ]
 
 let width = window.innerWidth
-let countSlidesPerView;
 
-if (width < 450) {
-    countSlidesPerView = 3;
-}
-else if (width <= 768){
-    countSlidesPerView = 4;
-}
-else if (width <= 1024){
-    countSlidesPerView = 5;
-}
-else if (width < 1280){
-    countSlidesPerView = 6;
-}
+// const [isMobile, setIsMobile] = useState(false);
+
+//     useEffect(() => {
+//       window.screen.width <= 1199 ? setIsMobile(true) : setIsMobile(false);
+//     }, [window.screen.width]);
+
+//     function detectWindowSize() {
+//         window.innerWidth <= 1199 ? setIsMobile(true) : setIsMobile(false);        
+//     }
+    
+//     window.onresize = detectWindowSize;
+
+
 
 const SpecialtiesPhones = () => {
     
+    const [slidesPerView, setSlidesPerView] = useState(6);
 
+    useEffect(() => {
+        if (window.screen.width < 350){
+            setSlidesPerView(2);
+        }
+        else if (window.screen.width < 460) {
+            setSlidesPerView(3);
+        }
+        else if (window.screen.width < 768){
+            setSlidesPerView(4);
+        }
+        else if (window.screen.width <= 991){
+            setSlidesPerView(5);
+        }
+        else if (window.screen.width <= 1199){
+            setSlidesPerView(6);
+        }
+    }, [window.screen.width])
+
+    function countSlidesPerView() {
+        if (window.innerWidth < 350){
+            setSlidesPerView(2);
+        }
+        else if (window.innerWidth < 460) {
+            setSlidesPerView(3);
+        }
+        else if (window.innerWidth < 768){
+            setSlidesPerView(4);
+        }
+        else if (window.innerWidth <= 991){
+            setSlidesPerView(5);
+        }
+        else if (window.innerWidth <= 1199){
+            setSlidesPerView(6);
+        }
+    }
+
+    window.onresize = countSlidesPerView;
+    
     return( 
         <div className={classes.swiperContainer}>
             <Swiper
-                slidesPerView={countSlidesPerView}
+                slidesPerView={slidesPerView}
                 navigation
                 pagination={{clickable: true}}
                 onSwiper={(swiper) => console.log(swiper)}

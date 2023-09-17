@@ -1,5 +1,4 @@
 .header {
-    font-size: 36pt;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -31,9 +30,33 @@
 }
 
 
+.listStyle {
+    padding-left: 0;
+}
+
+
 .listStyle > li{
     font-size: 15pt;
     color: #575757;
     text-align: center;
     list-style: none;
+}
+
+
+@media((min-width: 320px) and (max-width: 768px)){
+    .textStyle > p{
+        font-size: 16px;
+    }
+
+    .listStyle > li {
+        font-size: 16px;
+    }
+
+    .textPrinciples > h2{
+        font-size: 25px;
+    }
+
+    .textPrinciples > p{
+        font-size: 18px;
+    }
 }

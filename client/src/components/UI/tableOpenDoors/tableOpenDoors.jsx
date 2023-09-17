@@ -5,7 +5,7 @@ import classes from './tableOpenDoors.module.css'
 const TableOpenDoors = () => {
     return (
         <Container className='my-5'>
-            <Table className={classes.tableStyles}>
+            <Table responsive="lg" bordered="true" className={classes.tableStyles}>
                 <thead>
                     <tr>
                         <th>Дата и время</th>
@@ -23,7 +23,7 @@ const TableOpenDoors = () => {
                                 <li>7 Апреля 12:00</li>
                             </ul>
                         </td>
-                        <td>Запись по телефону: +7 999-999-99-99</td>
+                        <td>Запись по телефону: +7 915 488-88-88</td>
                     </tr>
                 </tbody>
             </Table>

@@ -7789,10 +7789,17 @@ const Search = props => {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/components/UI/table/Table.jsx":
 /*!*******************************************!*\
   !*** ./src/components/UI/table/Table.jsx ***!
   \*******************************************/
+=======
+/***/ "./src/components/UI/tableCourses/tableCourses.jsx":
+/*!*********************************************************!*\
+  !*** ./src/components/UI/tableCourses/tableCourses.jsx ***!
+  \*********************************************************/
+>>>>>>> main
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7802,6 +7809,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
 /* harmony import */ var _Table_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Table.module.css */ "./src/components/UI/table/Table.module.css");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
@@ -7809,11 +7817,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Table */ "./node_modules/react-bootstrap/esm/Table.js");
 /* harmony import */ var _navigation_Navigation_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../navigation/Navigation.jsx */ "./src/components/UI/navigation/Navigation.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+=======
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var _tableCourses_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tableCourses.module.css */ "./src/components/UI/tableCourses/tableCourses.module.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+>>>>>>> main
 
 
 
 
 
+<<<<<<< HEAD
 
 
 const MyTable = () => {
@@ -8139,6 +8154,81 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
 /* harmony import */ var _tableOpenDoors_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tableOpenDoors.module.css */ "./src/components/UI/tableOpenDoors/tableOpenDoors.module.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+=======
+const TableCourses = () => {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "my-5",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      className: _tableCourses_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableStyles,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("thead", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u043A\u0443\u0440\u0441\u0430"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u041F\u0435\u0440\u0438\u043E\u0434 \u0437\u0430\u043D\u044F\u0442\u0438\u0439"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u0421\u0440\u043E\u043A \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u044F/\u041A\u043E\u043B-\u0432\u043E \u0447\u0430\u0441\u043E\u0432"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u044F"
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tbody", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439 \u044F\u0437\u044B\u043A"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u041C\u0430\u0440\u0442-\u0418\u044E\u043D\u044C (1-2 \u0440\u0430\u0437\u0430 \u0432 \u043D\u0435\u0434\u0435\u043B\u044E)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "64 \u0427\u0430\u0441\u0430"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "12.000 \u0440\u0443\u0431."
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0440\u0438\u0441\u0443\u043D\u043E\u043A"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u041C\u0430\u0440\u0442-\u0418\u044E\u043D\u044C (1-2 \u0440\u0430\u0437\u0430 \u0432 \u043D\u0435\u0434\u0435\u043B\u044E)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "64 \u0427\u0430\u0441\u0430"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "12.000 \u0440\u0443\u0431."
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u0411\u0438\u043E\u043B\u043E\u0433\u0438\u044F"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u041C\u0430\u0440\u0442-\u0418\u044E\u043D\u044C (1-2 \u0440\u0430\u0437\u0430 \u0432 \u043D\u0435\u0434\u0435\u043B\u044E)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "64 \u0427\u0430\u0441\u0430"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "12.000 \u0440\u0443\u0431."
+          })]
+        })]
+      })]
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TableCourses);
+
+/***/ }),
+
+/***/ "./src/components/UI/tableOpenDoors/tableOpenDoors.jsx":
+/*!*************************************************************!*\
+  !*** ./src/components/UI/tableOpenDoors/tableOpenDoors.jsx ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var _tableOpenDoors_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tableOpenDoors.module.css */ "./src/components/UI/tableOpenDoors/tableOpenDoors.module.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -8183,6 +8273,302 @@ const TableOpenDoors = () => {
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TableOpenDoors);
+
+/***/ }),
+
+/***/ "./src/components/UI/table/Table.jsx":
+/*!*******************************************!*\
+  !*** ./src/components/UI/table/Table.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Table_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Table.module.css */ "./src/components/UI/table/Table.module.css");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Table */ "./node_modules/react-bootstrap/esm/Table.js");
+/* harmony import */ var _navigation_Navigation_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../navigation/Navigation.jsx */ "./src/components/UI/navigation/Navigation.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+>>>>>>> main
+
+
+
+
+
+<<<<<<< HEAD
+const TableOpenDoors = () => {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "my-5",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      className: _tableOpenDoors_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableStyles,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("thead", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043C\u044F"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u041C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0435"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+            children: "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F"
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("tbody", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u042F\u043D\u0432\u0430\u0440\u044C-\u0430\u043F\u0440\u0435\u043B\u044C"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("td", {
+            children: ["\u0414\u043D\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0445 \u0434\u0432\u0435\u0440\u0435\u0439", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+              className: _tableOpenDoors_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].listStyle,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+                children: "11 \u041C\u0430\u0440\u0442\u0430 12:00"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+                children: "25 \u041C\u0430\u0440\u0442\u0430 12:00"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+                children: "7 \u0410\u043F\u0440\u0435\u043B\u044F 12:00"
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+            children: "\u0417\u0430\u043F\u0438\u0441\u044C \u043F\u043E \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0443: +7 999-999-99-99"
+          })]
+        })
+=======
+const MyTable = () => {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "my-5",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        lg: 8,
+        className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+          children: "\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430 \u0438 \u043E\u0440\u0433\u0430\u043D\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0439 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+          children: "\u0421\u043F\u0438\u0441\u043E\u043A \u0441\u043E\u0442\u0440\u0443\u0434\u043D\u0438\u043A\u043E\u0432 \u0410\u041D\u041E \u041F\u041E \"\u0413\u0422\u041A \"\u0417\u043D\u0430\u043D\u0438\u0435\""
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_bootstrap_Table__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          responsive: "lg",
+          bordered: "true",
+          className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableStyles,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                children: "\u0414\u043E\u043B\u0436\u043D\u043E\u0441\u0442\u044C"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                children: "\u0424\u0418\u041E"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                children: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                children: "\u041F\u043E\u0447\u0442\u0430"
+              })]
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tbody", {
+            className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableStyles,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                colSpan: 4,
+                children: "\u0414\u0438\u0440\u0435\u043A\u0442\u043E\u0440 \u043A\u043E\u043B\u043B\u0435\u0434\u0436\u0430"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "1. \u0414\u0438\u0440\u0435\u043A\u0442\u043E\u0440 \u043A\u043E\u043B\u043B\u0435\u0434\u0436\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0411\u0430\u0445\u0430\u0440\u0435\u0432\u0430 \u0418\u0440\u0438\u043D\u0430 \u0420\u043E\u0441\u0442\u0438\u0441\u043B\u0430\u0432\u043E\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(916)-353-52-36"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "ir_znanie@mail.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                colSpan: 4,
+                children: "\u0417\u0430\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u0438 \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u0430 \u043A\u043E\u043B\u043B\u0435\u0434\u0436\u0430"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "2. \u0417\u0430\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u0430 \u043F\u043E \u043E\u0431\u0449\u0438\u043C \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0411\u0430\u0442\u043E\u0432\u0430 \u041D\u0430\u0442\u0430\u043B\u044C\u044F \u0412\u0438\u043A\u0442\u043E\u0440\u043E\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(980)-663-15-19"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "bnv-znanie@yandex.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "3. \u0417\u0430\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u0430 \u043F\u043E \u043D\u0430\u0443\u0447\u043D\u043E-\u043C\u0435\u0442\u043E\u0434\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0438 \u0443\u0447\u0435\u0431\u043D\u043E\u0439 \u0440\u0430\u0431\u043E\u0442\u0435"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0413\u0440\u0430\u0447\u0435\u0432 \u0412\u0438\u0442\u0430\u043B\u0438\u0439 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(977)-904-39-03"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "k.070@bk.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "4. \u0417\u0430\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u0430 \u043F\u043E \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0411\u0430\u0445\u0430\u0440\u0435\u0432 \u0420\u043E\u0441\u0442\u0438\u0441\u043B\u0430\u0432 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(916)-153-72-64"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "r.bakharev@mail.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "5. \u0417\u0430\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0434\u0438\u0440\u0435\u043A\u0442\u043E\u0440\u0430 \u043F\u043E \u0432\u043E\u0441\u043F\u0438\u0442\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0439 \u0440\u0430\u0431\u043E\u0442\u0435"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u041B\u0435\u0446\u043A\u0430\u044F \u0422\u0430\u0442\u044C\u044F\u043D\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(925)-075-30-09"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "tleckaya@yandex.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                colSpan: 4,
+                children: "\u041E\u0442\u0434\u0435\u043B \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0433\u043E \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "6. \u0414\u0435\u043B\u043E\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0411\u0443\u0440\u0434\u0430\u043D\u043E\u0432\u0430 \u041E\u043B\u044C\u0433\u0430 \u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(917)-582-51-09"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "boa-znanie@mail.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "7. \u0414\u0435\u043B\u043E\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u041F\u043E\u0442\u0430\u043F\u043E\u0432\u0430 \u0412\u0435\u0440\u043E\u043D\u0438\u043A\u0430 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(926)-396-45-20"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "vp-znanie@mail.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                colSpan: 4,
+                children: "\u0411\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440\u0438\u044F"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "8. \u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u0431\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0413\u0440\u0438\u0431\u043A\u043E\u0432\u0430 \u0418\u0440\u0438\u043D\u0430 \u0412\u0430\u043B\u0435\u043D\u0442\u0438\u043D\u043E\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "gribkova-irina@mail.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "9. \u0411\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440 \u043F\u043E \u043A\u0430\u0434\u0440\u0430\u043C"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0413\u0430\u0445\u043E\u0432\u0430 \u041C\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(925)-529-26-88"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "lev_margo@mail.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "10. \u0411\u0443\u0445\u0433\u0430\u043B\u0442\u0435\u0440"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u0424\u0435\u0434\u043E\u0440\u043E\u0432\u0430 \u041B\u0430\u0440\u0438\u0441\u0430 \u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440\u043E\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "fedorovalvznanie@yandex.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                colSpan: 4,
+                children: "\u0421\u0438\u0441\u0442\u0435\u043C\u043D\u044B\u0439 \u0430\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "11. \u0421\u0438\u0441\u0442\u0435\u043C\u043D\u044B\u0439 \u0430\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u042F\u0434\u0430\u043A \u0421\u0442\u0435\u043F\u0430\u043D \u0414\u0435\u043D\u0438\u0441\u043E\u0432\u0438\u0447"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(910)-464-81-57"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "step1313131098@yandex.ru"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableHeader,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                colSpan: 4,
+                children: "\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\u044B"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "12. \u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u041D\u0430\u0441\u043F\u0430\u043D\u043E\u0432\u0430 \u042E\u043B\u0438\u044F \u0412\u0430\u043B\u0435\u043D\u0442\u0438\u043D\u043E\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(903)-163-16-98"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u2014"
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+              className: _Table_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].tableCell,
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "13. \u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u041B\u0430\u0440\u0438\u043D\u0430 \u0413\u0430\u043B\u0438\u043D\u0430 \u0412\u0438\u043A\u0442\u043E\u0440\u043E\u0432\u043D\u0430"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "+7(909)-647-51-71"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                children: "\u2014"
+              })]
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+          children: "\u041E\u0440\u0433\u0430\u043D\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0439 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u0438"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+            children: "\u041E\u0431\u0449\u0435\u0435 \u0441\u043E\u0431\u0440\u0430\u043D\u0438\u0435 \u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432 \u0438 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u043E\u0432"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+            children: "\u041F\u0435\u0434\u0430\u0433\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0441\u043E\u0432\u0435\u0442"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        lg: 4,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_navigation_Navigation_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+>>>>>>> main
+      })]
+    })
+  });
+};
+<<<<<<< HEAD
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TableOpenDoors);
+=======
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyTable);
+>>>>>>> main
 
 /***/ }),
 
@@ -18268,10 +18654,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/components/UI/table/Table.module.css":
 /*!**************************************************!*\
   !*** ./src/components/UI/table/Table.module.css ***!
   \**************************************************/
+=======
+/***/ "./src/components/UI/tableCourses/tableCourses.module.css":
+/*!****************************************************************!*\
+  !*** ./src/components/UI/tableCourses/tableCourses.module.css ***!
+  \****************************************************************/
+>>>>>>> main
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18280,6 +18673,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // extracted by mini-css-extract-plugin
+<<<<<<< HEAD
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"header":"NTomXFIoobe_GrmeYB8z","tableStyles":"vr6_8ftXyVBBmvEoA2je","tableCell":"RZiZcTWPr_xm6tePUdwU","tableHeader":"z4VQve06e7qan6zPk86g"});
 
 /***/ }),
@@ -18288,14 +18682,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************************************************!*\
   !*** ./src/components/UI/tableCourses/tableCourses.module.css ***!
   \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-// extracted by mini-css-extract-plugin
+=======
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"tableStyles":"WUfVGVfHltlzLN_ay_x1"});
 
 /***/ }),
@@ -18304,6 +18691,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************************************!*\
   !*** ./src/components/UI/tableOpenDoors/tableOpenDoors.module.css ***!
   \********************************************************************/
+>>>>>>> main
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18312,7 +18700,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // extracted by mini-css-extract-plugin
+<<<<<<< HEAD
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"tableStyles":"WUfVGVfHltlzLN_ay_x1"});
+
+/***/ }),
+
+/***/ "./src/components/UI/tableOpenDoors/tableOpenDoors.module.css":
+/*!********************************************************************!*\
+  !*** ./src/components/UI/tableOpenDoors/tableOpenDoors.module.css ***!
+  \********************************************************************/
+=======
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"tableStyles":"W1VZyLfyjAmBugmTouEF","listStyle":"U7RVk95mHscAVTck3HsH"});
+
+/***/ }),
+
+/***/ "./src/components/UI/table/Table.module.css":
+/*!**************************************************!*\
+  !*** ./src/components/UI/table/Table.module.css ***!
+  \**************************************************/
+>>>>>>> main
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// extracted by mini-css-extract-plugin
+<<<<<<< HEAD
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"tableStyles":"W1VZyLfyjAmBugmTouEF","listStyle":"U7RVk95mHscAVTck3HsH"});
+=======
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"header":"NTomXFIoobe_GrmeYB8z","tableStyles":"vr6_8ftXyVBBmvEoA2je","tableCell":"RZiZcTWPr_xm6tePUdwU","tableHeader":"z4VQve06e7qan6zPk86g"});
+>>>>>>> main
 
 /***/ }),
 
@@ -71288,7 +71707,11 @@ module.exports = __webpack_require__.p + "30dadb4d096051921cba.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
+<<<<<<< HEAD
 module.exports = __webpack_require__.p + "23b6a5893f25462b7f99.svg";
+=======
+module.exports = __webpack_require__.p + "2b05a9131e92085c47fa.svg";
+>>>>>>> main
 
 /***/ }),
 

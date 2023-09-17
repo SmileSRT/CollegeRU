@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './EduPharmacist.module.css'
 import iconDone from '../../../public/icons/done.png'
+import SpecialtiesNav from '../UI/specialtiesNav/specialtiesNav.jsx';
 
 const EduPharmacist = () => {
 
@@ -86,6 +87,11 @@ const EduPharmacist = () => {
                         <p>Оказывать информционно-консультативную помощь населению</p>
                     </Col>
                 </Row>
+
+                <div className={classes.header}>
+                    <h1>Хотите изучить больше?</h1>
+                    <SpecialtiesNav/>
+                </div>
 
                 <div className={classes.header}>
                     <h1>Как к нам поступить?</h1>

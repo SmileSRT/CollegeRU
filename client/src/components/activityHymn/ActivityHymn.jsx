@@ -9,7 +9,6 @@ const ActivityHymn = () => {
             <h1 className={classes.header}>Гимн колледжа</h1>
             <div className={classes.video}>
                 <iframe 
-                    width="800" height="400" 
                     src="https://www.youtube.com/embed/M1rv16V21dw" 
                     title="Гимн Колледжа" 
                     frameborder="0" 

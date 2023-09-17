@@ -81,7 +81,7 @@ const aboutEducation = (props) => {
     const createLink = (headerNames, year, arrayYEAR, folder) => {
         let div = document.createElement('div')
         div.setAttribute('class', classes.header)
-        div.innerHTML = `<h2>${headerNames[year]}<h2>`
+        div.innerHTML = `<h4>${headerNames[year]}<h4>`
         for (let i = 0; i < arrayYEAR.length; i++) {
             div.innerHTML += `
             <div class=${classes.urlStyle} >
@@ -138,7 +138,7 @@ const aboutEducation = (props) => {
                         </div>
                     </div>
                     <div className={classes.header}>
-                        <h2>Сведения о языке, на котором осуществляется обучение</h2>
+                        <h4>Сведения о языке, на котором осуществляется обучение</h4>
                         <p>Обучение осуществляется на русском языке</p>
                     </div>
                 </Col>

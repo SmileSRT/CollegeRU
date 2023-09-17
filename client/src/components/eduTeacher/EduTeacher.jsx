@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './EduTeacher.module.css'
 import iconDone from '../../../public/icons/done.png'
+import SpecialtiesNav from '../UI/specialtiesNav/specialtiesNav.jsx';
 
 const EduTeacher = () => {
 
@@ -104,10 +105,15 @@ const EduTeacher = () => {
                     </Col>
                     <Col className={classes.specialsBlock} lg={4}>
                         <h5>Балл по русскому языку</h5>
-                        <h4>4</h4>
+                        <h4>4.0</h4>
                         <p>Лица, имеющие "3", обязательно сдают экзамен при поступлении(устный)</p>
                     </Col>
                 </Row>
+
+                <div className={classes.header}>
+                    <h1>Хотите изучить больше?</h1>
+                    <SpecialtiesNav/>
+                </div>
 
                 <div className={classes.header}>
                     <h1>Как к нам поступить?</h1>

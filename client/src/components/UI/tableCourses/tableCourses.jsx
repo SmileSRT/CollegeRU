@@ -5,7 +5,7 @@ import classes from './tableCourses.module.css'
 const TableCourses = () => {
     return (
         <Container className='my-5'>
-            <Table className={classes.tableStyles}>
+            <Table responsive="lg" bordered="true" className={classes.tableStyles}>
                 <thead>
                     <tr>
                         <th>Наименование курса</th>

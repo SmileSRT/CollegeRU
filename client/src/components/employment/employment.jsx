@@ -8,11 +8,11 @@ const Employment = () => {
         <Container className='my-5'>
             <div className={classes.header}>
                 <h1>Трудоустройство</h1>
-                <h2>Положение</h2>
+                <h4>Положение</h4>
                 <div className = {classes.urlStyle}>
                     <a href='http://localhost:9000/pdf/employment/state/2021-10-22_001-745x1024.pdf'>Положение о центре содействия трудоустройству выпускников</a>
                 </div>
-                <h2>Соглашение</h2>
+                <h4>Соглашение</h4>
                 <div className={classes.urlStyle}>
                     <a href='http://localhost:9000/pdf/employment/agreement/2021-10-25_001-745x1024.pdf' >Соглашение с ЦЗН</a>
                 </div>
