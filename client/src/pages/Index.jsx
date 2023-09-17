@@ -16,7 +16,6 @@ import { Container } from 'react-bootstrap';
 const Index = (props) => {
     const title = props.title
     document.title = title;
- 
 
     return( 
         <div>

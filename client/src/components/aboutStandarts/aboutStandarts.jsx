@@ -6,7 +6,7 @@ import Navigation from '../UI/navigation/Navigation.jsx';
 const AboutStandarts = () => {
     let caption = useState('')
     const returnPath = (caption) => {
-        return 'http://localhost:9000/pdf/' + caption
+        return process.env.REACT_APP_API_URL + '/pdf/' + caption
     }
     const documentList = [
         {

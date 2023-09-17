@@ -90,7 +90,7 @@ const AboutDocuments = () => {
 
     let caption = useState('')
     const returnPath = (caption) => {
-        return 'http://localhost:9000/pdf/' + caption
+        return process.env.REACT_APP_API_URL + '/pdf/' + caption
     }
 
     const statesFiller = () => {
@@ -120,7 +120,7 @@ const AboutDocuments = () => {
                         <h4>Устав образовательной организации</h4>
                             <div className={classes.urlStyle}>
 
-                                <a href="http://localhost:9000/pdf/founding_documents/Устав.pdf">Устав образовательной организации</a>
+                                <a href={process.env.REACT_APP_API_URL + "/pdf/founding_documents/Устав.pdf"}>Устав образовательной организации</a>
 
                             </div>
                             <h4>Лицензия на осуществление образовательной деятельности (с приложениями)</h4>
@@ -136,13 +136,13 @@ const AboutDocuments = () => {
                             </div>
                             <h4>Учредительные документы</h4>
                             <div className={classes.urlStyle}>
-                                <a href="http://localhost:9000/pdf/founding_documents/Лист_Записи_Единого_Государственного_Реестра_Юридических_Лиц.pdf">Лист записи единого государственного реестра юридических лиц</a>
+                                <a href={ process.env.REACT_APP_API_URL + "/pdf/founding_documents/Лист_Записи_Единого_Государственного_Реестра_Юридических_Лиц.pdf"}>Лист записи единого государственного реестра юридических лиц</a>
                             </div>
                             <div className={classes.urlStyle}>
-                                <a href="http://localhost:9000/pdf/founding_documents/Свидетельство_О_Постановке_На_Учет_ФНО.pdf">Свидетельство о постановке на учет в налоговом органе</a>
+                                <a href={ process.env.REACT_APP_API_URL + "/pdf/founding_documents/Свидетельство_О_Постановке_На_Учет_ФНО.pdf"}>Свидетельство о постановке на учет в налоговом органе</a>
                             </div>
                             <div className={classes.urlStyle}>
-                                <a href="http://localhost:9000/pdf/founding_documents/Свидетельство_О_Регистрации.pdf">Свидетельство о государственной регистрации</a>
+                                <a href={ process.env.REACT_APP_API_URL + "/pdf/founding_documents/Свидетельство_О_Регистрации.pdf"}>Свидетельство о государственной регистрации</a>
                             </div>
 
                             <h2>Локальные нормативные акты</h2>

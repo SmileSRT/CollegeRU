@@ -13,7 +13,7 @@ const aboutEducation = (props) => {
     const isShowed = props.isShowed
 
     const returnPath = (caption) => {
-        return 'http://localhost:9000/education/' + caption
+        return process.env.REACT_APP_API_URL + '/education/' + caption
     }
     let headerNames = [
         'Образовательные программы 2022',

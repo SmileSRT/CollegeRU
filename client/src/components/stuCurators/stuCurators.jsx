@@ -9,7 +9,7 @@ const StuCurators = () => {
                 <h1>Кураторы групп</h1>
                 <h4>Загрузить приказ о назначении кураторов</h4>
                 <div className={classes.urlStyle}>
-                    <a href='http://localhost:9000/pdf/student/student_curators/№1-Б-О-назначении-кураторов-2022-2023-2.pdf'>Приказ о назначении кураторов групп.pdf</a>
+                    <a href={process.env.REACT_APP_API_URL + '/pdf/student/student_curators/№1-Б-О-назначении-кураторов-2022-2023-2.pdf'}>Приказ о назначении кураторов групп.pdf</a>
                 </div>
             </div>
         </Container>

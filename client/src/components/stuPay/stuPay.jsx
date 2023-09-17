@@ -12,13 +12,13 @@ const StuPay = () => {
                 <div className={classes.header}>
                     <h4>Загрузить квитанцию</h4>
                     <div className={classes.urlStyle}>
-                        <a href='http://localhost:9000/pdf/student/student_pay/Извещение.pdf'>Квитация об оплате обучения.pdf</a>
+                        <a href={process.env.REACT_APP_API_URL + '/pdf/student/student_pay/Извещение.pdf'}>Квитация об оплате обучения.pdf</a>
                     </div>
                     <div className={classes.urlStyle}>
-                        <a href='http://localhost:9000/pdf/student/student_pay/Извещение.docx'>Квитация об оплате обучения.docx</a>
+                        <a href={process.env.REACT_APP_API_URL + '/pdf/student/student_pay/Извещение.docx'}>Квитация об оплате обучения.docx</a>
                     </div>
                     <div className={classes.urlStyle}>
-                        <a href='http://localhost:9000/pdf/student/student_pay/Извещение.jpg'>Квитация об оплате обучения.jpg</a>
+                        <a href={process.env.REACT_APP_API_URL + '/pdf/student/student_pay/Извещение.jpg'}>Квитация об оплате обучения.jpg</a>
                     </div>
                 </div>
                 <div className={classes.imageStyle}>

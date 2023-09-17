@@ -11,7 +11,7 @@ const AboutFinance = () => {
                     <h1>Финансово-хозяйственная деятельность</h1>
 
                     <h2>План финансово-хозяйственной деятельности</h2>
-                    <a href="http://localhost:9000/pdf/financial_economy_activity/План-ФХД-на-2020-год_removed_1.pdf" className={classes.linkStyle}>План финансово-хозяйственной деятельности на 2020 год</a>
+                    <a href={process.env.REACT_APP_API_URL  + "/pdf/financial_economy_activity/План-ФХД-на-2020-год_removed_1.pdf"} className={classes.linkStyle}>План финансово-хозяйственной деятельности на 2020 год</a>
 
                 </Col>
                 <Col lg={4}>

@@ -79,7 +79,7 @@ const downloads = [
 const AbiMaterials = () => {
     let caption = useState('')
     const returnPath = (caption) => {
-        return 'http://localhost:9000/pdf/abiMaterials/' + caption
+        return process.env.REACT_APP_API_URL + '/pdf/abiMaterials/' + caption
     }
 
 const agreementFiller = () => {

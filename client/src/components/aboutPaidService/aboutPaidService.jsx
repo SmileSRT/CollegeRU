@@ -7,7 +7,7 @@ const AboutPaidService = () => {
     let caption = useState('')
 
     const returnPath = (caption) => {
-        return 'http://localhost:9000/pdf/paid_service/' + caption
+        return process.env.REACT_APP_API_URL + '/pdf/paid_service/' + caption
     }
 
     const pdfList = [
@@ -72,7 +72,7 @@ const AboutPaidService = () => {
                         <h2>Образец договора об указании платных образовательных услуг</h2>
 
                             <div className={classes.urlStyle}>
-                                <a href='http://localhost:9000/pdf/paid_service/dogovor_dpo.docx'>Договор об указании платных образовательных услуг</a>
+                                <a href={process.env.REACT_APP_API_URL + '/pdf/paid_service/dogovor_dpo.docx'}>Договор об указании платных образовательных услуг</a>
                             </div>
                     </div>
                 </Col>
