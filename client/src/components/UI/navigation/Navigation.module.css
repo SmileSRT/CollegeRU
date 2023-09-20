@@ -35,7 +35,7 @@
 }
 
 
-@media (max-width: 993px) {
+@media screen and (max-width: 993px) {
     .menuStyle{
         padding-top: 20px;
         padding-left: 0;

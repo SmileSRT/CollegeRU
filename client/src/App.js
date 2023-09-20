@@ -17,7 +17,7 @@ const App = () => {
   // этот useEffect будет запущен один раз
   // аналогично componentDidMount()
     useEffect(() => {
-        fetch("http://localhost:9000/")
+        fetch("http://192.168.0.106:9000/")
         .then(res => res.json())
         .then(
             (result) => {

@@ -49,10 +49,10 @@ const SpecialtiesNav = () => {
             <Row className={classes.navigationBlock}>
                 {directions.map((direction) => (
                     <Col className={classes.directionBlock} xs={5} xl={2}>
-                        <a href={direction.route}>
+                        <Link to={direction.route}>
                             <img src={icons('./' + direction.icon)} className={classes.iconStyle}/>
                             <h5>{direction.name}</h5>
-                        </a>
+                        </Link>
                     </Col>
                 ))}
             </Row>

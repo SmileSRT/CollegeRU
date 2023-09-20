@@ -27,7 +27,7 @@
 }
 
 
-@media ((min-width: 1200px) and (max-width: 1400px)){
+@media screen and (min-width: 1200px) and (max-width: 1400px){
     .specialtiesBlock{
         padding-bottom: 10px;
     }
@@ -39,7 +39,7 @@
 }
 
 
-@media ((min-width: 1400px) and (max-width: 1500px)){
+@media screen and (min-width: 1400px) and (max-width: 1500px){
     .specialtiesBlock{
         padding-bottom: 10px;
     }

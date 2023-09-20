@@ -1,10 +1,15 @@
-.header > h1{
+.employmentBlock{
+    min-height: calc(100vh - 440px);
+}
+
+
+.employmentBlock > h1{
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-.header > h4{
+.employmentBlock > h4{
     margin-top: 20px;
     margin-bottom: 10px;
 }

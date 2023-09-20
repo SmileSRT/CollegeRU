@@ -110,13 +110,10 @@ body:not(.modal-open) {
     text-decoration: none;
     color: gray;
     padding: 8px;
-    margin: 5px 0;
     width: 100%;
 }
 
 
 .navLink:hover {
     color: rgb(100, 100, 100);
-    border-radius: 10px;
-    background-color:#c7c7c731;
 }

@@ -11,7 +11,7 @@
 }
 
 
-@media((min-width: 320px) and (max-width: 768px)){
+@media screen and (min-width: 320px) and (max-width: 768px){
     .imageStyle{
         width: 300px;
         height: auto;

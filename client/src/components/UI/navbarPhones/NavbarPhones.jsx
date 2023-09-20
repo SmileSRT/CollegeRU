@@ -241,9 +241,9 @@ const NavbarPhones = () => {
             <Container>
                 <Row className={classes.mobileNavbar}>
                     <Col xs={8} sm={9}  className={classes.navbarLogo}>
-                        <NavbarBrand href="/" >
+                        <NavLink to="/" >
                             <img src={orgLogo} alt="Колледж 'ЗНАНИЕ'" className={classes.logoStyle} />
-                        </NavbarBrand>
+                        </NavLink>
                     </Col>
                     <Col xs={4} sm={3} className={classes.navIcons}>
                         <NavLink to="/contact">

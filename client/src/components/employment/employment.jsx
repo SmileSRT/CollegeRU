@@ -6,7 +6,7 @@ import classes from './employment.module.css'
 const Employment = () => {
     return(
         <Container className='my-5'>
-            <div className={classes.header}>
+            <div className={classes.employmentBlock}>
                 <h1>Трудоустройство</h1>
                 <h4>Положение</h4>
                 <div className = {classes.urlStyle}>

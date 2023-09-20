@@ -42,7 +42,7 @@
     font-size: 14px;
 }
 
-@media(max-width: 560px){
+@media screen and (max-width: 560px){
     .headers > h1{
         text-align: center;
         font-size: 22px;
@@ -55,7 +55,7 @@
     }
 }
 
-@media((min-width: 560px) and (max-width: 1200px)){
+@media screen and (min-width: 560px) and (max-width: 1200px){
     .headers > h1{
         text-align: center;
     }

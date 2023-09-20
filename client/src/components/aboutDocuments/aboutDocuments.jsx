@@ -145,7 +145,7 @@ const AboutDocuments = () => {
                                 <a href="http://localhost:9000/pdf/founding_documents/Свидетельство_О_Регистрации.pdf">Свидетельство о государственной регистрации</a>
                             </div>
 
-                            <h2>Локальные нормативные акты</h2>
+                            <h4>Локальные нормативные акты</h4>
                             <div id="states">
 
                             </div>

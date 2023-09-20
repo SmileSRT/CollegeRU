@@ -28,7 +28,7 @@ const EduDoctor = () => {
                 </Col>
             </Row>
             <Container>
-                <Row className={classes.infoBlock}>
+                <Row className={classes.infoDirection}>
                     <Col className={classes.parametersBlock} lg={2}>
                         <h5>Срок обучения</h5>
                         <p>

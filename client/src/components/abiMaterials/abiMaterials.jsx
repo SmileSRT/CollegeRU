@@ -132,19 +132,19 @@ useEffect(() => {
                 <h1>Дополнительные материалы</h1>
 
 
-                <h2>Договоры</h2>
+                <h4>Договоры</h4>
                 <ul className={classes.listStyle} id='agreementList'>
              
                 </ul>
                 
 
-                <h2>Заявления</h2>
+                <h4>Заявления</h4>
                 <ul className={classes.listStyle} id='applicationsList'>
 
 
                 </ul>
 
-                <h2>Материалы для скачивания</h2>
+                <h4>Материалы для скачивания</h4>
                 <ul className={classes.listStyle} id='downloadList'>
                     {/* {materials.map((material) => (
 =======

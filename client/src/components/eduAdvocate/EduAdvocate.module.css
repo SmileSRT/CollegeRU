@@ -29,6 +29,13 @@
 }
 
 
+.infoDirection{
+    padding-top: 50px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
 .infoBlock{
     justify-content: center;
 }
@@ -38,7 +45,6 @@
     border: 3px solid rgb(207, 207, 207);
     border-radius: 25px;
     text-align: center;
-    margin: 50px 10px 0 10px;
     transition: transform .2s;
     background-color: white;
     padding: 0;
@@ -121,7 +127,7 @@
 }
 
 
-@media((min-width: 320px) and (max-width: 768px)){
+@media screen and (min-width: 320px) and (max-width: 768px){
     .introBlock{
         background:
         linear-gradient(rgba(44, 44, 44, 0.7), rgba(0, 0, 0, 0.8)),
@@ -144,9 +150,13 @@
         font-size: 15px;
     }
 
+    .infoDirection{
+        padding-top: 10px;
+        gap: 10px;
+    }
+
     .parametersBlock{
         width: 46%;
-        margin: 5px;
     }
 
     .parametersBlock > h5{
@@ -190,7 +200,7 @@
 }
 
 
-@media((min-width: 768px) and (max-width: 990px)){
+@media screen and (min-width: 768px) and (max-width: 990px){
     .introBlock{
         height: calc(100vh - 100px);
         background:
@@ -217,9 +227,13 @@
         font-size: 20px;
     }
 
+    .infoDirection{
+        padding-top: 10px;
+        gap: 10px;
+    }
+
     .parametersBlock{
         width: 46%;
-        margin: 5px;
     }
 
     .parametersBlock > h5{
@@ -263,7 +277,7 @@
 }
 
 
-@media((min-width: 320px) and (max-width: 425px) and (min-height: 800px)){
+@media screen and (min-width: 320px) and (max-width: 425px) and (min-height: 800px){
     .introText > h1{
         font-size: 40px;
     }

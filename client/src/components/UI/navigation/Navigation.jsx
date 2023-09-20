@@ -74,7 +74,7 @@ const Navigation = (props) => {
                     <h3>Разделы</h3>
                     <ul className={classes.navigationStyle}>
                         {navigationMenu.map((header) => (
-                            <li className={classes.linkMenu}><Link to={header.route}>{header.name}</Link></li>
+                            <li className={classes.linkMenu}><Link to={header.route} onClick={window.scroll(0, 0)}>{header.name}</Link></li>
                         ))}
                     </ul>
                 </div>) : null}
